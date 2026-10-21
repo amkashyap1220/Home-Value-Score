@@ -59,7 +59,7 @@ docs/            pre-registration and notes
 
 **Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
-Write-up with the interactive map: [Where's the best home value in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
+Write-up with the interactive map: [Where is the best value in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
 
 ## How to rerun
 
