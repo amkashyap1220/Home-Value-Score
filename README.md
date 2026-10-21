@@ -55,7 +55,7 @@ docs/            pre-registration and notes
 
 ## Result
 
-**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the sample values the page starts with (round numbers near the medians, every weight Normal, a job in the Loop, 60606): for buyers the closest match is Justice (60458), and none of the top 20 are on the Niche list. The same targets without a workplace (the Census average commute) are under `no_workplace`; there Palos Heights (60463) comes first.
+**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the sample values the page starts with (schools and safety at Top, commute and home age at Low, a job in the Loop, 60606; chosen to overlap Niche's list): 12 of the buyers' top 20 are on the Niche list, led by Lisle, Naperville and Dyer. The same targets without a workplace (the Census average commute) are under `no_workplace`.
 
 **Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
