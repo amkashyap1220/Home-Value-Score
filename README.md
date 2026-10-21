@@ -10,7 +10,7 @@ The post on the site is an interactive map that scores each zip against the read
 
 1. The reader sets a target and a weight for six things: schools, safety, commute time, walkability, home age, and median sale price (buyers) or rent per bedroom (renters: median gross rent divided by the average bedrooms of rented homes, so each roommate's share). If they name the town or zip they work in, commute becomes the drive time from each zip to that workplace (OpenStreetMap roads via OSRM, free-flow, so no traffic and no transit) instead of the Census average. Two people can name different workplaces. The page starts filled in with sample values (`SAMPLE` in `src/value.py`) that the reader changes to their own.
 2. Each value and each target becomes a percentile among the metro's zips. Closeness = 100 − the gap between the zip's percentile and the target's, so it's 100 exactly on target. For schools, safety and price, beating the target also counts as 100.
-3. Score = the weighted average of the six closeness values. The 20 highest are the reader's top areas, shown next to the places on Niche's 2026 Best Places to Live lists. With two people, "best for both" ranks by the lower of their two scores.
+3. Score = the weighted average of the six closeness values. The 20 highest are the reader's top areas, each linked to listings. With two people, "best for both" ranks by the lower of their two scores.
 
 The original pre-registered study (a regression of price per sq ft on quality, taxes and running costs, with value picks more than one standard deviation below the line) is still computed by `src/model.py`; its result is below. Race and ethnicity, and proxies for them, are not used anywhere.
 
@@ -18,7 +18,6 @@ The original pre-registered study (a regression of price per sq ft on quality, t
 
 | Data | Source | URL | Pulled | License |
 |---|---|---|---|---|
-| Reputation list | Niche, 2026 Best Places to Live (IL, IN) | https://www.niche.com/places-to-live/search/best-places-to-live/s/illinois/ | 2026-10-21 | Niche terms of use; place names only |
 | Zip (ZCTA) boundaries | Census TIGER/Line 2020 ZCTA5 | https://www2.census.gov/geo/tiger/TIGER2020/ZCTA520/ | 2026-10-21 | Public domain (U.S. Government) |
 | Block population and land area | Census TIGER/Line 2020 blocks (IL, IN, WI) | https://www2.census.gov/geo/tiger/TIGER2020/TABBLOCK20/ | 2026-10-21 | Public domain |
 | Block to zip, place, school district | Census 2020 ZCTA-to-block relationship file; 2020 block assignment files | https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/ , https://www2.census.gov/geo/docs/maps-data/data/baf2020/ | 2026-10-21 | Public domain |
@@ -38,7 +37,6 @@ The original pre-registered study (a regression of price per sq ft on quality, t
 | Rent, context only | Zillow Observed Rent Index, zip, all homes, smoothed (through 2026-09) | https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_uc_sfrcondomfr_sm_month.csv | 2026-10-21 | Zillow Research terms of use, with attribution |
 | Zip shapes for the map | Census 2020 ZCTA cartographic boundaries, 1:500,000 | https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip | 2026-10-21 | Public domain |
 | Drive times between zips (added for the workplace commute) | OSRM table service on OpenStreetMap roads (public demo server), from each zip's representative point to every other | https://router.project-osrm.org/ | 2026-10-21 | Map data © OpenStreetMap contributors, ODbL; OSRM is BSD-2 |
-| Chicago neighborhoods | City of Chicago, Boundaries – Neighborhoods | https://data.cityofchicago.org/d/9wp7-iasj | 2026-10-21 | City of Chicago Data Portal terms of use |
 
 Each file's exact URL and download time is in `data/raw/manifest.csv`. Missing police agencies and other data gaps are listed in [docs/data_notes.md](docs/data_notes.md).
 
@@ -55,9 +53,9 @@ docs/            pre-registration and notes
 
 ## Result
 
-**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the sample values the page starts with (schools and safety at Top, commute and home age at Low, a job in the Loop, 60606; chosen to overlap Niche's list): 12 of the buyers' top 20 are on the Niche list, led by Lisle, Naperville and Dyer. The same targets without a workplace (the Census average commute) are under `no_workplace`.
+**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the sample values the page starts with (schools and safety at Top, commute and home age at Low, a job in the Loop, 60606): the buyers' top 20 is led by Lisle, Naperville and Dyer. The same targets without a workplace (the Census average commute) are under `no_workplace`.
 
-**Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
+**Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
 Write-up with the interactive map: [Where is the best value in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
 
@@ -72,7 +70,7 @@ cd src
 ../.venv/bin/python walkability.py
 ../.venv/bin/python schools.py
 ../.venv/bin/python crime.py
-../.venv/bin/python reputation.py
+../.venv/bin/python places.py        # name each zip after its largest place
 ../.venv/bin/python indicators.py    # joins everything into data/processed/indicators.csv
 ../.venv/bin/python prices.py        # Redfin 12-month price per sq ft and sales (+ Zillow ZHVI context)
 ../.venv/bin/python extras.py       # running costs and home age: home age, energy bills, commuting fuel

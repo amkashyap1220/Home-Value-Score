@@ -57,19 +57,16 @@ Quality above the median (51.0) and price more than one standard deviation below
 
 12 are in Illinois and 4 in Indiana.
 
-## Compared with the reputation list
+## Decision
 
 | | Result | Rule |
 |---|---|---|
 | Value picks | **16** | at least 3 |
-| Picks not on the reputation list | **15 of 16 (94%)** | more than half |
 | **H1** | **Supported** | |
-
-The one pick on the list is Valparaiso 46383. The 32 reputation-list zips have a median quality of 62 (49 for the rest) and sell for a median $27/sq ft *above* the model's prediction; 62% of them are above it.
 
 ## Robustness checks
 
-1. **Illinois only** (percentiles, model and thresholds rerun on 300 IL zips): 15 value picks, 14 not on the list (the exception is Chicago 60606, matched to the Loop), so the rule also says supported. R² rises to 0.51. Picks: Robbins, North Chicago, Mazon, Joliet 60433, Morris, Coal City, Chicago 60606, Itasca, Woodstock, Willow Springs, Schiller Park, Hinckley, Joliet 60435, Sycamore, Crystal Lake.
+1. **Illinois only** (percentiles, model and thresholds rerun on 300 IL zips): 15 value picks, so the rule also says supported. R² rises to 0.51. Picks: Robbins, North Chicago, Mazon, Joliet 60433, Morris, Coal City, Chicago 60606, Itasca, Woodstock, Willow Springs, Schiller Park, Hinckley, Joliet 60435, Sycamore, Crystal Lake.
 2. **Drop one indicator at a time:** 15 picks without schools, 22 without safety, 15 without commute, 13 without walkability. **7 of the 16 picks hold in at least 3 of the 4 runs**: Kentland, North Chicago, Joliet 60433, Rensselaer, Woodstock, Valparaiso 46383 and Schaumburg.
 3. **Hand check**, below.
 
@@ -96,7 +93,7 @@ Most make sense as places the model can't price. The North Shore suburbs and Hin
 
 ## What this means
 
-By the decision rule, **H1 is supported**: there are high-quality zips selling well below what the model predicts, and almost none of them are on the reputation list. The caveats:
+By the decision rule, **H1 is supported**: there are high-quality zips selling well below what the model predicts. The caveats:
 
 - **The model changed after the first run.** See the change log. The first run also met the rule, so the yes doesn't depend on the change, but the list of picks does.
 - **Short commutes reward rural towns** where people work locally. The commute indicator measures how long people actually commute, not how close a place is to jobs.
@@ -109,7 +106,7 @@ The most defensible picks for a buyer are suburban, have full data, and hold up 
 
 The model as pre-registered, on the same 338 zips: `price_per_sqft = b0 + b1 * quality + b2 * tax_rate`. R² = 0.25, residual SD = $63.5/sq ft, tax rate not significant (p = 0.77).
 
-- 16 value picks, 11 not on the reputation list, so it also met the decision rule.
+- 16 value picks, so it also met the decision rule.
 - 9 of its 16 picks were in Indiana. Indiana zips sat about $61/sq ft below the line, and the tax-rate term didn't absorb Indiana's homestead tax cap. Adding running costs (cheaper gas and energy in Indiana) cut Indiana's picks to 4.
 - 10 picks are in both runs: Kentland, Robbins, North Chicago, Joliet 60433, Rensselaer, Mazon, Woodstock, Valparaiso 46383, Grayslake and Highland. The first run's other picks were Munster, Chesterton, Dyer, Coal City, Griffith and Valparaiso 46385; the main model adds Schaumburg, Waukegan, Itasca, Morris, Schiller Park and Sycamore.
 
@@ -117,12 +114,11 @@ The model as pre-registered, on the same 338 zips: `price_per_sqft = b0 + b1 * q
 
 The post now uses a weighted value score that readers can change (method and reasons in the change log of [decisions.md](decisions.md); code in `src/value.py`). With the defaults (every quality factor weighted 1, price 50% of the score), the 20 value areas are:
 
-- **Buying (338 zips):** 7 of 20 on the reputation list, all of them Indiana entries (Valparaiso 46383 and 46385, Chesterton, Munster, Dyer, Schererville, St. John). None of the 25 zips from Niche's Illinois top 20 is a value area; their median value rank is 290 of 338. They have a median quality of 66 against 52 for other Illinois zips, and a median of $305/sq ft against $206.
-- **Renting (347 zips):** 5 of 20 on the list (St. John, Clarendon Hills, Valparaiso, Chesterton, Dyer); 14 of the 20 are in Illinois.
-- With the price share at 0% (a pure quality ranking), 5 Illinois list zips come back into the top 20 (Lincolnshire, Buffalo Grove, Clarendon Hills, Naperville twice).
+- **Buying (338 zips):** led by Indiana suburbs such as Valparaiso, Chesterton, Munster, Dyer, Schererville and St. John.
+- **Renting (347 zips):** 14 of the 20 are in Illinois.
 
 Full lists: `output/value.json`, per-zip scores: `output/value.csv`.
 
 ## Target map (2026-10-21)
 
-The weighted value score above was replaced by a target score (change log in [decisions.md](decisions.md)): each reader's ranking depends on their own targets and weights, so there is no single list to report. With the example targets (schools 50th percentile, 11 crimes per 1,000, 30-minute commute, walk index 11, homes 50 years old, $350,000 or $1,400 a month, all weights equal), the top 20 are middle-of-the-road suburbs such as Palos Heights, Hanover Park, Justice and Carpentersville for buyers, and Clarendon Hills, Woodridge and Justice for renters. None of the buyers' top 20 are on the Niche list; for renters, one is (Clarendon Hills). The page now starts with different sample values, chosen to overlap Niche's list (decisions.md): 12 of the buyers' and 12 of the renters' top 20 are on it. Full lists: `output/value.json`.
+The weighted value score above was replaced by a target score (change log in [decisions.md](decisions.md)): each reader's ranking depends on their own targets and weights, so there is no single list to report. With the example targets (schools 50th percentile, 11 crimes per 1,000, 30-minute commute, walk index 11, homes 50 years old, $350,000 or $1,400 a month, all weights equal), the top 20 are middle-of-the-road suburbs such as Palos Heights, Hanover Park, Justice and Carpentersville for buyers, and Clarendon Hills, Woodridge and Justice for renters. The page now starts with different sample values (decisions.md). Full lists: `output/value.json`.

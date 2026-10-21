@@ -1,381 +1,381 @@
-zcta,state,county_fips,county,pop2020,share_in_msa,school_pct,police_agency,crime_year,crimes_per_1000,crime_note,commute_min,tax_rate,tax_rate_median,median_topcoded,walk_index,place_name,on_list,list_entry,quality_missing
-46301,IN,18127,Porter,580,1,12.17,,,,no matching agency in the FBI CDE,40.226,0.01044,0.0091976,False,5.5,Beverly Shores,False,,1
-46302,IN,18127,Porter,141,1,71.11,Porter County Sheriff's Office,2025,2.319,,,0.0083651,0.0062594,False,3.833,,False,,1
-46303,IN,18089,Lake,17028,1,88.48,Cedar Lake Police Department,2025,2.764,,32.089,0.0091428,0.0094583,False,6.934,Cedar Lake,False,,0
-46304,IN,18127,Porter,26835,1,91.11,Chesterton Police Department,2025,5.83,,26.712,0.0090642,0.0084374,False,7.186,Chesterton,True,Chesterton,0
-46307,IN,18089,Lake,69248,1,82.39,Crown Point Police Department,2025,4.664,,31.832,0.0086592,0.0083524,False,6.77,Crown Point,False,,0
-46310,IN,18073,Jasper,14126,1,63.41,Jasper County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",32.374,0.0058467,0.0052634,False,5.919,De Motte,False,,1
-46311,IN,18089,Lake,22431,1,90.3,Dyer Police Department,2025,1.963,,31.438,0.009469,0.0093848,False,8.705,Dyer,True,Dyer,0
-46312,IN,18089,Lake,26370,1,1.738,East Chicago Police Department,2025,18.46,,20.822,0.0084198,0.010275,False,8.844,East Chicago,False,,0
-46319,IN,18089,Lake,18108,1,55.42,Griffith Police Department,2025,9.745,,28.355,0.0095666,0.0085391,False,8.597,Griffith,False,,0
-46320,IN,18089,Lake,14514,1,1.568,Hammond Police Department,2025,30.71,,28.475,0.0094877,0.0085926,False,9.536,Hammond,False,,0
-46321,IN,18089,Lake,23894,1,97.25,Munster Police Department,2025,9.63,,28.112,0.011227,0.010978,False,9.025,Munster,True,Munster,0
-46322,IN,18089,Lake,23984,1,63.12,Highland Police Department,2025,13.9,,25.597,0.0088553,0.0087741,False,9.514,Highland,False,,0
-46323,IN,18089,Lake,22510,1,1.863,Hammond Police Department,2025,30.71,,23.572,0.0087552,0.01012,False,8.267,Hammond,False,,0
-46324,IN,18089,Lake,22611,1,1.566,Hammond Police Department,2025,30.71,,25.764,0.01048,0.010523,False,9.154,Hammond,False,,0
-46327,IN,18089,Lake,11078,1,1.566,Hammond Police Department,2025,30.71,,28.382,0.01108,0.01088,False,11.2,Hammond,False,,0
-46341,IN,18127,Porter,10518,1,70.84,Porter County Sheriff's Office,2025,2.319,,35.06,0.0060321,0.0076309,False,5.296,Hebron,False,,0
-46342,IN,18089,Lake,32540,1,47.87,Hobart Police Department,2025,23.75,,26.285,0.010014,0.010512,False,7.266,Hobart,False,,0
-46347,IN,18127,Porter,4800,1,87.21,Porter County Sheriff's Office,2025,2.319,,32.108,0.0079518,0.0081872,False,4.965,Kouts,False,,0
-46349,IN,18111,Newton,3219,1,40.2,Newton County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",44.26,0.0083189,0.0069545,False,3.812,Lake Village,False,,1
-46356,IN,18089,Lake,18668,1,84.17,Lowell Police Department,2025,1.202,,33.571,0.0084024,0.0085258,False,6.229,Lowell,False,,0
-46368,IN,18127,Porter,39837,1,26.9,Portage Police Department,2025,13.84,,27.469,0.0078631,0.0082959,False,7.628,Portage,False,,0
-46373,IN,18089,Lake,17839,1,90.27,St. John Police Department,2025,1.701,,30.946,0.0092141,0.0091905,False,7.84,St. John,True,St. John,0
-46375,IN,18089,Lake,24051,1,90.79,Schererville Police Department,2025,10.13,,31.964,0.0090724,0.0087413,False,8.413,Schererville,True,Schererville,0
-46376,IN,18089,Lake,367,1,84.17,,,,no matching agency in the FBI CDE,35.524,0.0097869,0.0081333,False,5,Schneider,False,,1
-46377,IN,18089,Lake,194,1,84.17,Lake County Sheriff's Office,2025,3.448,,,,,False,3.167,Shelby,False,,1
-46379,IN,18111,Newton,295,1,40.2,Newton County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",,,0.0075622,False,3.667,,False,,2
-46381,IN,18111,Newton,287,1,40.2,Newton County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",,0.0076101,,False,2.667,,False,,2
-46383,IN,18127,Porter,41981,1,91.95,Valparaiso Police Department,2025,9.577,,25.344,0.0082808,0.008721,False,8.06,Valparaiso,True,Valparaiso,0
-46385,IN,18127,Porter,41832,1,81.98,Porter County Sheriff's Office,2025,2.319,,29.937,0.0082423,0.007968,False,6.314,Valparaiso,True,Valparaiso,0
-46392,IN,18073,Jasper,7855,1,65.8,Jasper County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",33.395,0.0043767,0.0042173,False,4.616,Wheatfield,False,,1
-46393,IN,18127,Porter,376,1,87.46,Porter County Sheriff's Office,2025,2.319,,34.194,0.0063976,0.007493,False,3.833,Wheeler,False,,0
-46394,IN,18089,Lake,11725,1,15,Hammond Police Department,2025,30.71,,27.342,0.010478,0.010485,False,9.58,Hammond,False,,0
-46402,IN,18089,Lake,5502,1,1.92,Gary Police Department,2025,44.7,,23.847,0.0076489,0.008267,False,9.296,Gary,False,,0
-46403,IN,18089,Lake,11649,1,4.485,Gary Police Department,2025,44.7,,30.362,0.0087395,0.0082939,False,6.648,Gary,False,,0
-46404,IN,18089,Lake,15658,1,1.983,Gary Police Department,2025,44.7,,24.42,0.0081586,0.0096324,False,7.306,Gary,False,,0
-46405,IN,18089,Lake,11860,1,4.087,Lake Station Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",26.922,0.010018,0.010165,False,8.011,Lake Station,False,,1
-46406,IN,18089,Lake,8776,1,3.579,Gary Police Department,2025,44.7,,25.604,0.0089235,0.0094329,False,7.422,Gary,False,,0
-46407,IN,18089,Lake,9862,1,2.385,Gary Police Department,2025,44.7,,24.753,0.0077469,0.010947,False,8.243,Gary,False,,0
-46408,IN,18089,Lake,15109,1,2.409,Gary Police Department,2025,44.7,,25.475,0.0067353,0.0089279,False,6.982,Gary,False,,0
-46409,IN,18089,Lake,6975,1,2.554,Gary Police Department,2025,44.7,,26.892,0.0074156,0.012437,False,7.327,Gary,False,,0
-46410,IN,18089,Lake,39471,1,15.35,Merrillville Police Department,2025,14.73,,31.79,0.0096228,0.0086401,False,7.559,Merrillville,False,,0
-47922,IN,18111,Newton,1482,1,43.5,,,,no matching agency in the FBI CDE,26.532,0.0076121,0.0073546,False,5.583,Brook,False,,1
-47943,IN,18073,Jasper,914,1,55.34,Jasper County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",32.295,0.0059802,0.0060712,False,4.52,,False,,1
-47948,IN,18111,Newton,1279,0.95934,49.97,,,,no matching agency in the FBI CDE,22.048,0.0076828,0.0067387,False,4.723,Goodland,False,,1
-47951,IN,18111,Newton,2061,1,39.97,,,,no matching agency in the FBI CDE,23.446,0.0081284,0.011073,False,7.069,Kentland,False,,1
-47963,IN,18111,Newton,1937,1,40.17,,,,no matching agency in the FBI CDE,27.078,0.0092408,0.0081832,False,4.971,Morocco,False,,1
-47964,IN,18111,Newton,114,1,40.2,,,,no matching agency in the FBI CDE,18.088,0.007861,0.0093111,False,5.167,Mount Ayr,False,,1
-47977,IN,18073,Jasper,2235,0.86846,63.76,Remington Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",21.813,0.0049692,0.005003,False,5.033,Remington,False,,1
-47978,IN,18073,Jasper,10815,0.99575,77.09,Rensselaer Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",25.172,0.0043963,0.0041913,False,6.567,Rensselaer,False,,1
-60002,IL,17097,Lake,24086,1,68.72,Antioch Police Department,2025,7.746,,31.089,0.026828,0.027334,False,7.15,Antioch,False,,0
-60004,IL,17031,Cook,52546,1,77.49,Arlington Heights Police Department,2025,8.077,,28.689,0.019945,0.02137,False,10.04,Arlington Heights,False,,0
-60005,IL,17031,Cook,30221,1,73.89,Arlington Heights Police Department,2025,8.077,,26.373,0.019587,0.021113,False,11.38,Arlington Heights,False,,0
-60007,IL,17031,Cook,33670,1,62.62,Elk Grove Village Police Department,2025,14.5,,25.514,0.01795,0.019401,False,8.32,Elk Grove Village,False,,0
-60008,IL,17031,Cook,22760,1,69.3,Rolling Meadows Police Department,2025,13.59,,25.467,0.021663,0.020192,False,9.728,Rolling Meadows,False,,0
-60010,IL,17097,Lake,46365,1,88.94,Barrington Police Department,2025,6.42,,30.371,0.018907,0.015673,True,7.892,Barrington,False,,0
-60012,IL,17111,McHenry,10916,1,66.27,McHenry County Sheriff's Office,2025,2.601,,28.444,0.022231,0.023966,True,8.289,Crystal Lake,False,,0
-60013,IL,17111,McHenry,26144,1,69.04,Cary Police Department,2025,3.981,,29.986,0.024002,0.02487,False,7.942,Cary,False,,0
-60014,IL,17111,McHenry,48275,1,66.53,Crystal Lake Police Department,2025,12.19,,29.329,0.024049,0.024361,False,8.7,Crystal Lake,False,,0
-60015,IL,17097,Lake,28013,1,97.81,Deerfield Police Department,2025,7.262,,28.129,0.023457,0.016503,True,11.15,Deerfield,False,,0
-60016,IL,17031,Cook,61888,1,73.79,Des Plaines Police Department,2025,9.001,,30.199,0.018761,0.018418,False,13.62,Des Plaines,False,,0
-60018,IL,17031,Cook,30051,1,45.46,Des Plaines Police Department,2025,9.001,,25.955,0.018463,0.020607,False,14.23,Des Plaines,False,,0
-60020,IL,17097,Lake,10967,1,37.01,Fox Lake Police Department,2025,11.27,,35.258,0.02256,0.021888,False,9.708,Fox Lake,False,,0
-60021,IL,17111,McHenry,5404,1,71.2,Fox River Grove Police Department,2025,3.779,,33.209,0.022202,0.026001,False,11.44,Fox River Grove,False,,0
-60022,IL,17031,Cook,8482,1,99.26,Glencoe Police Department,2025,5.176,,36.337,0.013914,0.00718,True,13.24,Glencoe,False,,0
-60025,IL,17031,Cook,41256,1,92.36,Glenview Police Department,2025,10.53,,26.282,0.017079,0.01738,False,14.09,Glenview,False,,0
-60026,IL,17031,Cook,14518,1,96.31,Glenview Police Department,2025,10.53,,29.469,0.017185,0.014407,True,14.74,Glenview,False,,0
-60029,IL,17031,Cook,514,1,95.4,Golf Police Department,2025,0,,32.062,0.021175,0.010476,True,16.39,Golf,False,,0
-60030,IL,17097,Lake,36346,1,66.48,Grayslake Police Department,2025,4.677,,27.607,0.026437,0.030284,False,10.85,Grayslake,False,,0
-60031,IL,17097,Lake,37650,1,41.47,Gurnee Police Department,2025,21.17,,28.862,0.023844,0.025154,False,10.55,Gurnee,False,,0
-60033,IL,17111,McHenry,13581,0.99161,14.67,Harvard Police Department,2025,6.492,,28.414,0.01834,0.023817,False,9.043,Harvard,False,,0
-60034,IL,17111,McHenry,2148,1,66.84,Hebron Police Department,2025,0,,28.894,0.01811,0.018493,False,6.06,Hebron,False,,0
-60035,IL,17097,Lake,30152,1,94.25,Highland Park Police Department,2025,8.011,,27.453,0.020848,0.016468,True,12.13,Highland Park,False,,0
-60040,IL,17097,Lake,5102,1,94.1,Highwood Police Department,2025,5.157,,31.142,0.02142,0.022597,False,15.49,Highwood,False,,0
-60041,IL,17097,Lake,9140,1,42.47,Lake County Sheriff's Office,2025,4.567,,32.692,0.022253,0.023229,False,10.2,Long Lake,False,,0
-60042,IL,17111,McHenry,8433,1,58.53,Island Lake Police Department,2025,4.583,,32.026,0.024561,0.024601,False,7.381,Island Lake,False,,0
-60043,IL,17031,Cook,2514,1,99.78,Kenilworth Police Department,2025,4.132,,34.502,0.018878,0.0064097,True,13.47,Kenilworth,False,,0
-60044,IL,17097,Lake,10244,1,91.25,Lake Bluff Police Department,2025,11.08,,26.407,0.017279,0.016671,True,8.959,Lake Bluff,False,,0
-60045,IL,17097,Lake,21026,1,98,Lake Forest Police Department,2025,5.224,,30.875,0.015659,0.010829,True,8.398,Lake Forest,False,,0
-60046,IL,17097,Lake,34690,1,62.07,Lindenhurst Police Department,2025,2.327,,34.301,0.029011,0.03,False,7.452,Lindenhurst,False,,0
-60047,IL,17097,Lake,43944,1,95.04,Lake Zurich Police Department,2025,9.998,,31.39,0.021798,0.018476,True,8.112,Lake Zurich,False,,0
-60048,IL,17097,Lake,29353,1,88.6,Libertyville Police Department,2024,6.615,2025 offenses under half of 2024 (likely incomplete reporting); used 2024,26.508,0.022685,0.018144,True,10.51,Libertyville,False,,0
-60050,IL,17111,McHenry,31854,1,48.79,McHenry Police Department,2025,5.41,,28.593,0.024065,0.024304,False,9.497,McHenry,False,,0
-60051,IL,17111,McHenry,24649,1,50.19,McHenry County Sheriff's Office,2025,2.601,,34.205,0.02259,0.023326,False,8.194,Johnsburg,False,,0
-60053,IL,17031,Cook,25297,1,75.17,Morton Grove Police Department,2025,10.79,,28.383,0.020496,0.02084,False,14.88,Morton Grove,False,,0
-60056,IL,17031,Cook,57177,1,73.32,Mount Prospect Police Department,2025,8.521,,26.068,0.02036,0.021151,False,12.94,Mount Prospect,False,,0
-60060,IL,17097,Lake,37599,1,69.43,Mundelein Police Department,2025,6.257,,27.801,0.023454,0.026489,False,8.713,Mundelein,False,,0
-60061,IL,17097,Lake,27581,1,87.13,Vernon Hills Police Department,2025,11.39,,26.91,0.025371,0.024,True,9.207,Vernon Hills,True,Vernon Hills,0
-60062,IL,17031,Cook,42751,1,96.13,Northbrook Police Department,2025,9.303,,27.775,0.014757,0.015812,True,11,Northbrook,True,Northbrook,0
-60064,IL,17097,Lake,15206,1,3.287,North Chicago Police Department,2025,8.395,,23.452,0.017454,0.024652,False,12.78,North Chicago,False,,0
-60067,IL,17031,Cook,39324,1,69.45,Palatine Police Department,2025,7.889,,28.845,0.022769,0.023444,True,9.369,Palatine,False,,0
-60068,IL,17031,Cook,39672,1,86.19,Park Ridge Police Department,2025,7.123,,29.118,0.020045,0.018128,True,14.25,Park Ridge,False,,0
-60069,IL,17097,Lake,8735,1,98.69,Lincolnshire Police Department,2025,10.47,,25.745,0.023783,0.016344,True,10.66,Lincolnshire,True,Lincolnshire,0
-60070,IL,17031,Cook,15840,1,73.73,Prospect Heights Police Department,2025,5.885,,25.99,0.021155,0.020965,False,12.09,Prospect Heights,False,,0
-60071,IL,17111,McHenry,3891,1,70.93,Richmond Police Department,2025,4.688,,31.641,0.019819,0.021563,False,6.693,Richmond,False,,0
-60072,IL,17111,McHenry,988,1,55.71,,,,no matching agency in the FBI CDE,28.415,0.018128,0.020676,False,6.303,Ringwood,False,,1
-60073,IL,17097,Lake,61721,1,35.74,Round Lake Beach Police Department,2025,8.573,,30.996,0.026238,0.028261,False,9.691,Round Lake Beach,False,,0
-60074,IL,17031,Cook,37705,1,70.89,Palatine Police Department,2025,7.889,,25.973,0.021017,0.021933,False,10.56,Palatine,False,,0
-60075,IL,17097,Lake,40,1,5.589,Lake County Sheriff's Office,2025,4.567,,,,,False,4.667,,False,,1
-60076,IL,17031,Cook,34295,1,73.9,Skokie Police Department,2025,27.14,,28.567,0.019043,0.021126,False,15.8,Skokie,False,,0
-60077,IL,17031,Cook,28856,1,69.3,Skokie Police Department,2025,27.14,,27.106,0.018489,0.019806,False,16.54,Skokie,False,,0
-60081,IL,17111,McHenry,9396,1,66.81,Spring Grove Police Department,2025,2.692,,33.88,0.021699,0.023783,False,6.553,Spring Grove,False,,0
-60083,IL,17097,Lake,9564,1,44.54,,,,no matching agency in the FBI CDE,28.548,0.019028,0.025526,False,5.409,Beach Park,False,,1
-60084,IL,17097,Lake,17029,1,63.8,Wauconda Police Department,2025,1.566,,32.065,0.02547,0.024733,False,7.313,Wauconda,False,,0
-60085,IL,17097,Lake,71609,1,20.01,Waukegan Police Department,2025,19.31,,25.204,0.021187,0.023878,False,13.08,Waukegan,False,,0
-60087,IL,17097,Lake,28207,1,8.764,Waukegan Police Department,2025,19.31,,27.45,0.024295,0.024506,False,11.11,Waukegan,False,,0
-60088,IL,17097,Lake,14188,1,7.409,North Chicago Police Department,2025,8.395,,11.127,,,False,11.58,North Chicago,False,,0
-60089,IL,17097,Lake,43227,1,87.7,Buffalo Grove Police Department,2025,4.574,,26.262,0.02556,0.024262,True,11.2,Buffalo Grove,True,Buffalo Grove,0
-60090,IL,17031,Cook,39017,1,56.09,Wheeling Police Department,2025,8.843,,25.578,0.021413,0.022625,False,12.11,Wheeling,False,,0
-60091,IL,17031,Cook,28053,1,98.95,Wilmette Police Department,2025,8.978,,34.605,0.01763,0.01239,True,14.88,Wilmette,True,Wilmette,0
-60093,IL,17031,Cook,20691,1,99.07,Winnetka Police Department,2025,4.741,,29.122,0.016033,0.0084913,True,13.41,Winnetka,False,,0
-60096,IL,17097,Lake,6760,1,26.11,Winthrop Harbor Police Department,2025,4.268,,30.256,0.027463,0.029595,False,7.589,Winthrop Harbor,False,,0
-60097,IL,17111,McHenry,10849,1,58.22,McHenry County Sheriff's Office,2025,2.601,,33.203,0.022478,0.02091,False,5.164,Wonder Lake,False,,0
-60098,IL,17111,McHenry,33153,1,70.3,Woodstock Police Department,2025,5.934,,26.293,0.024239,0.025128,False,9.937,Woodstock,False,,0
-60099,IL,17097,Lake,31579,1,5.501,Zion Police Department,2025,12.1,,27.493,0.019699,0.032247,False,10.61,Zion,False,,0
-60101,IL,17043,DuPage,37644,1,35.71,Addison Police Department,2025,8.251,,25.458,0.019357,0.019439,False,10.72,Addison,False,,0
-60102,IL,17111,McHenry,31959,1,51.62,Algonquin Police Department,2025,9.884,,30.895,0.022322,0.022912,False,8.36,Algonquin,False,,0
-60103,IL,17043,DuPage,41740,1,24.95,Bartlett Police Department,2025,2.879,,29.682,0.023702,0.02424,False,7.162,Bartlett,False,,0
-60104,IL,17031,Cook,18829,1,6.793,Bellwood Police Department,2025,12.9,,27.782,0.02377,0.025504,False,14.87,Bellwood,False,,0
-60106,IL,17043,DuPage,20562,1,33.81,Bensenville Police Department,2025,9.896,,25.524,0.022043,0.022615,False,10,Bensenville,False,,0
-60107,IL,17031,Cook,39535,1,26.09,Streamwood Police Department,2025,6.51,,30.169,0.021711,0.022238,False,10,Streamwood,False,,0
-60108,IL,17043,DuPage,23070,1,73.94,Bloomingdale Police Department,2024,14.99,agency reported fewer than 12 months of 2025; used 2024,26.935,0.021311,0.022196,False,10.44,Bloomingdale,False,,0
-60109,IL,17089,Kane,580,1,88.74,,,,no matching agency in the FBI CDE,31.368,0.02404,0.021958,False,6.695,Burlington,False,,1
-60110,IL,17089,Kane,38762,1,48.94,Carpentersville Police Department,2025,8.578,,28.196,0.020676,0.022542,False,10.4,Carpentersville,False,,0
-60111,IL,17037,DeKalb,258,1,50.2,DeKalb County Sheriff's Office,2025,7.714,,29.266,0.013725,0.018151,False,2.911,,False,,0
-60112,IL,17037,DeKalb,4560,1,20.32,Cortland Police Department,2025,7.755,,25.57,0.027896,0.028438,False,6.168,Cortland,False,,0
-60115,IL,17037,DeKalb,42103,1,16.1,DeKalb Police Department,2025,24.98,,23.644,0.024149,0.027296,False,7.085,DeKalb,False,,0
-60118,IL,17089,Kane,16342,1,50.76,West Dundee Police Department,2025,8.721,,29.617,0.021846,0.023311,False,11.59,West Dundee,False,,0
-60119,IL,17089,Kane,10905,1,72.94,Elburn Police Department,2025,5.293,,29.669,0.019443,0.022687,False,6.718,Elburn,False,,0
-60120,IL,17031,Cook,50799,1,27.86,Elgin Police Department,2025,11.46,,28.151,0.020157,0.022501,False,12.02,Elgin,False,,0
-60123,IL,17089,Kane,47932,1,28.47,Elgin Police Department,2025,11.46,,27.286,0.020563,0.023192,False,13.45,Elgin,False,,0
-60124,IL,17089,Kane,24859,1,72.73,Elgin Police Department,2025,11.46,,29.823,0.023326,0.023184,False,7.529,Elgin,False,,0
-60126,IL,17043,DuPage,48147,1,89.98,Elmhurst Police Department,2025,7.726,,29.093,0.017152,0.017316,False,13.02,Elmhurst,False,,0
-60129,IL,17037,DeKalb,213,0.5493,60.56,DeKalb County Sheriff's Office,2025,7.714,,36.32,0.01861,0.022272,False,3.522,,False,,0
-60130,IL,17031,Cook,14346,1,22.37,Forest Park Police Department,2025,32.17,,27.445,0.021181,0.02127,False,15.71,Forest Park,False,,0
-60131,IL,17031,Cook,18205,1,33.35,Franklin Park Police Department,2025,12.75,,28.966,0.022057,0.022882,False,15.1,Franklin Park,False,,0
-60133,IL,17031,Cook,37494,1,53.72,Hanover Park Police Department,2025,5.147,,29.146,0.020632,0.022954,False,10.17,Hanover Park,False,,0
-60134,IL,17089,Kane,30503,1,90.5,Geneva Police Department,2025,8.994,,28.962,0.023119,0.022279,True,9.836,Geneva,False,,0
-60135,IL,17037,DeKalb,7292,0.99753,42.72,Genoa Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",32.644,0.020387,0.023472,False,6.824,Genoa,False,,1
-60136,IL,17089,Kane,8497,1,46.76,Gilberts Police Department,2025,1.512,,29.358,0.022261,0.024365,False,6.867,Gilberts,False,,0
-60137,IL,17043,DuPage,38985,1,79.42,Glen Ellyn Police Department,2025,5.164,,28.296,0.019689,0.019446,True,13.04,Glen Ellyn,False,,0
-60139,IL,17043,DuPage,33196,1,61.18,Glendale Heights Police Department,2025,8.443,,26.721,0.023496,0.024545,False,10.33,Glendale Heights,False,,0
-60140,IL,17089,Kane,21902,1,61.85,Pingree Grove Police Department,2025,1.948,,31.793,0.021134,0.02267,False,6.569,Pingree Grove,False,,0
-60141,IL,17031,Cook,131,1,18.26,Cook County Sheriff's Office,2025,19.81,,,,,False,14.33,,False,,1
-60142,IL,17111,McHenry,29831,1,78.49,Huntley Police Department,2025,4.777,,29.546,0.021246,0.022624,False,6.782,Huntley,False,,0
-60143,IL,17043,DuPage,11214,1,80.07,Itasca Police Department,2025,5.054,,25.719,0.01858,0.019468,False,10.79,Itasca,False,,0
-60144,IL,17089,Kane,71,1,68.99,,,,no matching agency in the FBI CDE,24.792,0.019853,0.021297,False,4,Kaneville,False,,1
-60145,IL,17037,DeKalb,2350,0.96766,40.57,DeKalb County Sheriff's Office,2025,7.714,,34.682,0.022681,0.022445,False,4.79,Kingston,False,,0
-60146,IL,17037,DeKalb,2420,0.96942,41.74,Kirkland Police Department,2025,1.238,,33.522,0.02163,0.023005,False,5.962,Kirkland,False,,0
-60148,IL,17043,DuPage,52794,1,59.65,Lombard Police Department,2025,16.4,,25.187,0.020563,0.02059,False,11.86,Lombard,False,,0
-60150,IL,17037,DeKalb,1713,1,26.84,,,,no matching agency in the FBI CDE,27.584,0.021906,0.0237,False,4.748,Malta,False,,1
-60151,IL,17089,Kane,3997,1,69.56,Kane County Sheriff's Office,2025,4.172,,31.934,0.023493,0.022893,False,5.629,Maple Park,False,,0
-60152,IL,17111,McHenry,12382,1,60.2,Marengo Police Department,2025,8.532,,32.09,0.019641,0.021203,False,5.849,Marengo,False,,0
-60153,IL,17031,Cook,23512,1,12.92,Maywood Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",34.417,0.025602,0.028677,False,14.28,Maywood,False,,1
-60154,IL,17031,Cook,16895,1,26.94,Westchester Police Department,2024,6.811,2025 offenses under half of 2024 (likely incomplete reporting); used 2024,27.363,0.019377,0.019184,False,13.15,Westchester,False,,0
-60155,IL,17031,Cook,8011,1,24.88,Broadview Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",25.844,0.018489,0.018462,False,14.4,Broadview,False,,1
-60156,IL,17111,McHenry,28982,1,65.94,Lake in the Hills Police Department,2025,3.49,,31.965,0.022648,0.023082,False,7.441,Lake in the Hills,False,,0
-60157,IL,17043,DuPage,2668,1,72.73,DuPage County Sheriff's Office,2025,3.247,,30.408,0.017978,0.016817,False,9.665,Roselle,False,,0
-60160,IL,17031,Cook,24776,1,14.98,Melrose Park Police Department,2025,15.95,,27.126,0.017936,0.020729,False,14.27,Melrose Park,False,,0
-60162,IL,17031,Cook,8337,1,13.15,Hillside Police Department,2025,22.46,,29.092,0.025011,0.025535,False,14.93,Hillside,False,,0
-60163,IL,17031,Cook,5285,1,9.467,Berkeley Police Department,2025,7.625,,27.578,0.02566,0.025209,False,13.36,Berkeley,False,,0
-60164,IL,17031,Cook,22367,1,20.32,Northlake Police Department,2024,18.43,2025 offenses under half of 2024 (likely incomplete reporting); used 2024,28.614,0.01835,0.022702,False,13.15,Northlake,False,,0
-60165,IL,17031,Cook,4576,1,6.893,Stone Park Police Department,2025,1.123,,20.246,0.021452,0.02487,False,15.13,Stone Park,False,,0
-60169,IL,17031,Cook,34248,1,81.55,Hoffman Estates Police Department,2025,7.436,,27.372,0.01993,0.021623,False,10.4,Hoffman Estates,False,,0
-60171,IL,17031,Cook,10612,1,35.92,River Grove Police Department,2025,13.09,,30.818,0.014813,0.023122,False,15.75,River Grove,False,,0
-60172,IL,17043,DuPage,24560,1,77.04,Roselle Police Department,2024,4.738,agency reported fewer than 12 months of 2025; used 2024,26.978,0.020737,0.020435,False,9.268,Roselle,False,,0
-60173,IL,17031,Cook,13764,1,78.98,Schaumburg Police Department,2025,17.12,,24.496,0.021437,0.021868,False,12.04,Schaumburg,False,,0
-60174,IL,17089,Kane,30958,1,93.08,St. Charles Police Department,2025,10.78,,25.976,0.021614,0.021422,False,8.57,St. Charles,False,,0
-60175,IL,17089,Kane,26024,1,92.88,Kane County Sheriff's Office,2025,4.172,,33.618,0.021491,0.019244,True,7.201,Campton Hills,False,,0
-60176,IL,17031,Cook,11714,1,37.99,Schiller Park Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",24.848,0.019615,0.021942,False,14.49,Schiller Park,False,,1
-60177,IL,17089,Kane,24361,1,55.38,South Elgin Police Department,2025,6.826,,28.15,0.022663,0.023321,False,9.989,South Elgin,False,,0
-60178,IL,17037,DeKalb,22386,1,66.24,Sycamore Police Department,2025,8.718,,26.597,0.022587,0.024197,False,7.732,Sycamore,False,,0
-60180,IL,17111,McHenry,1568,1,61,McHenry County Sheriff's Office,2025,2.601,,27.995,0.015702,0.022779,False,4.293,Union,False,,0
-60181,IL,17043,DuPage,29821,1,43.88,Villa Park Police Department,2025,12.79,,26.705,0.017447,0.019371,False,13.15,Villa Park,False,,0
-60183,IL,17089,Kane,71,1,93.66,Campton Hills Police Department,2025,0.6423,,,,,False,5.953,Campton Hills,False,,1
-60184,IL,17043,DuPage,2326,1,35.07,Wayne Police Department,2024,0.8949,agency reported fewer than 12 months of 2025; used 2024,28.185,0.021612,0.015561,True,6.442,Wayne,False,,0
-60185,IL,17043,DuPage,34775,1,40.04,West Chicago Police Department,2025,7.585,,26.794,0.023756,0.02361,False,8.106,West Chicago,False,,0
-60187,IL,17043,DuPage,30059,1,88.79,Wheaton Police Department,2025,5.065,,25.044,0.020033,0.020187,False,12.59,Wheaton,False,,0
-60188,IL,17043,DuPage,43053,1,66.49,Carol Stream Police Department,2025,6.986,,27.443,0.021697,0.023734,False,10.41,Carol Stream,False,,0
-60189,IL,17043,DuPage,30377,1,80.88,Wheaton Police Department,2025,5.065,,26.303,0.020082,0.020715,True,10.37,Wheaton,False,,0
-60190,IL,17043,DuPage,11455,1,50.72,Winfield Police Department,2025,2.524,,28.876,0.021459,0.021963,False,8.344,Winfield,False,,0
-60191,IL,17043,DuPage,14456,1,32.6,Wood Dale Police Department,2025,9.806,,27.937,0.019035,0.01851,False,8.936,Wood Dale,False,,0
-60192,IL,17031,Cook,16550,1,59.59,Hoffman Estates Police Department,2025,7.436,,31.555,0.023089,0.023753,False,7.555,Hoffman Estates,False,,0
-60193,IL,17031,Cook,40805,1,79.89,Schaumburg Police Department,2025,17.12,,27.837,0.019487,0.019691,False,9.183,Schaumburg,False,,0
-60194,IL,17031,Cook,20622,1,78.46,Schaumburg Police Department,2025,17.12,,29.976,0.017898,0.020282,False,10.52,Schaumburg,False,,0
-60195,IL,17031,Cook,5150,1,76.12,Schaumburg Police Department,2025,17.12,,27.112,0.020223,0.022988,False,10.65,Schaumburg,False,,0
-60201,IL,17031,Cook,44652,1,79.79,Evanston Police Department,2025,25.01,,25.333,0.018109,0.016931,True,16.13,Evanston,True,Evanston,0
-60202,IL,17031,Cook,33245,1,79.79,Evanston Police Department,2025,25.01,,29.964,0.018513,0.018232,False,14.89,Evanston,True,Evanston,0
-60203,IL,17031,Cook,4634,1,79.79,Skokie Police Department,2025,27.14,,27.9,0.017901,0.019996,False,14.25,Skokie,False,,0
-60208,IL,17031,Cook,213,1,79.79,Evanston Police Department,2025,25.01,,20,,,False,17.79,Evanston,True,Evanston,0
-60301,IL,17031,Cook,3043,1,91.61,Oak Park Police Department,2025,32.33,,33.45,0.024124,0.022077,False,19.02,Oak Park,False,,0
-60302,IL,17031,Cook,33698,1,91.61,Oak Park Police Department,2025,32.33,,32.004,0.025157,0.02109,True,15.37,Oak Park,False,,0
-60304,IL,17031,Cook,17842,1,91.61,Oak Park Police Department,2025,32.33,,30.378,0.025121,0.021429,True,15.51,Oak Park,False,,0
-60305,IL,17031,Cook,11710,1,93.94,River Forest Police Department,2025,16.9,,32.455,0.021487,0.014551,True,14.01,River Forest,True,River Forest,0
-60401,IL,17197,Will,8156,0.99068,66.59,Beecher Police Department,2025,5.493,,29.99,0.023775,0.023846,False,4.927,Beecher,False,,0
-60402,IL,17031,Cook,64706,1,21.91,Berwyn Police Department,2025,17.57,,28.581,0.022459,0.022593,False,14.27,Berwyn,False,,0
-60403,IL,17197,Will,17667,1,55.39,Crest Hill Police Department,2025,8.079,,27.976,0.02014,0.020021,False,10.3,Crest Hill,False,,0
-60404,IL,17197,Will,19916,1,56.44,Shorewood Police Department,2025,6.986,,34.187,0.02133,0.0217,False,7.709,Shorewood,False,,0
-60406,IL,17031,Cook,24011,1,12.95,Blue Island Police Department,2025,23.8,,28.628,0.022272,0.025622,False,14.23,Blue Island,False,,0
-60407,IL,17063,Grundy,1532,1,38.27,,,,no matching agency in the FBI CDE,34.459,0.01682,0.01723,False,6.303,Braceville,False,,1
-60408,IL,17197,Will,5601,1,44.21,Braidwood Police Department,2025,5.752,,29.181,0.01345,0.018793,False,5.959,Braidwood,False,,0
-60409,IL,17031,Cook,36045,1,6.068,Calumet City Police Department,2025,21.24,,34.415,0.026077,0.033147,False,12.91,Calumet City,False,,0
-60410,IL,17197,Will,13503,1,67.45,Channahon Police Department,2025,3.896,,30.402,0.018125,0.021206,False,6.53,Channahon,False,,0
-60411,IL,17031,Cook,53515,1,7.008,Chicago Heights Police Department,2025,37.75,,34.363,0.023499,0.025782,False,10.97,Chicago Heights,False,,0
-60415,IL,17031,Cook,14433,1,27.92,Chicago Ridge Police Department,2025,18.13,,31.829,0.015771,0.023684,False,12.48,Chicago Ridge,False,,0
-60416,IL,17063,Grundy,9512,1,80.32,Coal City Police Department,2025,4.796,,26.901,0.01552,0.018927,False,6.751,Coal City,False,,0
-60417,IL,17197,Will,15342,1,8.599,Crete Police Department,2025,10.89,,37.831,0.025851,0.028643,False,6.482,Crete,False,,0
-60418,IL,17031,Cook,10813,1,18.75,Crestwood Police Department,2025,26.07,,32.652,0.016892,0.021383,False,10.57,Crestwood,False,,0
-60419,IL,17031,Cook,21409,1,2.206,Dolton Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",30.652,0.028442,0.030152,False,12.74,Dolton,False,,1
-60421,IL,17197,Will,3734,1,45.92,Elwood Police Department,2025,10.2,,30.361,0.018565,0.018765,False,5.496,Elwood,False,,0
-60422,IL,17031,Cook,9927,1,45.62,Flossmoor Police Department,2025,23,,32.784,0.032474,0.029107,True,9.708,Flossmoor,False,,0
-60423,IL,17197,Will,32784,1,75.96,Frankfort Police Department,2025,6.502,,32.415,0.021603,0.02332,False,8.081,Frankfort,False,,0
-60424,IL,17063,Grundy,2102,0.99715,49.25,,,,no matching agency in the FBI CDE,30.05,0.018072,0.020157,False,6.409,Gardner,False,,1
-60425,IL,17031,Cook,8781,1,7.581,Glenwood Police Department,2025,11.02,,30.454,0.024091,0.029396,False,8.462,Glenwood,False,,0
-60426,IL,17031,Cook,24114,1,5.319,Harvey Police Department,2025,31.93,,29.185,0.019697,0.028736,False,14.07,Harvey,False,,0
-60428,IL,17031,Cook,11351,1,8.038,Markham Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",36.351,0.020896,0.027441,False,12.17,Markham,False,,1
-60429,IL,17031,Cook,14683,1,9.559,Hazel Crest Police Department,2025,26.27,,26.801,0.026381,0.026476,False,12.04,Hazel Crest,False,,0
-60430,IL,17031,Cook,20146,1,40.77,Homewood Police Department,2025,27.73,,33.171,0.026872,0.026594,False,12.28,Homewood,False,,0
-60431,IL,17197,Will,26853,1,50.58,Joliet Police Department,2025,15,,31.071,0.02092,0.022256,False,7.922,Joliet,False,,0
-60432,IL,17197,Will,19989,1,21.71,Joliet Police Department,2025,15,,28.958,0.01929,0.019453,False,12.72,Joliet,False,,0
-60433,IL,17197,Will,16526,1,26.84,Will County Sheriff's Office,2025,6.244,,25.535,0.019672,0.019698,False,10.88,Joliet,False,,0
-60435,IL,17197,Will,48927,1,26.85,Joliet Police Department,2025,15,,25.228,0.019895,0.021414,False,11.71,Joliet,False,,0
-60436,IL,17197,Will,18535,1,19.5,Joliet Police Department,2025,15,,26.489,0.019214,0.019336,False,12.75,Joliet,False,,0
-60437,IL,17063,Grundy,168,1,34.2,,,,no matching agency in the FBI CDE,32.315,0.018952,,False,4.667,Kinsman,False,,1
-60438,IL,17031,Cook,29661,1,11.34,Lansing Police Department,2025,18.6,,32.364,0.025816,0.028047,False,10.49,Lansing,False,,0
-60439,IL,17031,Cook,24327,1,87.69,Lemont Police Department,2025,5.353,,34.43,0.016128,0.017438,False,8.425,Lemont,False,,0
-60440,IL,17197,Will,52031,1,55.07,Bolingbrook Police Department,2025,8.801,,27.598,0.023657,0.024365,False,10.62,Bolingbrook,False,,0
-60441,IL,17197,Will,37093,1,66.12,Lockport Police Department,2025,4.574,,33.159,0.020096,0.024356,False,8.821,Lockport,False,,0
-60442,IL,17197,Will,12218,1,72.39,Manhattan Police Department,2025,2.521,,36.398,0.023175,0.02426,False,6.836,Manhattan,False,,0
-60443,IL,17031,Cook,21309,1,6.585,Matteson Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",34.384,0.027876,0.029025,False,8.808,Matteson,False,,1
-60444,IL,17063,Grundy,1784,1,42.1,Mazon Police Department,2025,0,,25.7,0.019035,0.020877,False,4.645,Mazon,False,,0
-60445,IL,17031,Cook,14692,1,22.19,Midlothian Police Department,2025,14.08,,28.814,0.023912,0.025413,False,13.59,Midlothian,False,,0
-60446,IL,17197,Will,40465,1,53.75,Romeoville Police Department,2025,9.426,,32.234,0.022675,0.024325,False,8.993,Romeoville,False,,0
-60447,IL,17063,Grundy,15750,1,69.33,Minooka Police Department,2025,2.395,,32.5,0.020698,0.020536,False,6.579,Minooka,False,,0
-60448,IL,17197,Will,25512,1,89.13,Mokena Police Department,2025,6.825,,30.258,0.019904,0.022568,False,8.148,Mokena,False,,0
-60449,IL,17197,Will,8961,1,32.43,Monee Police Department,2025,13.22,,32.549,0.021851,0.028027,False,6.187,Monee,False,,0
-60450,IL,17063,Grundy,20877,1,65.2,Morris Police Department,2025,12.06,,22.651,0.018229,0.020247,False,6.845,Morris,False,,0
-60451,IL,17197,Will,36561,1,87.25,New Lenox Police Department,2025,8.577,,32.052,0.021415,0.022651,False,8.042,New Lenox,False,,0
-60452,IL,17031,Cook,27363,1,30.01,Oak Forest Police Department,2025,3.824,,31.863,0.024603,0.025891,False,10.46,Oak Forest,False,,0
-60453,IL,17031,Cook,58362,1,44.29,Oak Lawn Police Department,2025,14.66,,30.772,0.021334,0.021906,False,13.83,Oak Lawn,False,,0
-60455,IL,17031,Cook,17098,1,52.56,Bridgeview Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",30.677,0.021245,0.024569,False,14.82,Bridgeview,False,,1
-60456,IL,17031,Cook,4343,1,52.61,Hometown Police Department,2024,17.42,agency reported fewer than 12 months of 2025; used 2024,28.135,0.020049,0.021125,False,13.49,Hometown,False,,0
-60457,IL,17031,Cook,14420,1,79.75,Hickory Hills Police Department,2025,7.909,,29.872,0.022403,0.023308,False,13.28,Hickory Hills,False,,0
-60458,IL,17031,Cook,14504,1,40.26,Justice Police Department,2025,2.542,,31.517,0.023838,0.024613,False,10.99,Justice,False,,0
-60459,IL,17031,Cook,29451,1,23.2,Burbank Police Department,2025,19.14,,31.321,0.02027,0.021734,False,14.67,Burbank,False,,0
-60461,IL,17031,Cook,4785,1,16.76,Olympia Fields Police Department,2025,40.32,,42.538,0.029436,0.029424,False,12.55,Olympia Fields,False,,0
-60462,IL,17031,Cook,40539,1,73.57,Orland Park Police Department,2025,10.04,,33.33,0.019887,0.020149,False,11.07,Orland Park,False,,0
-60463,IL,17031,Cook,14048,1,63.8,Palos Heights Police Department,2025,8.828,,30.117,0.020841,0.02037,False,10.5,Palos Heights,False,,0
-60464,IL,17031,Cook,9982,1,83.58,Cook County Sheriff's Office,2025,19.81,,33.844,0.018297,0.019061,False,8.608,Palos Park,False,,0
-60465,IL,17031,Cook,18530,1,85.16,Palos Hills Police Department,2025,6.697,,35.174,0.019136,0.020104,False,13.17,Palos Hills,False,,0
-60466,IL,17031,Cook,21904,1,9.027,Park Forest Police Department,2025,14.61,,31.787,0.027775,0.040026,False,11.04,Park Forest,False,,0
-60467,IL,17031,Cook,26098,1,76.75,Orland Park Police Department,2025,10.04,,35.715,0.018993,0.020508,False,8.791,Orland Park,False,,0
-60468,IL,17197,Will,6112,0.98446,61.44,Peotone Police Department,2025,7.535,,31.229,0.016505,0.015823,False,6.361,Peotone,False,,0
-60469,IL,17031,Cook,5469,1,18.83,Posen Police Department,2025,30.33,,24.152,0.019022,0.018988,False,13.3,Posen,False,,0
-60471,IL,17031,Cook,13155,1,9.294,Richton Park Police Department,2025,21.45,,33.612,0.027732,0.026671,False,8.153,Richton Park,False,,0
-60472,IL,17031,Cook,4671,1,19.6,Robbins Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",28.722,0.019885,0.022448,False,14.36,Robbins,False,,1
-60473,IL,17031,Cook,21661,1,12.29,South Holland Police Department,2025,19.05,,33.971,0.026855,0.027136,False,13.51,South Holland,False,,0
-60474,IL,17063,Grundy,824,1,48.19,,,,no matching agency in the FBI CDE,32.371,0.019416,0.020411,False,4.584,South Wilmington,False,,1
-60475,IL,17197,Will,9969,1,14.49,Steger Police Department,2025,19.62,,32.963,0.021665,0.023063,False,11.04,Steger,False,,0
-60476,IL,17031,Cook,2388,1,16.14,Thornton Police Department,2025,22.8,,25.567,0.014615,0.026628,False,12.83,Thornton,False,,0
-60477,IL,17031,Cook,37335,1,44.51,Tinley Park Police Department,2025,12.01,,33.748,0.022822,0.024847,False,10.63,Tinley Park,False,,0
-60478,IL,17031,Cook,16893,1,5.164,Country Club Hills Police Department,2025,22.33,,31.033,0.025902,0.026975,False,8.635,Country Club Hills,False,,0
-60479,IL,17063,Grundy,685,1,35.26,Grundy County Sheriff's Office,2025,3.975,,30.931,0.020295,0.020004,False,4.826,Verona,False,,0
-60480,IL,17031,Cook,5272,1,64.41,Willow Springs Police Department,2025,3.807,,27.188,0.014396,0.020687,False,10.8,Willow Springs,False,,0
-60481,IL,17197,Will,11518,0.99479,61.64,Wilmington Police Department,2025,11.91,,26.58,0.016585,0.017537,False,5.806,Wilmington,False,,0
-60482,IL,17031,Cook,11216,1,43.08,Worth Police Department,2025,10.76,,28.038,0.021923,0.026376,False,14.1,Worth,False,,0
-60484,IL,17197,Will,6761,1,8.429,University Park Police Department,2025,20.23,,39.49,0.02379,0.032523,False,9.323,University Park,False,,0
-60487,IL,17031,Cook,26388,1,81.53,Tinley Park Police Department,2025,12.01,,32.864,0.024788,0.023598,False,9.259,Tinley Park,False,,0
-60490,IL,17197,Will,21907,1,65.3,Bolingbrook Police Department,2025,8.801,,36.074,0.02356,0.025015,False,7.991,Bolingbrook,False,,0
-60491,IL,17197,Will,22999,1,81.02,Homer Glen Police Department,2025,3.208,,34.983,0.021688,0.021457,False,7.1,Homer Glen,False,,0
-60501,IL,17031,Cook,11746,1,31.91,Summit Police Department,2025,11.62,,28.853,0.020191,0.023649,False,15.58,Summit,False,,0
-60502,IL,17043,DuPage,22592,1,76.3,Aurora Police Department,2025,13.02,,30.407,0.023877,0.024257,True,9.499,Aurora,False,,0
-60503,IL,17197,Will,16855,1,65.29,Aurora Police Department,2025,13.02,,31.653,0.024498,0.026324,False,8.258,Aurora,False,,0
-60504,IL,17043,DuPage,38901,1,76.37,Aurora Police Department,2025,13.02,,30.855,0.021921,0.023099,False,11.3,Aurora,False,,0
-60505,IL,17089,Kane,57906,1,4.722,Aurora Police Department,2025,13.02,,24.43,0.01785,0.017353,False,11.29,Aurora,False,,0
-60506,IL,17089,Kane,52011,1,35.12,Aurora Police Department,2025,13.02,,24.746,0.022758,0.022736,False,11.83,Aurora,False,,0
-60510,IL,17089,Kane,28156,1,79.33,Batavia Police Department,2025,8.507,,28.833,0.022726,0.023136,False,9.271,Batavia,False,,0
-60511,IL,17089,Kane,1721,1,47.79,,,,no matching agency in the FBI CDE,18.594,0.021153,0.022934,False,4.392,Big Rock,False,,1
-60512,IL,17093,Kendall,1165,1,63.92,Kendall County Sheriff's Office,2025,5.934,,37.543,0.020262,0.022848,False,6.853,Yorkville,False,,0
-60513,IL,17031,Cook,19514,1,81.44,Brookfield Police Department,2025,5.707,,32.669,0.024057,0.024215,False,14.2,Brookfield,False,,0
-60514,IL,17043,DuPage,10320,1,96.66,Clarendon Hills Police Department,2025,4.939,,29.268,0.018048,0.016929,False,11.77,Clarendon Hills,True,Clarendon Hills,0
-60515,IL,17043,DuPage,29278,1,90.73,Downers Grove Police Department,2025,8.47,,27.263,0.015327,0.016108,False,12.51,Downers Grove,False,,0
-60516,IL,17043,DuPage,28694,1,90.87,Downers Grove Police Department,2025,8.47,,29.133,0.016129,0.015713,False,10.78,Downers Grove,False,,0
-60517,IL,17043,DuPage,33276,1,83.63,Woodridge Police Department,2025,7.067,,29.399,0.021724,0.022505,False,10.91,Woodridge,False,,0
-60519,IL,17043,DuPage,76,1,92.25,DuPage County Sheriff's Office,2025,3.247,,,,,False,8.167,Aurora,False,,1
-60520,IL,17037,DeKalb,2773,1,47.49,Hinckley Police Department,2025,4.566,,28.982,0.020442,0.020243,False,6.86,Hinckley,False,,0
-60521,IL,17043,DuPage,18199,1,98.55,Hinsdale Police Department,2025,5.437,,31.234,0.016384,0.0096834,True,10.83,Hinsdale,True,Hinsdale,0
-60523,IL,17043,DuPage,10347,1,93.67,Oak Brook Police Department,2025,60.14,,29.771,0.012573,0.012787,True,10.63,Oak Brook,False,,0
-60525,IL,17031,Cook,32613,1,84.7,La Grange Police Department,2025,7.379,,27.056,0.019271,0.021783,False,12.63,La Grange,True,La Grange,0
-60526,IL,17031,Cook,13810,1,80.34,La Grange Park Police Department,2025,4.477,,28.943,0.020263,0.020698,False,13.41,La Grange Park,False,,0
-60527,IL,17043,DuPage,29139,1,87.09,Burr Ridge Police Department,2025,7.584,,27.962,0.016384,0.015384,False,8.224,Burr Ridge,False,,0
-60532,IL,17043,DuPage,28766,1,92.03,Lisle Police Department,2025,5.357,,27.633,0.020697,0.021077,False,10.41,Lisle,False,,0
-60534,IL,17031,Cook,10749,1,14.26,Lyons Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",28.073,0.021621,0.023381,False,14.5,Lyons,False,,1
-60536,IL,17093,Kendall,80,1,67.26,,,,no matching agency in the FBI CDE,30.323,0.012634,0.026067,False,3.333,Millbrook,False,,1
-60538,IL,17093,Kendall,28898,1,46.7,Montgomery Police Department,2025,13.69,,31.689,0.022274,0.023588,False,6.817,Montgomery,False,,0
-60539,IL,17089,Kane,275,1,69.96,Kane County Sheriff's Office,2025,4.172,,11.786,,,False,8.167,,False,,0
-60540,IL,17043,DuPage,44201,1,95.32,Naperville Police Department,2025,6.387,,28.442,0.016984,0.018164,True,10.25,Naperville,True,Naperville,0
-60541,IL,17093,Kendall,3061,0.97092,69.72,Kendall County Sheriff's Office,2025,5.934,,28.695,0.01907,0.020665,False,4.541,Newark,False,,0
-60542,IL,17089,Kane,18540,1,27.47,North Aurora Police Department,2025,13.01,,26.49,0.02223,0.022748,False,8.661,North Aurora,False,,0
-60543,IL,17093,Kendall,40299,1,65.16,Oswego Police Department,2025,5.018,,30.987,0.022929,0.024031,False,7.669,Oswego,False,,0
-60544,IL,17197,Will,27680,1,66.56,Plainfield Police Department,2025,4.989,,34.138,0.019692,0.02113,False,7.374,Plainfield,False,,0
-60545,IL,17093,Kendall,13888,1,27.37,Plano Police Department,2025,5.203,,27.528,0.023912,0.026613,False,6.96,Plano,False,,0
-60546,IL,17031,Cook,16819,1,83.18,Riverside Police Department,2025,10.68,,30.996,0.022042,0.022104,False,13.28,Riverside,True,Riverside,0
-60548,IL,17037,DeKalb,12019,0.66503,57.44,Sandwich Police Department,2025,2.868,,33.562,0.018796,0.019943,False,6.149,Sandwich,False,,0
-60550,IL,17037,DeKalb,1293,1,37.15,,,,no matching agency in the FBI CDE,25.439,0.020846,0.022422,False,6.538,Shabbona,False,,1
-60554,IL,17089,Kane,12049,1,63.75,Sugar Grove Police Department,2025,2.458,,32.629,0.022811,0.02273,False,6.964,Sugar Grove,False,,0
-60555,IL,17043,DuPage,13909,1,86.97,Warrenville Police Department,2025,7.778,,27.605,0.019744,0.020424,False,8.479,Warrenville,False,,0
-60556,IL,17037,DeKalb,1956,1,36.31,Waterman Police Department,2024,0,agency reported fewer than 12 months of 2025; used 2024,36.466,0.020429,0.02075,False,5.239,Waterman,False,,0
-60558,IL,17031,Cook,13629,1,94.28,Western Springs Police Department,2025,2.516,,30.979,0.016955,0.013526,True,10.53,Western Springs,True,Western Springs,0
-60559,IL,17043,DuPage,24363,1,92.6,Westmont Police Department,2025,10.54,,26.547,0.017581,0.017353,False,13.19,Westmont,False,,0
-60560,IL,17093,Kendall,27185,1,63.51,Yorkville Police Department,2025,5.448,,33.428,0.024047,0.025342,False,7.422,Yorkville,False,,0
-60561,IL,17043,DuPage,23139,1,86.24,Darien Police Department,2025,7.402,,29.12,0.017578,0.017769,False,10.35,Darien,False,,0
-60563,IL,17043,DuPage,37997,1,93.77,Naperville Police Department,2025,6.387,,28.118,0.018936,0.019419,False,11.51,Naperville,True,Naperville,0
-60564,IL,17197,Will,45616,1,91.14,Naperville Police Department,2025,6.387,,34.418,0.02019,0.017481,True,9.657,Naperville,True,Naperville,0
-60565,IL,17043,DuPage,40300,1,93.19,Naperville Police Department,2025,6.387,,29.795,0.018795,0.018879,False,7.077,Naperville,True,Naperville,0
-60585,IL,17197,Will,24920,1,67.48,Plainfield Police Department,2025,4.989,,34.138,0.020849,0.021871,False,8.083,Plainfield,False,,0
-60586,IL,17197,Will,47212,1,65.66,Joliet Police Department,2025,15,,33.014,0.020125,0.020338,False,6.887,Joliet,False,,0
-60601,IL,17031,Cook,15814,1,20.8,Chicago Police Department,2025,33.76,,27.064,0.017074,0.016157,False,16.74,Chicago,True,Loop,0
-60602,IL,17031,Cook,1261,1,20.8,Chicago Police Department,2025,33.76,,26.973,0.015063,0.012042,False,19.35,Chicago,True,Loop,0
-60603,IL,17031,Cook,1288,1,20.8,Chicago Police Department,2025,33.76,,21.798,0.016303,0.015777,True,18.95,Chicago,True,Loop,0
-60604,IL,17031,Cook,897,1,20.8,Chicago Police Department,2025,33.76,,29.253,0.019,0.016078,False,18.91,Chicago,True,Loop,0
-60605,IL,17031,Cook,34071,1,20.8,Chicago Police Department,2025,33.76,,25.66,0.017773,0.018769,False,16.7,Chicago,False,,0
-60606,IL,17031,Cook,3797,1,20.8,Chicago Police Department,2025,33.76,,19.917,0.013628,0.0139,False,17.83,Chicago,True,Loop,0
-60607,IL,17031,Cook,31816,1,20.8,Chicago Police Department,2025,33.76,,23.455,0.016741,0.017354,False,17.8,Chicago,True,West Loop,0
-60608,IL,17031,Cook,75770,1,20.8,Chicago Police Department,2025,33.76,,29.931,0.014902,0.014869,False,15.53,Chicago,False,,0
-60609,IL,17031,Cook,65770,1,20.8,Chicago Police Department,2025,33.76,,32.149,0.012646,0.01495,False,13.94,Chicago,False,,0
-60610,IL,17031,Cook,43794,1,20.8,Chicago Police Department,2025,33.76,,26.036,0.016079,0.018031,False,15.79,Chicago,True,River North,0
-60611,IL,17031,Cook,38456,1,20.8,Chicago Police Department,2025,33.76,,24.682,0.015772,0.015367,True,16.15,Chicago,False,,0
-60612,IL,17031,Cook,34402,1,20.8,Chicago Police Department,2025,33.76,,31.493,0.014994,0.015614,False,15.73,Chicago,False,,0
-60613,IL,17031,Cook,53048,1,20.8,Chicago Police Department,2025,33.76,,34.62,0.016797,0.018229,False,15.1,Chicago,False,,0
-60614,IL,17031,Cook,73173,1,20.8,Chicago Police Department,2025,33.76,,30.924,0.015833,0.013883,True,16.22,Chicago,False,,0
-60615,IL,17031,Cook,43502,1,20.8,Chicago Police Department,2025,33.76,,28.297,0.015406,0.014692,False,14.31,Chicago,False,,0
-60616,IL,17031,Cook,54013,1,20.8,Chicago Police Department,2025,33.76,,28.371,0.014995,0.016061,False,15.58,Chicago,False,,0
-60617,IL,17031,Cook,77270,1,20.8,Chicago Police Department,2025,33.76,,37.302,0.010207,0.011184,False,13.09,Chicago,False,,0
-60618,IL,17031,Cook,90316,1,20.8,Chicago Police Department,2025,33.76,,33.957,0.015455,0.016158,False,15.59,Chicago,False,,0
-60619,IL,17031,Cook,63303,1,20.8,Chicago Police Department,2025,33.76,,36.201,0.012152,0.012045,False,12.88,Chicago,False,,0
-60620,IL,17031,Cook,66514,1,20.8,Chicago Police Department,2025,33.76,,39.392,0.010928,0.010698,False,13,Chicago,False,,0
-60621,IL,17031,Cook,29570,1,20.8,Chicago Police Department,2025,33.76,,37.115,0.010316,0.010932,False,12.99,Chicago,False,,0
-60622,IL,17031,Cook,55075,1,20.8,Chicago Police Department,2025,33.76,,29.031,0.015553,0.015673,True,15.6,Chicago,False,,0
-60623,IL,17031,Cook,87649,1,20.8,Chicago Police Department,2025,33.76,,31.485,0.011631,0.01282,False,13.71,Chicago,False,,0
-60624,IL,17031,Cook,37547,1,20.8,Chicago Police Department,2025,33.76,,32.891,0.011934,0.014231,False,14.51,Chicago,False,,0
-60625,IL,17031,Cook,76525,1,20.8,Chicago Police Department,2025,33.76,,34.509,0.016563,0.01731,False,15.07,Chicago,False,,0
-60626,IL,17031,Cook,50548,1,20.8,Chicago Police Department,2025,33.76,,36.534,0.01284,0.014277,False,14.45,Chicago,False,,0
-60628,IL,17031,Cook,62832,1,20.8,Chicago Police Department,2025,33.76,,37.326,0.010662,0.011249,False,13.41,Chicago,False,,0
-60629,IL,17031,Cook,114453,1,20.85,Chicago Police Department,2025,33.76,,36.637,0.012219,0.011884,False,13.51,Chicago,False,,0
-60630,IL,17031,Cook,54064,1,20.8,Chicago Police Department,2025,33.76,,33.284,0.01395,0.015503,False,15.51,Chicago,False,,0
-60631,IL,17031,Cook,29691,1,21.86,Chicago Police Department,2025,33.76,,29.258,0.015679,0.016675,False,14.89,Chicago,False,,0
-60632,IL,17031,Cook,92237,1,20.8,Chicago Police Department,2025,33.76,,33.011,0.012636,0.01325,False,14.12,Chicago,False,,0
-60633,IL,17031,Cook,13359,1,18.32,Chicago Police Department,2025,33.76,,37.418,0.013833,0.013485,False,12.32,Chicago,False,,0
-60634,IL,17031,Cook,75694,1,21.09,Chicago Police Department,2025,33.76,,36.329,0.013983,0.014705,False,14.87,Chicago,False,,0
-60636,IL,17031,Cook,34800,1,20.8,Chicago Police Department,2025,33.76,,40.673,0.011279,0.010786,False,13.58,Chicago,False,,0
-60637,IL,17031,Cook,53555,1,20.8,Chicago Police Department,2025,33.76,,30.82,0.010537,0.014885,False,13.65,Chicago,False,,0
-60638,IL,17031,Cook,56928,1,25.51,Chicago Police Department,2025,33.76,,33.568,0.013849,0.014637,False,14.44,Chicago,False,,0
-60639,IL,17031,Cook,89543,1,20.8,Chicago Police Department,2025,33.76,,36.541,0.014143,0.014485,False,14.32,Chicago,False,,0
-60640,IL,17031,Cook,65941,1,20.8,Chicago Police Department,2025,33.76,,35.45,0.014733,0.015739,False,14.87,Chicago,False,,0
-60641,IL,17031,Cook,69354,1,20.8,Chicago Police Department,2025,33.76,,37.165,0.014847,0.015492,False,14.62,Chicago,False,,0
-60642,IL,17031,Cook,21687,1,20.8,Chicago Police Department,2025,33.76,,27.132,0.016596,0.016848,True,16.61,Chicago,False,,0
-60643,IL,17031,Cook,47831,1,20.78,Chicago Police Department,2025,33.76,,35.734,0.014486,0.014709,False,13.87,Chicago,False,,0
-60644,IL,17031,Cook,47239,1,20.8,Chicago Police Department,2025,33.76,,36.149,0.0072152,0.012201,False,13.04,Chicago,False,,0
-60645,IL,17031,Cook,48356,1,20.8,Chicago Police Department,2025,33.76,,31.448,0.012838,0.014031,False,14.73,Chicago,False,,0
-60646,IL,17031,Cook,28383,1,20.88,Chicago Police Department,2025,33.76,,32.854,0.015884,0.016279,False,15.48,Chicago,False,,0
-60647,IL,17031,Cook,85631,1,20.8,Chicago Police Department,2025,33.76,,32.373,0.014239,0.015764,False,15.56,Chicago,False,,0
-60649,IL,17031,Cook,48171,1,20.8,Chicago Police Department,2025,33.76,,36.338,0.011621,0.012791,False,13.07,Chicago,False,,0
-60651,IL,17031,Cook,62819,1,20.8,Chicago Police Department,2025,33.76,,36.064,0.0095892,0.012497,False,13.18,Chicago,False,,0
-60652,IL,17031,Cook,40898,1,20.8,Chicago Police Department,2025,33.76,,38.773,0.012447,0.012778,False,14.08,Chicago,False,,0
-60653,IL,17031,Cook,33146,1,20.8,Chicago Police Department,2025,33.76,,31.92,0.012313,0.014695,False,14.1,Chicago,False,,0
-60654,IL,17031,Cook,23890,1,20.8,Chicago Police Department,2025,33.76,,23.434,0.017526,0.017688,False,17.68,Chicago,True,River North,0
-60655,IL,17031,Cook,27837,1,20.38,Chicago Police Department,2025,33.76,,30.804,0.015036,0.014786,False,14.63,Chicago,False,,0
-60656,IL,17031,Cook,28474,1,22.26,Chicago Police Department,2025,33.76,,30.105,0.015295,0.015893,False,14.27,Chicago,False,,0
-60657,IL,17031,Cook,72316,1,20.8,Chicago Police Department,2025,33.76,,33.265,0.016475,0.016839,False,14.95,Chicago,False,,0
-60659,IL,17031,Cook,40579,1,20.8,Chicago Police Department,2025,33.76,,30.058,0.014598,0.014607,False,14.56,Chicago,False,,0
-60660,IL,17031,Cook,42534,1,20.8,Chicago Police Department,2025,33.76,,36.089,0.013007,0.016451,False,13.45,Chicago,False,,0
-60661,IL,17031,Cook,11987,1,20.8,Chicago Police Department,2025,33.76,,25.101,0.018137,0.017366,False,16.16,Chicago,True,West Loop,0
-60706,IL,17031,Cook,24327,1,66.24,Norridge Police Department,2025,33.49,,32.068,0.016026,0.017363,False,15.79,Norridge,False,,0
-60707,IL,17031,Cook,43241,1,38.23,Elmwood Park Police Department,2025,12.97,,33.77,0.014283,0.017801,False,14.75,Elmwood Park,False,,0
-60712,IL,17031,Cook,13463,1,76.48,Lincolnwood Police Department,2025,19.2,,28.504,0.019655,0.020147,True,16.34,Lincolnwood,False,,0
-60714,IL,17031,Cook,31006,1,69.7,Niles Police Department,2025,19.42,,28.417,0.016436,0.01715,False,15.57,Niles,False,,0
-60803,IL,17031,Cook,22189,1,24.78,Alsip Police Department,2025,29.68,,29.903,0.022103,0.023175,False,12.69,Alsip,False,,0
-60804,IL,17031,Cook,85673,1,12.58,Cicero Police Department,2025,12.38,,29.317,0.018957,0.021913,False,14.72,Cicero,False,,0
-60805,IL,17031,Cook,19945,1,43.59,Evergreen Park Police Department,2025,56.1,,32.06,0.021307,0.022998,False,15.07,Evergreen Park,False,,0
-60827,IL,17031,Cook,24936,1,8.091,Riverdale Police Department,2025,28.47,,36.648,0.015467,0.024847,False,13.56,Riverdale,False,,0
+zcta,state,county_fips,county,pop2020,share_in_msa,school_pct,police_agency,crime_year,crimes_per_1000,crime_note,commute_min,tax_rate,tax_rate_median,median_topcoded,walk_index,place_name,quality_missing
+46301,IN,18127,Porter,580,1,12.17,,,,no matching agency in the FBI CDE,40.226,0.01044,0.0091976,False,5.5,Beverly Shores,1
+46302,IN,18127,Porter,141,1,71.11,Porter County Sheriff's Office,2025,2.319,,,0.0083651,0.0062594,False,3.833,,1
+46303,IN,18089,Lake,17028,1,88.48,Cedar Lake Police Department,2025,2.764,,32.089,0.0091428,0.0094583,False,6.934,Cedar Lake,0
+46304,IN,18127,Porter,26835,1,91.11,Chesterton Police Department,2025,5.83,,26.712,0.0090642,0.0084374,False,7.186,Chesterton,0
+46307,IN,18089,Lake,69248,1,82.39,Crown Point Police Department,2025,4.664,,31.832,0.0086592,0.0083524,False,6.77,Crown Point,0
+46310,IN,18073,Jasper,14126,1,63.41,Jasper County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",32.374,0.0058467,0.0052634,False,5.919,De Motte,1
+46311,IN,18089,Lake,22431,1,90.3,Dyer Police Department,2025,1.963,,31.438,0.009469,0.0093848,False,8.705,Dyer,0
+46312,IN,18089,Lake,26370,1,1.738,East Chicago Police Department,2025,18.46,,20.822,0.0084198,0.010275,False,8.844,East Chicago,0
+46319,IN,18089,Lake,18108,1,55.42,Griffith Police Department,2025,9.745,,28.355,0.0095666,0.0085391,False,8.597,Griffith,0
+46320,IN,18089,Lake,14514,1,1.568,Hammond Police Department,2025,30.71,,28.475,0.0094877,0.0085926,False,9.536,Hammond,0
+46321,IN,18089,Lake,23894,1,97.25,Munster Police Department,2025,9.63,,28.112,0.011227,0.010978,False,9.025,Munster,0
+46322,IN,18089,Lake,23984,1,63.12,Highland Police Department,2025,13.9,,25.597,0.0088553,0.0087741,False,9.514,Highland,0
+46323,IN,18089,Lake,22510,1,1.863,Hammond Police Department,2025,30.71,,23.572,0.0087552,0.01012,False,8.267,Hammond,0
+46324,IN,18089,Lake,22611,1,1.566,Hammond Police Department,2025,30.71,,25.764,0.01048,0.010523,False,9.154,Hammond,0
+46327,IN,18089,Lake,11078,1,1.566,Hammond Police Department,2025,30.71,,28.382,0.01108,0.01088,False,11.2,Hammond,0
+46341,IN,18127,Porter,10518,1,70.84,Porter County Sheriff's Office,2025,2.319,,35.06,0.0060321,0.0076309,False,5.296,Hebron,0
+46342,IN,18089,Lake,32540,1,47.87,Hobart Police Department,2025,23.75,,26.285,0.010014,0.010512,False,7.266,Hobart,0
+46347,IN,18127,Porter,4800,1,87.21,Porter County Sheriff's Office,2025,2.319,,32.108,0.0079518,0.0081872,False,4.965,Kouts,0
+46349,IN,18111,Newton,3219,1,40.2,Newton County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",44.26,0.0083189,0.0069545,False,3.812,Lake Village,1
+46356,IN,18089,Lake,18668,1,84.17,Lowell Police Department,2025,1.202,,33.571,0.0084024,0.0085258,False,6.229,Lowell,0
+46368,IN,18127,Porter,39837,1,26.9,Portage Police Department,2025,13.84,,27.469,0.0078631,0.0082959,False,7.628,Portage,0
+46373,IN,18089,Lake,17839,1,90.27,St. John Police Department,2025,1.701,,30.946,0.0092141,0.0091905,False,7.84,St. John,0
+46375,IN,18089,Lake,24051,1,90.79,Schererville Police Department,2025,10.13,,31.964,0.0090724,0.0087413,False,8.413,Schererville,0
+46376,IN,18089,Lake,367,1,84.17,,,,no matching agency in the FBI CDE,35.524,0.0097869,0.0081333,False,5,Schneider,1
+46377,IN,18089,Lake,194,1,84.17,Lake County Sheriff's Office,2025,3.448,,,,,False,3.167,Shelby,1
+46379,IN,18111,Newton,295,1,40.2,Newton County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",,,0.0075622,False,3.667,,2
+46381,IN,18111,Newton,287,1,40.2,Newton County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",,0.0076101,,False,2.667,,2
+46383,IN,18127,Porter,41981,1,91.95,Valparaiso Police Department,2025,9.577,,25.344,0.0082808,0.008721,False,8.06,Valparaiso,0
+46385,IN,18127,Porter,41832,1,81.98,Porter County Sheriff's Office,2025,2.319,,29.937,0.0082423,0.007968,False,6.314,Valparaiso,0
+46392,IN,18073,Jasper,7855,1,65.8,Jasper County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",33.395,0.0043767,0.0042173,False,4.616,Wheatfield,1
+46393,IN,18127,Porter,376,1,87.46,Porter County Sheriff's Office,2025,2.319,,34.194,0.0063976,0.007493,False,3.833,Wheeler,0
+46394,IN,18089,Lake,11725,1,15,Hammond Police Department,2025,30.71,,27.342,0.010478,0.010485,False,9.58,Hammond,0
+46402,IN,18089,Lake,5502,1,1.92,Gary Police Department,2025,44.7,,23.847,0.0076489,0.008267,False,9.296,Gary,0
+46403,IN,18089,Lake,11649,1,4.485,Gary Police Department,2025,44.7,,30.362,0.0087395,0.0082939,False,6.648,Gary,0
+46404,IN,18089,Lake,15658,1,1.983,Gary Police Department,2025,44.7,,24.42,0.0081586,0.0096324,False,7.306,Gary,0
+46405,IN,18089,Lake,11860,1,4.087,Lake Station Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",26.922,0.010018,0.010165,False,8.011,Lake Station,1
+46406,IN,18089,Lake,8776,1,3.579,Gary Police Department,2025,44.7,,25.604,0.0089235,0.0094329,False,7.422,Gary,0
+46407,IN,18089,Lake,9862,1,2.385,Gary Police Department,2025,44.7,,24.753,0.0077469,0.010947,False,8.243,Gary,0
+46408,IN,18089,Lake,15109,1,2.409,Gary Police Department,2025,44.7,,25.475,0.0067353,0.0089279,False,6.982,Gary,0
+46409,IN,18089,Lake,6975,1,2.554,Gary Police Department,2025,44.7,,26.892,0.0074156,0.012437,False,7.327,Gary,0
+46410,IN,18089,Lake,39471,1,15.35,Merrillville Police Department,2025,14.73,,31.79,0.0096228,0.0086401,False,7.559,Merrillville,0
+47922,IN,18111,Newton,1482,1,43.5,,,,no matching agency in the FBI CDE,26.532,0.0076121,0.0073546,False,5.583,Brook,1
+47943,IN,18073,Jasper,914,1,55.34,Jasper County Sheriff's Office,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",32.295,0.0059802,0.0060712,False,4.52,,1
+47948,IN,18111,Newton,1279,0.95934,49.97,,,,no matching agency in the FBI CDE,22.048,0.0076828,0.0067387,False,4.723,Goodland,1
+47951,IN,18111,Newton,2061,1,39.97,,,,no matching agency in the FBI CDE,23.446,0.0081284,0.011073,False,7.069,Kentland,1
+47963,IN,18111,Newton,1937,1,40.17,,,,no matching agency in the FBI CDE,27.078,0.0092408,0.0081832,False,4.971,Morocco,1
+47964,IN,18111,Newton,114,1,40.2,,,,no matching agency in the FBI CDE,18.088,0.007861,0.0093111,False,5.167,Mount Ayr,1
+47977,IN,18073,Jasper,2235,0.86846,63.76,Remington Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",21.813,0.0049692,0.005003,False,5.033,Remington,1
+47978,IN,18073,Jasper,10815,0.99575,77.09,Rensselaer Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",25.172,0.0043963,0.0041913,False,6.567,Rensselaer,1
+60002,IL,17097,Lake,24086,1,68.72,Antioch Police Department,2025,7.746,,31.089,0.026828,0.027334,False,7.15,Antioch,0
+60004,IL,17031,Cook,52546,1,77.49,Arlington Heights Police Department,2025,8.077,,28.689,0.019945,0.02137,False,10.04,Arlington Heights,0
+60005,IL,17031,Cook,30221,1,73.89,Arlington Heights Police Department,2025,8.077,,26.373,0.019587,0.021113,False,11.38,Arlington Heights,0
+60007,IL,17031,Cook,33670,1,62.62,Elk Grove Village Police Department,2025,14.5,,25.514,0.01795,0.019401,False,8.32,Elk Grove Village,0
+60008,IL,17031,Cook,22760,1,69.3,Rolling Meadows Police Department,2025,13.59,,25.467,0.021663,0.020192,False,9.728,Rolling Meadows,0
+60010,IL,17097,Lake,46365,1,88.94,Barrington Police Department,2025,6.42,,30.371,0.018907,0.015673,True,7.892,Barrington,0
+60012,IL,17111,McHenry,10916,1,66.27,McHenry County Sheriff's Office,2025,2.601,,28.444,0.022231,0.023966,True,8.289,Crystal Lake,0
+60013,IL,17111,McHenry,26144,1,69.04,Cary Police Department,2025,3.981,,29.986,0.024002,0.02487,False,7.942,Cary,0
+60014,IL,17111,McHenry,48275,1,66.53,Crystal Lake Police Department,2025,12.19,,29.329,0.024049,0.024361,False,8.7,Crystal Lake,0
+60015,IL,17097,Lake,28013,1,97.81,Deerfield Police Department,2025,7.262,,28.129,0.023457,0.016503,True,11.15,Deerfield,0
+60016,IL,17031,Cook,61888,1,73.79,Des Plaines Police Department,2025,9.001,,30.199,0.018761,0.018418,False,13.62,Des Plaines,0
+60018,IL,17031,Cook,30051,1,45.46,Des Plaines Police Department,2025,9.001,,25.955,0.018463,0.020607,False,14.23,Des Plaines,0
+60020,IL,17097,Lake,10967,1,37.01,Fox Lake Police Department,2025,11.27,,35.258,0.02256,0.021888,False,9.708,Fox Lake,0
+60021,IL,17111,McHenry,5404,1,71.2,Fox River Grove Police Department,2025,3.779,,33.209,0.022202,0.026001,False,11.44,Fox River Grove,0
+60022,IL,17031,Cook,8482,1,99.26,Glencoe Police Department,2025,5.176,,36.337,0.013914,0.00718,True,13.24,Glencoe,0
+60025,IL,17031,Cook,41256,1,92.36,Glenview Police Department,2025,10.53,,26.282,0.017079,0.01738,False,14.09,Glenview,0
+60026,IL,17031,Cook,14518,1,96.31,Glenview Police Department,2025,10.53,,29.469,0.017185,0.014407,True,14.74,Glenview,0
+60029,IL,17031,Cook,514,1,95.4,Golf Police Department,2025,0,,32.062,0.021175,0.010476,True,16.39,Golf,0
+60030,IL,17097,Lake,36346,1,66.48,Grayslake Police Department,2025,4.677,,27.607,0.026437,0.030284,False,10.85,Grayslake,0
+60031,IL,17097,Lake,37650,1,41.47,Gurnee Police Department,2025,21.17,,28.862,0.023844,0.025154,False,10.55,Gurnee,0
+60033,IL,17111,McHenry,13581,0.99161,14.67,Harvard Police Department,2025,6.492,,28.414,0.01834,0.023817,False,9.043,Harvard,0
+60034,IL,17111,McHenry,2148,1,66.84,Hebron Police Department,2025,0,,28.894,0.01811,0.018493,False,6.06,Hebron,0
+60035,IL,17097,Lake,30152,1,94.25,Highland Park Police Department,2025,8.011,,27.453,0.020848,0.016468,True,12.13,Highland Park,0
+60040,IL,17097,Lake,5102,1,94.1,Highwood Police Department,2025,5.157,,31.142,0.02142,0.022597,False,15.49,Highwood,0
+60041,IL,17097,Lake,9140,1,42.47,Lake County Sheriff's Office,2025,4.567,,32.692,0.022253,0.023229,False,10.2,Long Lake,0
+60042,IL,17111,McHenry,8433,1,58.53,Island Lake Police Department,2025,4.583,,32.026,0.024561,0.024601,False,7.381,Island Lake,0
+60043,IL,17031,Cook,2514,1,99.78,Kenilworth Police Department,2025,4.132,,34.502,0.018878,0.0064097,True,13.47,Kenilworth,0
+60044,IL,17097,Lake,10244,1,91.25,Lake Bluff Police Department,2025,11.08,,26.407,0.017279,0.016671,True,8.959,Lake Bluff,0
+60045,IL,17097,Lake,21026,1,98,Lake Forest Police Department,2025,5.224,,30.875,0.015659,0.010829,True,8.398,Lake Forest,0
+60046,IL,17097,Lake,34690,1,62.07,Lindenhurst Police Department,2025,2.327,,34.301,0.029011,0.03,False,7.452,Lindenhurst,0
+60047,IL,17097,Lake,43944,1,95.04,Lake Zurich Police Department,2025,9.998,,31.39,0.021798,0.018476,True,8.112,Lake Zurich,0
+60048,IL,17097,Lake,29353,1,88.6,Libertyville Police Department,2024,6.615,2025 offenses under half of 2024 (likely incomplete reporting); used 2024,26.508,0.022685,0.018144,True,10.51,Libertyville,0
+60050,IL,17111,McHenry,31854,1,48.79,McHenry Police Department,2025,5.41,,28.593,0.024065,0.024304,False,9.497,McHenry,0
+60051,IL,17111,McHenry,24649,1,50.19,McHenry County Sheriff's Office,2025,2.601,,34.205,0.02259,0.023326,False,8.194,Johnsburg,0
+60053,IL,17031,Cook,25297,1,75.17,Morton Grove Police Department,2025,10.79,,28.383,0.020496,0.02084,False,14.88,Morton Grove,0
+60056,IL,17031,Cook,57177,1,73.32,Mount Prospect Police Department,2025,8.521,,26.068,0.02036,0.021151,False,12.94,Mount Prospect,0
+60060,IL,17097,Lake,37599,1,69.43,Mundelein Police Department,2025,6.257,,27.801,0.023454,0.026489,False,8.713,Mundelein,0
+60061,IL,17097,Lake,27581,1,87.13,Vernon Hills Police Department,2025,11.39,,26.91,0.025371,0.024,True,9.207,Vernon Hills,0
+60062,IL,17031,Cook,42751,1,96.13,Northbrook Police Department,2025,9.303,,27.775,0.014757,0.015812,True,11,Northbrook,0
+60064,IL,17097,Lake,15206,1,3.287,North Chicago Police Department,2025,8.395,,23.452,0.017454,0.024652,False,12.78,North Chicago,0
+60067,IL,17031,Cook,39324,1,69.45,Palatine Police Department,2025,7.889,,28.845,0.022769,0.023444,True,9.369,Palatine,0
+60068,IL,17031,Cook,39672,1,86.19,Park Ridge Police Department,2025,7.123,,29.118,0.020045,0.018128,True,14.25,Park Ridge,0
+60069,IL,17097,Lake,8735,1,98.69,Lincolnshire Police Department,2025,10.47,,25.745,0.023783,0.016344,True,10.66,Lincolnshire,0
+60070,IL,17031,Cook,15840,1,73.73,Prospect Heights Police Department,2025,5.885,,25.99,0.021155,0.020965,False,12.09,Prospect Heights,0
+60071,IL,17111,McHenry,3891,1,70.93,Richmond Police Department,2025,4.688,,31.641,0.019819,0.021563,False,6.693,Richmond,0
+60072,IL,17111,McHenry,988,1,55.71,,,,no matching agency in the FBI CDE,28.415,0.018128,0.020676,False,6.303,Ringwood,1
+60073,IL,17097,Lake,61721,1,35.74,Round Lake Beach Police Department,2025,8.573,,30.996,0.026238,0.028261,False,9.691,Round Lake Beach,0
+60074,IL,17031,Cook,37705,1,70.89,Palatine Police Department,2025,7.889,,25.973,0.021017,0.021933,False,10.56,Palatine,0
+60075,IL,17097,Lake,40,1,5.589,Lake County Sheriff's Office,2025,4.567,,,,,False,4.667,,1
+60076,IL,17031,Cook,34295,1,73.9,Skokie Police Department,2025,27.14,,28.567,0.019043,0.021126,False,15.8,Skokie,0
+60077,IL,17031,Cook,28856,1,69.3,Skokie Police Department,2025,27.14,,27.106,0.018489,0.019806,False,16.54,Skokie,0
+60081,IL,17111,McHenry,9396,1,66.81,Spring Grove Police Department,2025,2.692,,33.88,0.021699,0.023783,False,6.553,Spring Grove,0
+60083,IL,17097,Lake,9564,1,44.54,,,,no matching agency in the FBI CDE,28.548,0.019028,0.025526,False,5.409,Beach Park,1
+60084,IL,17097,Lake,17029,1,63.8,Wauconda Police Department,2025,1.566,,32.065,0.02547,0.024733,False,7.313,Wauconda,0
+60085,IL,17097,Lake,71609,1,20.01,Waukegan Police Department,2025,19.31,,25.204,0.021187,0.023878,False,13.08,Waukegan,0
+60087,IL,17097,Lake,28207,1,8.764,Waukegan Police Department,2025,19.31,,27.45,0.024295,0.024506,False,11.11,Waukegan,0
+60088,IL,17097,Lake,14188,1,7.409,North Chicago Police Department,2025,8.395,,11.127,,,False,11.58,North Chicago,0
+60089,IL,17097,Lake,43227,1,87.7,Buffalo Grove Police Department,2025,4.574,,26.262,0.02556,0.024262,True,11.2,Buffalo Grove,0
+60090,IL,17031,Cook,39017,1,56.09,Wheeling Police Department,2025,8.843,,25.578,0.021413,0.022625,False,12.11,Wheeling,0
+60091,IL,17031,Cook,28053,1,98.95,Wilmette Police Department,2025,8.978,,34.605,0.01763,0.01239,True,14.88,Wilmette,0
+60093,IL,17031,Cook,20691,1,99.07,Winnetka Police Department,2025,4.741,,29.122,0.016033,0.0084913,True,13.41,Winnetka,0
+60096,IL,17097,Lake,6760,1,26.11,Winthrop Harbor Police Department,2025,4.268,,30.256,0.027463,0.029595,False,7.589,Winthrop Harbor,0
+60097,IL,17111,McHenry,10849,1,58.22,McHenry County Sheriff's Office,2025,2.601,,33.203,0.022478,0.02091,False,5.164,Wonder Lake,0
+60098,IL,17111,McHenry,33153,1,70.3,Woodstock Police Department,2025,5.934,,26.293,0.024239,0.025128,False,9.937,Woodstock,0
+60099,IL,17097,Lake,31579,1,5.501,Zion Police Department,2025,12.1,,27.493,0.019699,0.032247,False,10.61,Zion,0
+60101,IL,17043,DuPage,37644,1,35.71,Addison Police Department,2025,8.251,,25.458,0.019357,0.019439,False,10.72,Addison,0
+60102,IL,17111,McHenry,31959,1,51.62,Algonquin Police Department,2025,9.884,,30.895,0.022322,0.022912,False,8.36,Algonquin,0
+60103,IL,17043,DuPage,41740,1,24.95,Bartlett Police Department,2025,2.879,,29.682,0.023702,0.02424,False,7.162,Bartlett,0
+60104,IL,17031,Cook,18829,1,6.793,Bellwood Police Department,2025,12.9,,27.782,0.02377,0.025504,False,14.87,Bellwood,0
+60106,IL,17043,DuPage,20562,1,33.81,Bensenville Police Department,2025,9.896,,25.524,0.022043,0.022615,False,10,Bensenville,0
+60107,IL,17031,Cook,39535,1,26.09,Streamwood Police Department,2025,6.51,,30.169,0.021711,0.022238,False,10,Streamwood,0
+60108,IL,17043,DuPage,23070,1,73.94,Bloomingdale Police Department,2024,14.99,agency reported fewer than 12 months of 2025; used 2024,26.935,0.021311,0.022196,False,10.44,Bloomingdale,0
+60109,IL,17089,Kane,580,1,88.74,,,,no matching agency in the FBI CDE,31.368,0.02404,0.021958,False,6.695,Burlington,1
+60110,IL,17089,Kane,38762,1,48.94,Carpentersville Police Department,2025,8.578,,28.196,0.020676,0.022542,False,10.4,Carpentersville,0
+60111,IL,17037,DeKalb,258,1,50.2,DeKalb County Sheriff's Office,2025,7.714,,29.266,0.013725,0.018151,False,2.911,,0
+60112,IL,17037,DeKalb,4560,1,20.32,Cortland Police Department,2025,7.755,,25.57,0.027896,0.028438,False,6.168,Cortland,0
+60115,IL,17037,DeKalb,42103,1,16.1,DeKalb Police Department,2025,24.98,,23.644,0.024149,0.027296,False,7.085,DeKalb,0
+60118,IL,17089,Kane,16342,1,50.76,West Dundee Police Department,2025,8.721,,29.617,0.021846,0.023311,False,11.59,West Dundee,0
+60119,IL,17089,Kane,10905,1,72.94,Elburn Police Department,2025,5.293,,29.669,0.019443,0.022687,False,6.718,Elburn,0
+60120,IL,17031,Cook,50799,1,27.86,Elgin Police Department,2025,11.46,,28.151,0.020157,0.022501,False,12.02,Elgin,0
+60123,IL,17089,Kane,47932,1,28.47,Elgin Police Department,2025,11.46,,27.286,0.020563,0.023192,False,13.45,Elgin,0
+60124,IL,17089,Kane,24859,1,72.73,Elgin Police Department,2025,11.46,,29.823,0.023326,0.023184,False,7.529,Elgin,0
+60126,IL,17043,DuPage,48147,1,89.98,Elmhurst Police Department,2025,7.726,,29.093,0.017152,0.017316,False,13.02,Elmhurst,0
+60129,IL,17037,DeKalb,213,0.5493,60.56,DeKalb County Sheriff's Office,2025,7.714,,36.32,0.01861,0.022272,False,3.522,,0
+60130,IL,17031,Cook,14346,1,22.37,Forest Park Police Department,2025,32.17,,27.445,0.021181,0.02127,False,15.71,Forest Park,0
+60131,IL,17031,Cook,18205,1,33.35,Franklin Park Police Department,2025,12.75,,28.966,0.022057,0.022882,False,15.1,Franklin Park,0
+60133,IL,17031,Cook,37494,1,53.72,Hanover Park Police Department,2025,5.147,,29.146,0.020632,0.022954,False,10.17,Hanover Park,0
+60134,IL,17089,Kane,30503,1,90.5,Geneva Police Department,2025,8.994,,28.962,0.023119,0.022279,True,9.836,Geneva,0
+60135,IL,17037,DeKalb,7292,0.99753,42.72,Genoa Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",32.644,0.020387,0.023472,False,6.824,Genoa,1
+60136,IL,17089,Kane,8497,1,46.76,Gilberts Police Department,2025,1.512,,29.358,0.022261,0.024365,False,6.867,Gilberts,0
+60137,IL,17043,DuPage,38985,1,79.42,Glen Ellyn Police Department,2025,5.164,,28.296,0.019689,0.019446,True,13.04,Glen Ellyn,0
+60139,IL,17043,DuPage,33196,1,61.18,Glendale Heights Police Department,2025,8.443,,26.721,0.023496,0.024545,False,10.33,Glendale Heights,0
+60140,IL,17089,Kane,21902,1,61.85,Pingree Grove Police Department,2025,1.948,,31.793,0.021134,0.02267,False,6.569,Pingree Grove,0
+60141,IL,17031,Cook,131,1,18.26,Cook County Sheriff's Office,2025,19.81,,,,,False,14.33,,1
+60142,IL,17111,McHenry,29831,1,78.49,Huntley Police Department,2025,4.777,,29.546,0.021246,0.022624,False,6.782,Huntley,0
+60143,IL,17043,DuPage,11214,1,80.07,Itasca Police Department,2025,5.054,,25.719,0.01858,0.019468,False,10.79,Itasca,0
+60144,IL,17089,Kane,71,1,68.99,,,,no matching agency in the FBI CDE,24.792,0.019853,0.021297,False,4,Kaneville,1
+60145,IL,17037,DeKalb,2350,0.96766,40.57,DeKalb County Sheriff's Office,2025,7.714,,34.682,0.022681,0.022445,False,4.79,Kingston,0
+60146,IL,17037,DeKalb,2420,0.96942,41.74,Kirkland Police Department,2025,1.238,,33.522,0.02163,0.023005,False,5.962,Kirkland,0
+60148,IL,17043,DuPage,52794,1,59.65,Lombard Police Department,2025,16.4,,25.187,0.020563,0.02059,False,11.86,Lombard,0
+60150,IL,17037,DeKalb,1713,1,26.84,,,,no matching agency in the FBI CDE,27.584,0.021906,0.0237,False,4.748,Malta,1
+60151,IL,17089,Kane,3997,1,69.56,Kane County Sheriff's Office,2025,4.172,,31.934,0.023493,0.022893,False,5.629,Maple Park,0
+60152,IL,17111,McHenry,12382,1,60.2,Marengo Police Department,2025,8.532,,32.09,0.019641,0.021203,False,5.849,Marengo,0
+60153,IL,17031,Cook,23512,1,12.92,Maywood Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",34.417,0.025602,0.028677,False,14.28,Maywood,1
+60154,IL,17031,Cook,16895,1,26.94,Westchester Police Department,2024,6.811,2025 offenses under half of 2024 (likely incomplete reporting); used 2024,27.363,0.019377,0.019184,False,13.15,Westchester,0
+60155,IL,17031,Cook,8011,1,24.88,Broadview Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",25.844,0.018489,0.018462,False,14.4,Broadview,1
+60156,IL,17111,McHenry,28982,1,65.94,Lake in the Hills Police Department,2025,3.49,,31.965,0.022648,0.023082,False,7.441,Lake in the Hills,0
+60157,IL,17043,DuPage,2668,1,72.73,DuPage County Sheriff's Office,2025,3.247,,30.408,0.017978,0.016817,False,9.665,Roselle,0
+60160,IL,17031,Cook,24776,1,14.98,Melrose Park Police Department,2025,15.95,,27.126,0.017936,0.020729,False,14.27,Melrose Park,0
+60162,IL,17031,Cook,8337,1,13.15,Hillside Police Department,2025,22.46,,29.092,0.025011,0.025535,False,14.93,Hillside,0
+60163,IL,17031,Cook,5285,1,9.467,Berkeley Police Department,2025,7.625,,27.578,0.02566,0.025209,False,13.36,Berkeley,0
+60164,IL,17031,Cook,22367,1,20.32,Northlake Police Department,2024,18.43,2025 offenses under half of 2024 (likely incomplete reporting); used 2024,28.614,0.01835,0.022702,False,13.15,Northlake,0
+60165,IL,17031,Cook,4576,1,6.893,Stone Park Police Department,2025,1.123,,20.246,0.021452,0.02487,False,15.13,Stone Park,0
+60169,IL,17031,Cook,34248,1,81.55,Hoffman Estates Police Department,2025,7.436,,27.372,0.01993,0.021623,False,10.4,Hoffman Estates,0
+60171,IL,17031,Cook,10612,1,35.92,River Grove Police Department,2025,13.09,,30.818,0.014813,0.023122,False,15.75,River Grove,0
+60172,IL,17043,DuPage,24560,1,77.04,Roselle Police Department,2024,4.738,agency reported fewer than 12 months of 2025; used 2024,26.978,0.020737,0.020435,False,9.268,Roselle,0
+60173,IL,17031,Cook,13764,1,78.98,Schaumburg Police Department,2025,17.12,,24.496,0.021437,0.021868,False,12.04,Schaumburg,0
+60174,IL,17089,Kane,30958,1,93.08,St. Charles Police Department,2025,10.78,,25.976,0.021614,0.021422,False,8.57,St. Charles,0
+60175,IL,17089,Kane,26024,1,92.88,Kane County Sheriff's Office,2025,4.172,,33.618,0.021491,0.019244,True,7.201,Campton Hills,0
+60176,IL,17031,Cook,11714,1,37.99,Schiller Park Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",24.848,0.019615,0.021942,False,14.49,Schiller Park,1
+60177,IL,17089,Kane,24361,1,55.38,South Elgin Police Department,2025,6.826,,28.15,0.022663,0.023321,False,9.989,South Elgin,0
+60178,IL,17037,DeKalb,22386,1,66.24,Sycamore Police Department,2025,8.718,,26.597,0.022587,0.024197,False,7.732,Sycamore,0
+60180,IL,17111,McHenry,1568,1,61,McHenry County Sheriff's Office,2025,2.601,,27.995,0.015702,0.022779,False,4.293,Union,0
+60181,IL,17043,DuPage,29821,1,43.88,Villa Park Police Department,2025,12.79,,26.705,0.017447,0.019371,False,13.15,Villa Park,0
+60183,IL,17089,Kane,71,1,93.66,Campton Hills Police Department,2025,0.6423,,,,,False,5.953,Campton Hills,1
+60184,IL,17043,DuPage,2326,1,35.07,Wayne Police Department,2024,0.8949,agency reported fewer than 12 months of 2025; used 2024,28.185,0.021612,0.015561,True,6.442,Wayne,0
+60185,IL,17043,DuPage,34775,1,40.04,West Chicago Police Department,2025,7.585,,26.794,0.023756,0.02361,False,8.106,West Chicago,0
+60187,IL,17043,DuPage,30059,1,88.79,Wheaton Police Department,2025,5.065,,25.044,0.020033,0.020187,False,12.59,Wheaton,0
+60188,IL,17043,DuPage,43053,1,66.49,Carol Stream Police Department,2025,6.986,,27.443,0.021697,0.023734,False,10.41,Carol Stream,0
+60189,IL,17043,DuPage,30377,1,80.88,Wheaton Police Department,2025,5.065,,26.303,0.020082,0.020715,True,10.37,Wheaton,0
+60190,IL,17043,DuPage,11455,1,50.72,Winfield Police Department,2025,2.524,,28.876,0.021459,0.021963,False,8.344,Winfield,0
+60191,IL,17043,DuPage,14456,1,32.6,Wood Dale Police Department,2025,9.806,,27.937,0.019035,0.01851,False,8.936,Wood Dale,0
+60192,IL,17031,Cook,16550,1,59.59,Hoffman Estates Police Department,2025,7.436,,31.555,0.023089,0.023753,False,7.555,Hoffman Estates,0
+60193,IL,17031,Cook,40805,1,79.89,Schaumburg Police Department,2025,17.12,,27.837,0.019487,0.019691,False,9.183,Schaumburg,0
+60194,IL,17031,Cook,20622,1,78.46,Schaumburg Police Department,2025,17.12,,29.976,0.017898,0.020282,False,10.52,Schaumburg,0
+60195,IL,17031,Cook,5150,1,76.12,Schaumburg Police Department,2025,17.12,,27.112,0.020223,0.022988,False,10.65,Schaumburg,0
+60201,IL,17031,Cook,44652,1,79.79,Evanston Police Department,2025,25.01,,25.333,0.018109,0.016931,True,16.13,Evanston,0
+60202,IL,17031,Cook,33245,1,79.79,Evanston Police Department,2025,25.01,,29.964,0.018513,0.018232,False,14.89,Evanston,0
+60203,IL,17031,Cook,4634,1,79.79,Skokie Police Department,2025,27.14,,27.9,0.017901,0.019996,False,14.25,Skokie,0
+60208,IL,17031,Cook,213,1,79.79,Evanston Police Department,2025,25.01,,20,,,False,17.79,Evanston,0
+60301,IL,17031,Cook,3043,1,91.61,Oak Park Police Department,2025,32.33,,33.45,0.024124,0.022077,False,19.02,Oak Park,0
+60302,IL,17031,Cook,33698,1,91.61,Oak Park Police Department,2025,32.33,,32.004,0.025157,0.02109,True,15.37,Oak Park,0
+60304,IL,17031,Cook,17842,1,91.61,Oak Park Police Department,2025,32.33,,30.378,0.025121,0.021429,True,15.51,Oak Park,0
+60305,IL,17031,Cook,11710,1,93.94,River Forest Police Department,2025,16.9,,32.455,0.021487,0.014551,True,14.01,River Forest,0
+60401,IL,17197,Will,8156,0.99068,66.59,Beecher Police Department,2025,5.493,,29.99,0.023775,0.023846,False,4.927,Beecher,0
+60402,IL,17031,Cook,64706,1,21.91,Berwyn Police Department,2025,17.57,,28.581,0.022459,0.022593,False,14.27,Berwyn,0
+60403,IL,17197,Will,17667,1,55.39,Crest Hill Police Department,2025,8.079,,27.976,0.02014,0.020021,False,10.3,Crest Hill,0
+60404,IL,17197,Will,19916,1,56.44,Shorewood Police Department,2025,6.986,,34.187,0.02133,0.0217,False,7.709,Shorewood,0
+60406,IL,17031,Cook,24011,1,12.95,Blue Island Police Department,2025,23.8,,28.628,0.022272,0.025622,False,14.23,Blue Island,0
+60407,IL,17063,Grundy,1532,1,38.27,,,,no matching agency in the FBI CDE,34.459,0.01682,0.01723,False,6.303,Braceville,1
+60408,IL,17197,Will,5601,1,44.21,Braidwood Police Department,2025,5.752,,29.181,0.01345,0.018793,False,5.959,Braidwood,0
+60409,IL,17031,Cook,36045,1,6.068,Calumet City Police Department,2025,21.24,,34.415,0.026077,0.033147,False,12.91,Calumet City,0
+60410,IL,17197,Will,13503,1,67.45,Channahon Police Department,2025,3.896,,30.402,0.018125,0.021206,False,6.53,Channahon,0
+60411,IL,17031,Cook,53515,1,7.008,Chicago Heights Police Department,2025,37.75,,34.363,0.023499,0.025782,False,10.97,Chicago Heights,0
+60415,IL,17031,Cook,14433,1,27.92,Chicago Ridge Police Department,2025,18.13,,31.829,0.015771,0.023684,False,12.48,Chicago Ridge,0
+60416,IL,17063,Grundy,9512,1,80.32,Coal City Police Department,2025,4.796,,26.901,0.01552,0.018927,False,6.751,Coal City,0
+60417,IL,17197,Will,15342,1,8.599,Crete Police Department,2025,10.89,,37.831,0.025851,0.028643,False,6.482,Crete,0
+60418,IL,17031,Cook,10813,1,18.75,Crestwood Police Department,2025,26.07,,32.652,0.016892,0.021383,False,10.57,Crestwood,0
+60419,IL,17031,Cook,21409,1,2.206,Dolton Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",30.652,0.028442,0.030152,False,12.74,Dolton,1
+60421,IL,17197,Will,3734,1,45.92,Elwood Police Department,2025,10.2,,30.361,0.018565,0.018765,False,5.496,Elwood,0
+60422,IL,17031,Cook,9927,1,45.62,Flossmoor Police Department,2025,23,,32.784,0.032474,0.029107,True,9.708,Flossmoor,0
+60423,IL,17197,Will,32784,1,75.96,Frankfort Police Department,2025,6.502,,32.415,0.021603,0.02332,False,8.081,Frankfort,0
+60424,IL,17063,Grundy,2102,0.99715,49.25,,,,no matching agency in the FBI CDE,30.05,0.018072,0.020157,False,6.409,Gardner,1
+60425,IL,17031,Cook,8781,1,7.581,Glenwood Police Department,2025,11.02,,30.454,0.024091,0.029396,False,8.462,Glenwood,0
+60426,IL,17031,Cook,24114,1,5.319,Harvey Police Department,2025,31.93,,29.185,0.019697,0.028736,False,14.07,Harvey,0
+60428,IL,17031,Cook,11351,1,8.038,Markham Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",36.351,0.020896,0.027441,False,12.17,Markham,1
+60429,IL,17031,Cook,14683,1,9.559,Hazel Crest Police Department,2025,26.27,,26.801,0.026381,0.026476,False,12.04,Hazel Crest,0
+60430,IL,17031,Cook,20146,1,40.77,Homewood Police Department,2025,27.73,,33.171,0.026872,0.026594,False,12.28,Homewood,0
+60431,IL,17197,Will,26853,1,50.58,Joliet Police Department,2025,15,,31.071,0.02092,0.022256,False,7.922,Joliet,0
+60432,IL,17197,Will,19989,1,21.71,Joliet Police Department,2025,15,,28.958,0.01929,0.019453,False,12.72,Joliet,0
+60433,IL,17197,Will,16526,1,26.84,Will County Sheriff's Office,2025,6.244,,25.535,0.019672,0.019698,False,10.88,Joliet,0
+60435,IL,17197,Will,48927,1,26.85,Joliet Police Department,2025,15,,25.228,0.019895,0.021414,False,11.71,Joliet,0
+60436,IL,17197,Will,18535,1,19.5,Joliet Police Department,2025,15,,26.489,0.019214,0.019336,False,12.75,Joliet,0
+60437,IL,17063,Grundy,168,1,34.2,,,,no matching agency in the FBI CDE,32.315,0.018952,,False,4.667,Kinsman,1
+60438,IL,17031,Cook,29661,1,11.34,Lansing Police Department,2025,18.6,,32.364,0.025816,0.028047,False,10.49,Lansing,0
+60439,IL,17031,Cook,24327,1,87.69,Lemont Police Department,2025,5.353,,34.43,0.016128,0.017438,False,8.425,Lemont,0
+60440,IL,17197,Will,52031,1,55.07,Bolingbrook Police Department,2025,8.801,,27.598,0.023657,0.024365,False,10.62,Bolingbrook,0
+60441,IL,17197,Will,37093,1,66.12,Lockport Police Department,2025,4.574,,33.159,0.020096,0.024356,False,8.821,Lockport,0
+60442,IL,17197,Will,12218,1,72.39,Manhattan Police Department,2025,2.521,,36.398,0.023175,0.02426,False,6.836,Manhattan,0
+60443,IL,17031,Cook,21309,1,6.585,Matteson Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",34.384,0.027876,0.029025,False,8.808,Matteson,1
+60444,IL,17063,Grundy,1784,1,42.1,Mazon Police Department,2025,0,,25.7,0.019035,0.020877,False,4.645,Mazon,0
+60445,IL,17031,Cook,14692,1,22.19,Midlothian Police Department,2025,14.08,,28.814,0.023912,0.025413,False,13.59,Midlothian,0
+60446,IL,17197,Will,40465,1,53.75,Romeoville Police Department,2025,9.426,,32.234,0.022675,0.024325,False,8.993,Romeoville,0
+60447,IL,17063,Grundy,15750,1,69.33,Minooka Police Department,2025,2.395,,32.5,0.020698,0.020536,False,6.579,Minooka,0
+60448,IL,17197,Will,25512,1,89.13,Mokena Police Department,2025,6.825,,30.258,0.019904,0.022568,False,8.148,Mokena,0
+60449,IL,17197,Will,8961,1,32.43,Monee Police Department,2025,13.22,,32.549,0.021851,0.028027,False,6.187,Monee,0
+60450,IL,17063,Grundy,20877,1,65.2,Morris Police Department,2025,12.06,,22.651,0.018229,0.020247,False,6.845,Morris,0
+60451,IL,17197,Will,36561,1,87.25,New Lenox Police Department,2025,8.577,,32.052,0.021415,0.022651,False,8.042,New Lenox,0
+60452,IL,17031,Cook,27363,1,30.01,Oak Forest Police Department,2025,3.824,,31.863,0.024603,0.025891,False,10.46,Oak Forest,0
+60453,IL,17031,Cook,58362,1,44.29,Oak Lawn Police Department,2025,14.66,,30.772,0.021334,0.021906,False,13.83,Oak Lawn,0
+60455,IL,17031,Cook,17098,1,52.56,Bridgeview Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",30.677,0.021245,0.024569,False,14.82,Bridgeview,1
+60456,IL,17031,Cook,4343,1,52.61,Hometown Police Department,2024,17.42,agency reported fewer than 12 months of 2025; used 2024,28.135,0.020049,0.021125,False,13.49,Hometown,0
+60457,IL,17031,Cook,14420,1,79.75,Hickory Hills Police Department,2025,7.909,,29.872,0.022403,0.023308,False,13.28,Hickory Hills,0
+60458,IL,17031,Cook,14504,1,40.26,Justice Police Department,2025,2.542,,31.517,0.023838,0.024613,False,10.99,Justice,0
+60459,IL,17031,Cook,29451,1,23.2,Burbank Police Department,2025,19.14,,31.321,0.02027,0.021734,False,14.67,Burbank,0
+60461,IL,17031,Cook,4785,1,16.76,Olympia Fields Police Department,2025,40.32,,42.538,0.029436,0.029424,False,12.55,Olympia Fields,0
+60462,IL,17031,Cook,40539,1,73.57,Orland Park Police Department,2025,10.04,,33.33,0.019887,0.020149,False,11.07,Orland Park,0
+60463,IL,17031,Cook,14048,1,63.8,Palos Heights Police Department,2025,8.828,,30.117,0.020841,0.02037,False,10.5,Palos Heights,0
+60464,IL,17031,Cook,9982,1,83.58,Cook County Sheriff's Office,2025,19.81,,33.844,0.018297,0.019061,False,8.608,Palos Park,0
+60465,IL,17031,Cook,18530,1,85.16,Palos Hills Police Department,2025,6.697,,35.174,0.019136,0.020104,False,13.17,Palos Hills,0
+60466,IL,17031,Cook,21904,1,9.027,Park Forest Police Department,2025,14.61,,31.787,0.027775,0.040026,False,11.04,Park Forest,0
+60467,IL,17031,Cook,26098,1,76.75,Orland Park Police Department,2025,10.04,,35.715,0.018993,0.020508,False,8.791,Orland Park,0
+60468,IL,17197,Will,6112,0.98446,61.44,Peotone Police Department,2025,7.535,,31.229,0.016505,0.015823,False,6.361,Peotone,0
+60469,IL,17031,Cook,5469,1,18.83,Posen Police Department,2025,30.33,,24.152,0.019022,0.018988,False,13.3,Posen,0
+60471,IL,17031,Cook,13155,1,9.294,Richton Park Police Department,2025,21.45,,33.612,0.027732,0.026671,False,8.153,Richton Park,0
+60472,IL,17031,Cook,4671,1,19.6,Robbins Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",28.722,0.019885,0.022448,False,14.36,Robbins,1
+60473,IL,17031,Cook,21661,1,12.29,South Holland Police Department,2025,19.05,,33.971,0.026855,0.027136,False,13.51,South Holland,0
+60474,IL,17063,Grundy,824,1,48.19,,,,no matching agency in the FBI CDE,32.371,0.019416,0.020411,False,4.584,South Wilmington,1
+60475,IL,17197,Will,9969,1,14.49,Steger Police Department,2025,19.62,,32.963,0.021665,0.023063,False,11.04,Steger,0
+60476,IL,17031,Cook,2388,1,16.14,Thornton Police Department,2025,22.8,,25.567,0.014615,0.026628,False,12.83,Thornton,0
+60477,IL,17031,Cook,37335,1,44.51,Tinley Park Police Department,2025,12.01,,33.748,0.022822,0.024847,False,10.63,Tinley Park,0
+60478,IL,17031,Cook,16893,1,5.164,Country Club Hills Police Department,2025,22.33,,31.033,0.025902,0.026975,False,8.635,Country Club Hills,0
+60479,IL,17063,Grundy,685,1,35.26,Grundy County Sheriff's Office,2025,3.975,,30.931,0.020295,0.020004,False,4.826,Verona,0
+60480,IL,17031,Cook,5272,1,64.41,Willow Springs Police Department,2025,3.807,,27.188,0.014396,0.020687,False,10.8,Willow Springs,0
+60481,IL,17197,Will,11518,0.99479,61.64,Wilmington Police Department,2025,11.91,,26.58,0.016585,0.017537,False,5.806,Wilmington,0
+60482,IL,17031,Cook,11216,1,43.08,Worth Police Department,2025,10.76,,28.038,0.021923,0.026376,False,14.1,Worth,0
+60484,IL,17197,Will,6761,1,8.429,University Park Police Department,2025,20.23,,39.49,0.02379,0.032523,False,9.323,University Park,0
+60487,IL,17031,Cook,26388,1,81.53,Tinley Park Police Department,2025,12.01,,32.864,0.024788,0.023598,False,9.259,Tinley Park,0
+60490,IL,17197,Will,21907,1,65.3,Bolingbrook Police Department,2025,8.801,,36.074,0.02356,0.025015,False,7.991,Bolingbrook,0
+60491,IL,17197,Will,22999,1,81.02,Homer Glen Police Department,2025,3.208,,34.983,0.021688,0.021457,False,7.1,Homer Glen,0
+60501,IL,17031,Cook,11746,1,31.91,Summit Police Department,2025,11.62,,28.853,0.020191,0.023649,False,15.58,Summit,0
+60502,IL,17043,DuPage,22592,1,76.3,Aurora Police Department,2025,13.02,,30.407,0.023877,0.024257,True,9.499,Aurora,0
+60503,IL,17197,Will,16855,1,65.29,Aurora Police Department,2025,13.02,,31.653,0.024498,0.026324,False,8.258,Aurora,0
+60504,IL,17043,DuPage,38901,1,76.37,Aurora Police Department,2025,13.02,,30.855,0.021921,0.023099,False,11.3,Aurora,0
+60505,IL,17089,Kane,57906,1,4.722,Aurora Police Department,2025,13.02,,24.43,0.01785,0.017353,False,11.29,Aurora,0
+60506,IL,17089,Kane,52011,1,35.12,Aurora Police Department,2025,13.02,,24.746,0.022758,0.022736,False,11.83,Aurora,0
+60510,IL,17089,Kane,28156,1,79.33,Batavia Police Department,2025,8.507,,28.833,0.022726,0.023136,False,9.271,Batavia,0
+60511,IL,17089,Kane,1721,1,47.79,,,,no matching agency in the FBI CDE,18.594,0.021153,0.022934,False,4.392,Big Rock,1
+60512,IL,17093,Kendall,1165,1,63.92,Kendall County Sheriff's Office,2025,5.934,,37.543,0.020262,0.022848,False,6.853,Yorkville,0
+60513,IL,17031,Cook,19514,1,81.44,Brookfield Police Department,2025,5.707,,32.669,0.024057,0.024215,False,14.2,Brookfield,0
+60514,IL,17043,DuPage,10320,1,96.66,Clarendon Hills Police Department,2025,4.939,,29.268,0.018048,0.016929,False,11.77,Clarendon Hills,0
+60515,IL,17043,DuPage,29278,1,90.73,Downers Grove Police Department,2025,8.47,,27.263,0.015327,0.016108,False,12.51,Downers Grove,0
+60516,IL,17043,DuPage,28694,1,90.87,Downers Grove Police Department,2025,8.47,,29.133,0.016129,0.015713,False,10.78,Downers Grove,0
+60517,IL,17043,DuPage,33276,1,83.63,Woodridge Police Department,2025,7.067,,29.399,0.021724,0.022505,False,10.91,Woodridge,0
+60519,IL,17043,DuPage,76,1,92.25,DuPage County Sheriff's Office,2025,3.247,,,,,False,8.167,Aurora,1
+60520,IL,17037,DeKalb,2773,1,47.49,Hinckley Police Department,2025,4.566,,28.982,0.020442,0.020243,False,6.86,Hinckley,0
+60521,IL,17043,DuPage,18199,1,98.55,Hinsdale Police Department,2025,5.437,,31.234,0.016384,0.0096834,True,10.83,Hinsdale,0
+60523,IL,17043,DuPage,10347,1,93.67,Oak Brook Police Department,2025,60.14,,29.771,0.012573,0.012787,True,10.63,Oak Brook,0
+60525,IL,17031,Cook,32613,1,84.7,La Grange Police Department,2025,7.379,,27.056,0.019271,0.021783,False,12.63,La Grange,0
+60526,IL,17031,Cook,13810,1,80.34,La Grange Park Police Department,2025,4.477,,28.943,0.020263,0.020698,False,13.41,La Grange Park,0
+60527,IL,17043,DuPage,29139,1,87.09,Burr Ridge Police Department,2025,7.584,,27.962,0.016384,0.015384,False,8.224,Burr Ridge,0
+60532,IL,17043,DuPage,28766,1,92.03,Lisle Police Department,2025,5.357,,27.633,0.020697,0.021077,False,10.41,Lisle,0
+60534,IL,17031,Cook,10749,1,14.26,Lyons Police Department,,,"agency reported fewer than 12 months of 2025; 2024 also incomplete, missing",28.073,0.021621,0.023381,False,14.5,Lyons,1
+60536,IL,17093,Kendall,80,1,67.26,,,,no matching agency in the FBI CDE,30.323,0.012634,0.026067,False,3.333,Millbrook,1
+60538,IL,17093,Kendall,28898,1,46.7,Montgomery Police Department,2025,13.69,,31.689,0.022274,0.023588,False,6.817,Montgomery,0
+60539,IL,17089,Kane,275,1,69.96,Kane County Sheriff's Office,2025,4.172,,11.786,,,False,8.167,,0
+60540,IL,17043,DuPage,44201,1,95.32,Naperville Police Department,2025,6.387,,28.442,0.016984,0.018164,True,10.25,Naperville,0
+60541,IL,17093,Kendall,3061,0.97092,69.72,Kendall County Sheriff's Office,2025,5.934,,28.695,0.01907,0.020665,False,4.541,Newark,0
+60542,IL,17089,Kane,18540,1,27.47,North Aurora Police Department,2025,13.01,,26.49,0.02223,0.022748,False,8.661,North Aurora,0
+60543,IL,17093,Kendall,40299,1,65.16,Oswego Police Department,2025,5.018,,30.987,0.022929,0.024031,False,7.669,Oswego,0
+60544,IL,17197,Will,27680,1,66.56,Plainfield Police Department,2025,4.989,,34.138,0.019692,0.02113,False,7.374,Plainfield,0
+60545,IL,17093,Kendall,13888,1,27.37,Plano Police Department,2025,5.203,,27.528,0.023912,0.026613,False,6.96,Plano,0
+60546,IL,17031,Cook,16819,1,83.18,Riverside Police Department,2025,10.68,,30.996,0.022042,0.022104,False,13.28,Riverside,0
+60548,IL,17037,DeKalb,12019,0.66503,57.44,Sandwich Police Department,2025,2.868,,33.562,0.018796,0.019943,False,6.149,Sandwich,0
+60550,IL,17037,DeKalb,1293,1,37.15,,,,no matching agency in the FBI CDE,25.439,0.020846,0.022422,False,6.538,Shabbona,1
+60554,IL,17089,Kane,12049,1,63.75,Sugar Grove Police Department,2025,2.458,,32.629,0.022811,0.02273,False,6.964,Sugar Grove,0
+60555,IL,17043,DuPage,13909,1,86.97,Warrenville Police Department,2025,7.778,,27.605,0.019744,0.020424,False,8.479,Warrenville,0
+60556,IL,17037,DeKalb,1956,1,36.31,Waterman Police Department,2024,0,agency reported fewer than 12 months of 2025; used 2024,36.466,0.020429,0.02075,False,5.239,Waterman,0
+60558,IL,17031,Cook,13629,1,94.28,Western Springs Police Department,2025,2.516,,30.979,0.016955,0.013526,True,10.53,Western Springs,0
+60559,IL,17043,DuPage,24363,1,92.6,Westmont Police Department,2025,10.54,,26.547,0.017581,0.017353,False,13.19,Westmont,0
+60560,IL,17093,Kendall,27185,1,63.51,Yorkville Police Department,2025,5.448,,33.428,0.024047,0.025342,False,7.422,Yorkville,0
+60561,IL,17043,DuPage,23139,1,86.24,Darien Police Department,2025,7.402,,29.12,0.017578,0.017769,False,10.35,Darien,0
+60563,IL,17043,DuPage,37997,1,93.77,Naperville Police Department,2025,6.387,,28.118,0.018936,0.019419,False,11.51,Naperville,0
+60564,IL,17197,Will,45616,1,91.14,Naperville Police Department,2025,6.387,,34.418,0.02019,0.017481,True,9.657,Naperville,0
+60565,IL,17043,DuPage,40300,1,93.19,Naperville Police Department,2025,6.387,,29.795,0.018795,0.018879,False,7.077,Naperville,0
+60585,IL,17197,Will,24920,1,67.48,Plainfield Police Department,2025,4.989,,34.138,0.020849,0.021871,False,8.083,Plainfield,0
+60586,IL,17197,Will,47212,1,65.66,Joliet Police Department,2025,15,,33.014,0.020125,0.020338,False,6.887,Joliet,0
+60601,IL,17031,Cook,15814,1,20.8,Chicago Police Department,2025,33.76,,27.064,0.017074,0.016157,False,16.74,Chicago,0
+60602,IL,17031,Cook,1261,1,20.8,Chicago Police Department,2025,33.76,,26.973,0.015063,0.012042,False,19.35,Chicago,0
+60603,IL,17031,Cook,1288,1,20.8,Chicago Police Department,2025,33.76,,21.798,0.016303,0.015777,True,18.95,Chicago,0
+60604,IL,17031,Cook,897,1,20.8,Chicago Police Department,2025,33.76,,29.253,0.019,0.016078,False,18.91,Chicago,0
+60605,IL,17031,Cook,34071,1,20.8,Chicago Police Department,2025,33.76,,25.66,0.017773,0.018769,False,16.7,Chicago,0
+60606,IL,17031,Cook,3797,1,20.8,Chicago Police Department,2025,33.76,,19.917,0.013628,0.0139,False,17.83,Chicago,0
+60607,IL,17031,Cook,31816,1,20.8,Chicago Police Department,2025,33.76,,23.455,0.016741,0.017354,False,17.8,Chicago,0
+60608,IL,17031,Cook,75770,1,20.8,Chicago Police Department,2025,33.76,,29.931,0.014902,0.014869,False,15.53,Chicago,0
+60609,IL,17031,Cook,65770,1,20.8,Chicago Police Department,2025,33.76,,32.149,0.012646,0.01495,False,13.94,Chicago,0
+60610,IL,17031,Cook,43794,1,20.8,Chicago Police Department,2025,33.76,,26.036,0.016079,0.018031,False,15.79,Chicago,0
+60611,IL,17031,Cook,38456,1,20.8,Chicago Police Department,2025,33.76,,24.682,0.015772,0.015367,True,16.15,Chicago,0
+60612,IL,17031,Cook,34402,1,20.8,Chicago Police Department,2025,33.76,,31.493,0.014994,0.015614,False,15.73,Chicago,0
+60613,IL,17031,Cook,53048,1,20.8,Chicago Police Department,2025,33.76,,34.62,0.016797,0.018229,False,15.1,Chicago,0
+60614,IL,17031,Cook,73173,1,20.8,Chicago Police Department,2025,33.76,,30.924,0.015833,0.013883,True,16.22,Chicago,0
+60615,IL,17031,Cook,43502,1,20.8,Chicago Police Department,2025,33.76,,28.297,0.015406,0.014692,False,14.31,Chicago,0
+60616,IL,17031,Cook,54013,1,20.8,Chicago Police Department,2025,33.76,,28.371,0.014995,0.016061,False,15.58,Chicago,0
+60617,IL,17031,Cook,77270,1,20.8,Chicago Police Department,2025,33.76,,37.302,0.010207,0.011184,False,13.09,Chicago,0
+60618,IL,17031,Cook,90316,1,20.8,Chicago Police Department,2025,33.76,,33.957,0.015455,0.016158,False,15.59,Chicago,0
+60619,IL,17031,Cook,63303,1,20.8,Chicago Police Department,2025,33.76,,36.201,0.012152,0.012045,False,12.88,Chicago,0
+60620,IL,17031,Cook,66514,1,20.8,Chicago Police Department,2025,33.76,,39.392,0.010928,0.010698,False,13,Chicago,0
+60621,IL,17031,Cook,29570,1,20.8,Chicago Police Department,2025,33.76,,37.115,0.010316,0.010932,False,12.99,Chicago,0
+60622,IL,17031,Cook,55075,1,20.8,Chicago Police Department,2025,33.76,,29.031,0.015553,0.015673,True,15.6,Chicago,0
+60623,IL,17031,Cook,87649,1,20.8,Chicago Police Department,2025,33.76,,31.485,0.011631,0.01282,False,13.71,Chicago,0
+60624,IL,17031,Cook,37547,1,20.8,Chicago Police Department,2025,33.76,,32.891,0.011934,0.014231,False,14.51,Chicago,0
+60625,IL,17031,Cook,76525,1,20.8,Chicago Police Department,2025,33.76,,34.509,0.016563,0.01731,False,15.07,Chicago,0
+60626,IL,17031,Cook,50548,1,20.8,Chicago Police Department,2025,33.76,,36.534,0.01284,0.014277,False,14.45,Chicago,0
+60628,IL,17031,Cook,62832,1,20.8,Chicago Police Department,2025,33.76,,37.326,0.010662,0.011249,False,13.41,Chicago,0
+60629,IL,17031,Cook,114453,1,20.85,Chicago Police Department,2025,33.76,,36.637,0.012219,0.011884,False,13.51,Chicago,0
+60630,IL,17031,Cook,54064,1,20.8,Chicago Police Department,2025,33.76,,33.284,0.01395,0.015503,False,15.51,Chicago,0
+60631,IL,17031,Cook,29691,1,21.86,Chicago Police Department,2025,33.76,,29.258,0.015679,0.016675,False,14.89,Chicago,0
+60632,IL,17031,Cook,92237,1,20.8,Chicago Police Department,2025,33.76,,33.011,0.012636,0.01325,False,14.12,Chicago,0
+60633,IL,17031,Cook,13359,1,18.32,Chicago Police Department,2025,33.76,,37.418,0.013833,0.013485,False,12.32,Chicago,0
+60634,IL,17031,Cook,75694,1,21.09,Chicago Police Department,2025,33.76,,36.329,0.013983,0.014705,False,14.87,Chicago,0
+60636,IL,17031,Cook,34800,1,20.8,Chicago Police Department,2025,33.76,,40.673,0.011279,0.010786,False,13.58,Chicago,0
+60637,IL,17031,Cook,53555,1,20.8,Chicago Police Department,2025,33.76,,30.82,0.010537,0.014885,False,13.65,Chicago,0
+60638,IL,17031,Cook,56928,1,25.51,Chicago Police Department,2025,33.76,,33.568,0.013849,0.014637,False,14.44,Chicago,0
+60639,IL,17031,Cook,89543,1,20.8,Chicago Police Department,2025,33.76,,36.541,0.014143,0.014485,False,14.32,Chicago,0
+60640,IL,17031,Cook,65941,1,20.8,Chicago Police Department,2025,33.76,,35.45,0.014733,0.015739,False,14.87,Chicago,0
+60641,IL,17031,Cook,69354,1,20.8,Chicago Police Department,2025,33.76,,37.165,0.014847,0.015492,False,14.62,Chicago,0
+60642,IL,17031,Cook,21687,1,20.8,Chicago Police Department,2025,33.76,,27.132,0.016596,0.016848,True,16.61,Chicago,0
+60643,IL,17031,Cook,47831,1,20.78,Chicago Police Department,2025,33.76,,35.734,0.014486,0.014709,False,13.87,Chicago,0
+60644,IL,17031,Cook,47239,1,20.8,Chicago Police Department,2025,33.76,,36.149,0.0072152,0.012201,False,13.04,Chicago,0
+60645,IL,17031,Cook,48356,1,20.8,Chicago Police Department,2025,33.76,,31.448,0.012838,0.014031,False,14.73,Chicago,0
+60646,IL,17031,Cook,28383,1,20.88,Chicago Police Department,2025,33.76,,32.854,0.015884,0.016279,False,15.48,Chicago,0
+60647,IL,17031,Cook,85631,1,20.8,Chicago Police Department,2025,33.76,,32.373,0.014239,0.015764,False,15.56,Chicago,0
+60649,IL,17031,Cook,48171,1,20.8,Chicago Police Department,2025,33.76,,36.338,0.011621,0.012791,False,13.07,Chicago,0
+60651,IL,17031,Cook,62819,1,20.8,Chicago Police Department,2025,33.76,,36.064,0.0095892,0.012497,False,13.18,Chicago,0
+60652,IL,17031,Cook,40898,1,20.8,Chicago Police Department,2025,33.76,,38.773,0.012447,0.012778,False,14.08,Chicago,0
+60653,IL,17031,Cook,33146,1,20.8,Chicago Police Department,2025,33.76,,31.92,0.012313,0.014695,False,14.1,Chicago,0
+60654,IL,17031,Cook,23890,1,20.8,Chicago Police Department,2025,33.76,,23.434,0.017526,0.017688,False,17.68,Chicago,0
+60655,IL,17031,Cook,27837,1,20.38,Chicago Police Department,2025,33.76,,30.804,0.015036,0.014786,False,14.63,Chicago,0
+60656,IL,17031,Cook,28474,1,22.26,Chicago Police Department,2025,33.76,,30.105,0.015295,0.015893,False,14.27,Chicago,0
+60657,IL,17031,Cook,72316,1,20.8,Chicago Police Department,2025,33.76,,33.265,0.016475,0.016839,False,14.95,Chicago,0
+60659,IL,17031,Cook,40579,1,20.8,Chicago Police Department,2025,33.76,,30.058,0.014598,0.014607,False,14.56,Chicago,0
+60660,IL,17031,Cook,42534,1,20.8,Chicago Police Department,2025,33.76,,36.089,0.013007,0.016451,False,13.45,Chicago,0
+60661,IL,17031,Cook,11987,1,20.8,Chicago Police Department,2025,33.76,,25.101,0.018137,0.017366,False,16.16,Chicago,0
+60706,IL,17031,Cook,24327,1,66.24,Norridge Police Department,2025,33.49,,32.068,0.016026,0.017363,False,15.79,Norridge,0
+60707,IL,17031,Cook,43241,1,38.23,Elmwood Park Police Department,2025,12.97,,33.77,0.014283,0.017801,False,14.75,Elmwood Park,0
+60712,IL,17031,Cook,13463,1,76.48,Lincolnwood Police Department,2025,19.2,,28.504,0.019655,0.020147,True,16.34,Lincolnwood,0
+60714,IL,17031,Cook,31006,1,69.7,Niles Police Department,2025,19.42,,28.417,0.016436,0.01715,False,15.57,Niles,0
+60803,IL,17031,Cook,22189,1,24.78,Alsip Police Department,2025,29.68,,29.903,0.022103,0.023175,False,12.69,Alsip,0
+60804,IL,17031,Cook,85673,1,12.58,Cicero Police Department,2025,12.38,,29.317,0.018957,0.021913,False,14.72,Cicero,0
+60805,IL,17031,Cook,19945,1,43.59,Evergreen Park Police Department,2025,56.1,,32.06,0.021307,0.022998,False,15.07,Evergreen Park,0
+60827,IL,17031,Cook,24936,1,8.091,Riverdale Police Department,2025,28.47,,36.648,0.015467,0.024847,False,13.56,Riverdale,0

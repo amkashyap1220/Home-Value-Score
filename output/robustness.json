@@ -1,7 +1,6 @@
 {
   "illinois_only": {
     "value_picks": 15,
-    "not_on_list": 14,
     "h1_supported": true,
     "zips": [
       "60472",

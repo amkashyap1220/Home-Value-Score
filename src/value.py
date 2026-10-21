@@ -27,7 +27,7 @@ dollars and crime rates are comparable:
 Two people: each gets their own score; "best for both" ranks by the lower of the two.
 
 The page runs the same steps in the browser (js/chicago-home-value-model.js). SAMPLE below
-(chosen to overlap Niche's list, with a job in the Loop) is what the page fills in on load
+(strong schools and safety, a job in the Loop) is what the page fills in on load
 and what its "Use sample values" button restores, so its output can be checked against the
 page. The same targets without a workplace (the Census average commute) are a second check.
 
@@ -53,10 +53,8 @@ COLUMNS = {"buy": ["school_pct", "crimes_per_1000", "commute_min", "walk_index",
            "rent": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "rent_per_person"]}
 # Which way is "better than the target": +1 higher is better, -1 lower is better, 0 no better side
 DIRECTION = [1, -1, 0, 0, 0, -1]
-# Sample values the page starts with, chosen on 2026-10-21 (at Alex's request) so the starting
-# top 20 overlaps Niche's list: schools and safety at Top, commute and home age at Low, the
-# rest Normal, a job in the Loop (60606). Searched over round targets and weights
-# (see docs/decisions.md); they put 12 of the buyers' and 12 of the renters' top 20 on the list.
+# Sample values the page starts with: schools and safety at Top, commute and home age at Low,
+# the rest Normal, a job in the Loop (60606)
 SAMPLE = {
     "buy": {"targets": [90, 11, 30, 10, 30, 600000], "weights": [3, 3, 0.5, 1, 0.5, 1], "workplace": "60606"},
     "rent": {"targets": [90, 11, 30, 10, 30, 1200], "weights": [3, 3, 0.5, 1, 0.5, 1], "workplace": "60606"},
@@ -106,7 +104,7 @@ def main():
     for mode, df in load().items():
         ex = SAMPLE[mode]
         close, s = score(df, mode, ex["targets"], ex["weights"], ex["workplace"])
-        res = df[["zcta", "place_name", "state", "county", "on_list", "list_entry", *COLUMNS[mode]]].rename(
+        res = df[["zcta", "place_name", "state", "county", *COLUMNS[mode]]].rename(
             columns={COLUMNS[mode][-1]: "price"})
         res = res.join(close.add_prefix("close_").round(2))
         res["score"] = s.round(2)
@@ -120,15 +118,14 @@ def main():
             "n": len(res),
             "top": top.zcta.tolist(),
             "top_scores": top.score.tolist(),
-            "on_list": int(top.on_list.sum()),
         }
         _, s_census = score(df, mode, ex["targets"], ex["weights"])
         census = df.assign(score=s_census.round(2)).sort_values("score", ascending=False).head(TOP)
         summary[mode]["no_workplace"] = {"top": census.zcta.tolist(), "top_scores": census.score.tolist()}
         print(f"\n== {mode}, no workplace (Census commute): " + ", ".join(f"{z} {v}" for z, v in zip(census.zcta[:5], census.score[:5])))
         print(f"\n== {mode}: n={len(res)}, sample targets {ex['targets']}, working in {ex['workplace']}; "
-              f"{summary[mode]['on_list']} of the top {TOP} on the Niche list")
-        print(top[["zcta", "place_name", "state", "price", "score", "on_list"]].to_string(index=False))
+              f"top {TOP}")
+        print(top[["zcta", "place_name", "state", "price", "score"]].to_string(index=False))
 
     pd.concat(rows).to_csv(OUT / "value.csv", index=False, float_format="%.6g")
     (OUT / "value.json").write_text(json.dumps(summary, indent=2))

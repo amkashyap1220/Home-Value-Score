@@ -6,7 +6,7 @@ Dep. Variable:                   ppsf   R-squared:                       0.412
 Model:                            OLS   Adj. R-squared:                  0.403
 Method:                 Least Squares   F-statistic:                     46.50
 Date:                Wed, 21 Oct 2026   Prob (F-statistic):           2.34e-36
-Time:                        19:54:57   Log-Likelihood:                -1841.6
+Time:                        22:22:53   Log-Likelihood:                -1841.6
 No. Observations:                 338   AIC:                             3695.
 Df Residuals:                     332   BIC:                             3718.
 Df Model:                           5                                         
@@ -41,7 +41,7 @@ Dep. Variable:                   ppsf   R-squared:                       0.251
 Model:                            OLS   Adj. R-squared:                  0.247
 Method:                 Least Squares   F-statistic:                     56.18
 Date:                Wed, 21 Oct 2026   Prob (F-statistic):           9.12e-22
-Time:                        19:54:57   Log-Likelihood:                -1882.4
+Time:                        22:22:54   Log-Likelihood:                -1882.4
 No. Observations:                 338   AIC:                             3771.
 Df Residuals:                     335   BIC:                             3782.
 Df Model:                           2                                         
