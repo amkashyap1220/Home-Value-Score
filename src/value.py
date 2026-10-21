@@ -15,8 +15,10 @@ dollars and crime rates are comparable:
 
   pct(x)      = share of the sample's zips below x (ties count half), 0 to 100
   closeness   = 100 - |pct(zip's value) - pct(target)|
-                100 when the zip is exactly on target, lower the further away it is in
-                either direction. A missing value counts as 50.
+                100 when the zip is exactly on target, lower the further away it is.
+                For schools, safety and price, doing better than the target (better schools,
+                less crime, a lower price) also counts as 100; for the other three, being off
+                in either direction lowers it. A missing value counts as 50.
   score       = sum(weight x closeness) / sum(weight)
   top areas   = the 20 highest scores
 
@@ -46,6 +48,8 @@ TOP = 20
 NAMES = ["schools", "safety", "commute", "walkability", "home_age", "price"]
 COLUMNS = {"buy": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "median_price"],
            "rent": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "rent"]}
+# Which way is "better than the target": +1 higher is better, -1 lower is better, 0 no better side
+DIRECTION = [1, -1, 0, 0, 0, -1]
 # "Typical values": round numbers near each sample's medians
 EXAMPLE = {
     "buy": {"targets": [50, 11, 30, 11, 50, 350000], "weights": [1, 1, 1, 1, 1, 1]},
@@ -74,10 +78,11 @@ def pct(values, x):
 def score(df, mode, targets, weights):
     cols = COLUMNS[mode]
     close = pd.DataFrame(index=df.index)
-    for name, col, t in zip(NAMES, cols, targets):
-        t_pct = pct(df[col], t)
-        p = df[col].map(lambda x: pct(df[col], x) if pd.notna(x) else None)
-        close[name] = (100 - (p - t_pct).abs()).fillna(50)
+    for name, col, t, sign in zip(NAMES, cols, targets, DIRECTION):
+        gap = df[col].map(lambda x: pct(df[col], x) if pd.notna(x) else None) - pct(df[col], t)
+        if sign:
+            gap = gap.where(gap * sign < 0, 0)   # better than the target counts as on target
+        close[name] = (100 - gap.abs()).fillna(50)
     w = pd.Series(weights, index=NAMES, dtype=float)
     return close, (close * w).sum(axis=1) / w.sum()
 
