@@ -1,40 +1,40 @@
-"""The value score behind the interactive map on alexanderk.dev (replaces the
-regression for the post on 2026-10-21; see the change log in docs/decisions.md).
+"""The target score behind the interactive map on alexanderk.dev (replaces the
+weighted value score on 2026-10-21; see the change log in docs/decisions.md).
 
-For every zip, six things are turned into percentile ranks from 0 to 100 within the
-sample, so that higher is always better:
+A reader sets a target and a weight for each of six factors:
 
-  schools, safety, commute, walkability   as in model.py
-  newer homes                             median year built (ACS B25035): newer = higher
-  low price                               median price per sq ft (buyers) or median gross
-                                          rent (renters): cheaper = higher
+  schools       district proficiency percentile within the state (0 to 100)
+  safety        crimes per 1,000 residents a year
+  commute       average one-way commute, minutes
+  walkability   EPA National Walkability Index (1 to 20)
+  home age      median age of the homes, years (ACS B25035)
+  price         median sale price (buyers, Redfin) or median gross rent a month (renters, ACS B25064)
 
-  quality     = weighted average of the first five (weights 0 to 3; 1 each by default).
-                A missing indicator counts as 50, the middle, so a gap in the data neither
-                helps nor hurts a zip.
-  value score = (1 - price share) x quality + price share x low-price percentile
-                (price share 0 to 100%; 50% by default: what you get counts as much as what
-                you pay)
-  value areas = the 20 highest value scores among zips with above-median quality
+How close a zip is to a target is measured in percentile points, so that minutes,
+dollars and crime rates are comparable:
 
-Targets (page only): a reader can also set a target for any factor, such as a longest
-commute or a budget. A zip that meets the target scores 100 on that factor; one that misses
-it scores 100 x its percentile / the target's percentile, so it falls off the further it
-misses. For buyers the budget is compared with the median sale price. A second person can
-enter their own weights and targets; "best for both" ranks zips by the lower of the two
-value scores, among zips above both people's quality medians. None of this changes the
-default results this script computes.
+  pct(x)      = share of the sample's zips below x (ties count half), 0 to 100
+  closeness   = 100 - |pct(zip's value) - pct(target)|
+                100 when the zip is exactly on target, lower the further away it is.
+                For schools, safety and price, doing better than the target (better schools,
+                less crime, a lower price) also counts as 100; for the other three, being off
+                in either direction lowers it. A missing value counts as 50.
+  score       = sum(weight x closeness) / sum(weight)
+  top areas   = the 20 highest scores
 
-The page runs the same steps in the browser (js/chicago-home-value-model.js), so readers can
-set their own weights. This script computes the default ("my") results.
+Two people: each gets their own score; "best for both" ranks by the lower of the two.
+
+The page runs the same steps in the browser (js/chicago-home-value-model.js). The example
+below (typical targets, every weight equal) is the page's "Fill in typical values" button,
+so its output can be checked against the page.
 
 Samples:
-  buyers   at least 20 sales in the 12-month window (as pre-registered), a price per sq ft,
-           at most one missing quality indicator, and a home age
+  buyers   at least 20 sales in the 12-month window (as pre-registered), a median sale
+           price, at most one missing quality indicator, and a home age
   renters  a median gross rent and at least 100 renter-occupied homes, at most one missing
            quality indicator, and a home age
 
-Outputs: output/value.csv (one row per zip and sample), output/value.json (summary)
+Outputs: output/value.csv (one row per zip and sample, example scores), output/value.json
 """
 import json
 
@@ -45,12 +45,16 @@ from fetch import ROOT
 P, OUT = ROOT / "data/processed", ROOT / "output"
 MIN_SALES, MIN_RENTERS = 20, 100
 TOP = 20
-# column -> True if higher is better
-FACTORS = {"school_pct": True, "crimes_per_1000": False, "commute_min": False, "walk_index": True,
-           "home_age": False}
-NAMES = ["schools", "safety", "commute", "walkability", "newer_homes"]
-PRICE = {"buy": "ppsf", "rent": "rent"}
-DEFAULT = {"weights": [1, 1, 1, 1, 1], "price_share": 0.5}
+NAMES = ["schools", "safety", "commute", "walkability", "home_age", "price"]
+COLUMNS = {"buy": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "median_price"],
+           "rent": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "rent"]}
+# Which way is "better than the target": +1 higher is better, -1 lower is better, 0 no better side
+DIRECTION = [1, -1, 0, 0, 0, -1]
+# "Typical values": round numbers near each sample's medians
+EXAMPLE = {
+    "buy": {"targets": [50, 11, 30, 11, 50, 350000], "weights": [1, 1, 1, 1, 1, 1]},
+    "rent": {"targets": [50, 11, 30, 11, 50, 1400], "weights": [1, 1, 1, 1, 1, 1]},
+}
 
 
 def load():
@@ -60,78 +64,55 @@ def load():
           .merge(pd.read_csv(P / "rent.csv", dtype={"zcta": str})[["zcta", "rent", "renter_units"]], on="zcta", how="left"))
     ok = (df.quality_missing < 2) & df.home_age.notna()
     return {
-        "buy": df[ok & (df.sales_12m >= MIN_SALES) & df.ppsf.notna()].reset_index(drop=True),
+        "buy": df[ok & (df.sales_12m >= MIN_SALES) & df.median_price.notna()].reset_index(drop=True),
         "rent": df[ok & (df.renter_units >= MIN_RENTERS) & df.rent.notna()].reset_index(drop=True),
     }
 
 
-def percentiles(df, mode):
-    """Percentile ranks within the sample; higher is better for every column."""
-    out = pd.DataFrame(index=df.index)
-    for (col, higher_better), name in zip(FACTORS.items(), NAMES):
-        r = df[col].rank(ascending=higher_better, method="average")
-        out[name] = (r - 1) / (r.count() - 1) * 100
-    r = df[PRICE[mode]].rank(ascending=False, method="average")
-    out["low_price"] = (r - 1) / (r.count() - 1) * 100
-    return out
+def pct(values, x):
+    """Share of the known values below x, ties counting half, as 0 to 100."""
+    v = values.dropna()
+    return ((v < x).sum() + (v == x).sum() / 2) / len(v) * 100
 
 
-def score(pct, weights, price_share):
+def score(df, mode, targets, weights):
+    cols = COLUMNS[mode]
+    close = pd.DataFrame(index=df.index)
+    for name, col, t, sign in zip(NAMES, cols, targets, DIRECTION):
+        gap = df[col].map(lambda x: pct(df[col], x) if pd.notna(x) else None) - pct(df[col], t)
+        if sign:
+            gap = gap.where(gap * sign < 0, 0)   # better than the target counts as on target
+        close[name] = (100 - gap.abs()).fillna(50)
     w = pd.Series(weights, index=NAMES, dtype=float)
-    quality = (pct[NAMES].fillna(50) * w).sum(axis=1) / w.sum()
-    value = (1 - price_share) * quality + price_share * pct.low_price
-    area = pd.Series(False, index=pct.index)
-    area[value[quality > quality.median()].nlargest(TOP).index] = True
-    return quality, value, area
+    return close, (close * w).sum(axis=1) / w.sum()
 
 
 def main():
-    rows, summary = [], {"default": DEFAULT, "top": TOP}
+    rows, summary = [], {"top": TOP, "example": EXAMPLE}
     for mode, df in load().items():
-        pct = percentiles(df, mode)
-        quality, value, area = score(pct, **DEFAULT)
-        res = df[["zcta", "place_name", "state", "county", "on_list", "list_entry", *FACTORS, PRICE[mode], "median_price"]].rename(
-            columns={PRICE[mode]: "price"}).join(pct.round(3))
-        if mode == "rent":
-            res["median_price"] = None
-        res["quality"], res["value"], res["value_area"] = quality, value, area
-        res["rank"] = value.rank(ascending=False, method="min").astype(int)
+        ex = EXAMPLE[mode]
+        close, s = score(df, mode, ex["targets"], ex["weights"])
+        res = df[["zcta", "place_name", "state", "county", "on_list", "list_entry", *COLUMNS[mode]]].rename(
+            columns={COLUMNS[mode][-1]: "price"})
+        res = res.join(close.add_prefix("close_").round(2))
+        res["score"] = s.round(2)
+        res["rank"] = s.rank(ascending=False, method="min").astype(int)
+        res["top"] = res["rank"] <= TOP
         res.insert(0, "mode", mode)
         rows.append(res)
 
-        top = res[res.value_area].sort_values("value", ascending=False)
-        listed = res[res.on_list]
+        top = res.sort_values("score", ascending=False).head(TOP)
         summary[mode] = {
             "n": len(res),
-            "quality_median": round(quality.median(), 2),
-            "value_areas": top.zcta.tolist(),
+            "top": top.zcta.tolist(),
+            "top_scores": top.score.tolist(),
             "on_list": int(top.on_list.sum()),
-            "on_list_entries": top[top.on_list].list_entry.tolist(),
-            "illinois": int((top.state == "IL").sum()),
-            "list_zips": len(listed),
-            "list_median_rank": float(listed["rank"].median()),
-            "list_median_quality": round(listed.quality.median(), 1),
-            "other_median_quality": round(res[~res.on_list].quality.median(), 1),
-            "list_median_price": round(listed.price.median(), 2),
-            "other_median_price": round(res[~res.on_list].price.median(), 2),
         }
-        # Niche's Illinois list against the other Illinois zips
-        il = res[res.state == "IL"]
-        summary[mode]["illinois_list"] = {
-            "zips": int(il.on_list.sum()),
-            "in_value_areas": int((il.on_list & il.value_area).sum()),
-            "median_rank": float(il[il.on_list]["rank"].median()),
-            "median_quality": round(il[il.on_list].quality.median(), 1),
-            "other_median_quality": round(il[~il.on_list].quality.median(), 1),
-            "median_price": round(il[il.on_list].price.median(), 2),
-            "other_median_price": round(il[~il.on_list].price.median(), 2),
-        }
-        print(f"\n== {mode}: n={len(res)}, {summary[mode]['on_list']} of {TOP} value areas on the Niche list "
-              f"({', '.join(summary[mode]['on_list_entries']) or 'none'}); {summary[mode]['illinois']} in Illinois")
-        print(top[["zcta", "place_name", "state", "price", "quality", "value", "on_list"]].round(1).to_string(index=False))
-        print({k: v for k, v in summary[mode].items() if k.startswith(("list", "other", "illinois_"))})
+        print(f"\n== {mode}: n={len(res)}, example targets {ex['targets']}; "
+              f"{summary[mode]['on_list']} of the top {TOP} on the Niche list")
+        print(top[["zcta", "place_name", "state", "price", "score", "on_list"]].to_string(index=False))
 
-    pd.concat(rows).to_csv(OUT / "value.csv", index=False, float_format="%.4g")
+    pd.concat(rows).to_csv(OUT / "value.csv", index=False, float_format="%.6g")
     (OUT / "value.json").write_text(json.dumps(summary, indent=2))
 
 
