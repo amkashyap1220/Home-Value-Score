@@ -103,7 +103,7 @@ By the decision rule, **H1 is supported**: there are high-quality zips selling w
 - **Missing safety data helps some zips**, such as Robbins, Kentland and Rensselaer, because their score is the average of the other three indicators.
 - **About half the picks depend on the recipe.** 7 of 16 survive dropping an indicator, and two of those (North Chicago and Kentland) look like measurement artifacts on the hand check.
 
-The most defensible picks for a buyer are suburban, have full data, and show up in more than one check: Woodstock (robust to drop-one and in the Illinois-only run), Schaumburg 60173 (robust to drop-one), Joliet 60433 (robust, Illinois-only), Itasca and Sycamore (Illinois-only). These are good leads for a closer look, not proof that these places are undervalued.
+The most defensible picks for a buyer are suburban, have full data, and hold up under the checks: Woodstock and Joliet 60433 (robust to drop-one and in the Illinois-only run), Schaumburg 60173 (robust to drop-one), and Itasca and Sycamore (Illinois-only). These are good leads for a closer look, not proof that these places are undervalued.
 
 ## First run: quality and tax rate only
 
