@@ -8,7 +8,7 @@
 
 The post on the site is an interactive map that scores each zip against the reader's own targets (since 2026-10-21; see the change log in [docs/decisions.md](docs/decisions.md)):
 
-1. The reader sets a target and a weight for six things: schools, safety, commute time, walkability, home age, and median sale price (buyers) or median rent (renters).
+1. The reader sets a target and a weight for six things: schools, safety, commute time, walkability, home age, and median sale price (buyers) or median rent (renters). If they name the town or zip they work in, commute becomes the drive time from each zip to that workplace (OpenStreetMap roads via OSRM, free-flow, so no traffic and no transit) instead of the Census average. Two people can name different workplaces. The page starts filled in with sample values (`SAMPLE` in `src/value.py`) that the reader changes to their own.
 2. Each value and each target becomes a percentile among the metro's zips. Closeness = 100 − the gap between the zip's percentile and the target's, so it's 100 exactly on target. For schools, safety and price, beating the target also counts as 100.
 3. Score = the weighted average of the six closeness values. The 20 highest are the reader's top areas, shown next to the places on Niche's 2026 Best Places to Live lists. With two people, "best for both" ranks by the lower of their two scores.
 
@@ -37,6 +37,7 @@ The original pre-registered study (a regression of price per sq ft on quality, t
 | Rent (added for the value map) | ACS 5-year 2020–2024 summary file, tables B25064 (median gross rent) and B25003 (renter-occupied homes) | https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/ | 2026-10-21 | Public domain |
 | Rent, context only | Zillow Observed Rent Index, zip, all homes, smoothed (through 2026-09) | https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_uc_sfrcondomfr_sm_month.csv | 2026-10-21 | Zillow Research terms of use, with attribution |
 | Zip shapes for the map | Census 2020 ZCTA cartographic boundaries, 1:500,000 | https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip | 2026-10-21 | Public domain |
+| Drive times between zips (added for the workplace commute) | OSRM table service on OpenStreetMap roads (public demo server), from each zip's representative point to every other | https://router.project-osrm.org/ | 2026-10-21 | Map data © OpenStreetMap contributors, ODbL; OSRM is BSD-2 |
 | Chicago neighborhoods | City of Chicago, Boundaries – Neighborhoods | https://data.cityofchicago.org/d/9wp7-iasj | 2026-10-21 | City of Chicago Data Portal terms of use |
 
 Each file's exact URL and download time is in `data/raw/manifest.csv`. Missing police agencies and other data gaps are listed in [docs/data_notes.md](docs/data_notes.md).
@@ -54,7 +55,7 @@ docs/            pre-registration and notes
 
 ## Result
 
-**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the example with typical targets (round numbers near the medians, every weight equal), which is what the page's "Fill in typical values" button gives: for buyers the closest match is Palos Heights (60463), and none of the top 20 are on the Niche list.
+**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the sample values the page starts with (round numbers near the medians, every weight Normal, a job in the Loop, 60606): for buyers the closest match is Justice (60458), and none of the top 20 are on the Niche list. The same targets without a workplace (the Census average commute) are under `no_workplace`; there Palos Heights (60463) comes first.
 
 **Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
@@ -77,9 +78,10 @@ cd src
 ../.venv/bin/python extras.py       # running costs and home age: home age, energy bills, commuting fuel
 ../.venv/bin/python model.py         # quality score, regression, value picks, robustness -> output/
 ../.venv/bin/python rent.py          # median gross rent and renter-occupied homes (+ Zillow ZORI context)
-../.venv/bin/python value.py         # target scores for the example targets, buyers and renters -> output/value.*
 ../.venv/bin/python map.py           # simplified zip shapes for the map -> output/site/
+../.venv/bin/python commute.py       # drive times between all 380 zips (OSRM) -> data/processed/, output/site/
+../.venv/bin/python value.py         # target scores for the sample values, buyers and renters -> output/value.*
 ../.venv/bin/python site_data.py     # small JSON for the map on alexanderk.dev -> output/site/
 ```
 
-Each script downloads what it needs into `data/raw/` (about 4.6 GB, not committed) and skips files already there. Copy the two files in `output/site/` to `writing/` in the site repo.
+Each script downloads what it needs into `data/raw/` (about 4.6 GB, not committed) and skips files already there. Copy the three files in `output/site/` to `writing/` in the site repo.

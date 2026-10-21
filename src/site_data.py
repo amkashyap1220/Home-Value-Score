@@ -14,7 +14,7 @@ import json
 import pandas as pd
 
 from fetch import ROOT
-from value import COLUMNS, EXAMPLE, MIN_RENTERS, MIN_SALES, TOP
+from value import COLUMNS, SAMPLE, MIN_RENTERS, MIN_SALES, TOP
 
 OUT = ROOT / "output"
 
@@ -35,7 +35,7 @@ def main():
         z[r.mode] = [None if pd.isna(getattr(r, c)) else round(float(getattr(r, c)), 2) for c in cols]
 
     site = {
-        "top": TOP, "example": EXAMPLE,
+        "top": TOP, "sample": SAMPLE,
         "samples": {"buy": f"at least {MIN_SALES} sales in the past year",
                     "rent": f"at least {MIN_RENTERS} rented homes"},
         "zips": sorted(zips.values(), key=lambda z: z["zip"]),
