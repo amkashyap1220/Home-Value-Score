@@ -66,3 +66,30 @@ By the rule set before the data was seen, **H1 is supported**: there are high-qu
 - **Only 4 picks are robust** to dropping an indicator, and two of those (North Chicago, which has a short commute because it includes Naval Station Great Lakes, and Kentland) look like measurement artifacts on the hand check.
 
 The most defensible picks for a buyer are the suburban ones that hold up in the Illinois-only run and have full data: Woodstock, Coal City, Itasca, Willow Springs and Joliet 60433. These are good leads for a closer look, not proof that these places are undervalued.
+
+## Post-hoc: extended model with running costs and home age
+
+**Not pre-registered.** This model was added on 2026-10-21 at Alex's request, after the results above were seen, so it doesn't change the H1 decision. Its controls:
+
+- **Home age:** 2026 minus the median year built (ACS B25035).
+- **Home energy bill:** estimated mean monthly electricity plus natural gas bill (ACS B25132 and B25133, from bin midpoints). The median zip pays about $238 a month.
+- **Commuting fuel:** estimated yearly gasoline cost per worker = share who drive × mean commute time, converted to miles at 30 mph, × 2 trips × 250 workdays ÷ 25 mpg × the average pump price over the price window. EIA weekly regular gasoline: Chicago average for Illinois zips ($3.54), Midwest average for Indiana zips ($3.11). EIA publishes no Indiana or NW Indiana series. The median zip is about $930 a year.
+
+| Term | Coefficient | Std. error | p |
+|---|---|---|---|
+| Intercept | 317.4 | 35.7 | < 0.001 |
+| Quality score (per point) | 1.88 | 0.24 | < 0.001 |
+| Tax rate | 347 | 777 | 0.66 |
+| Home age (per year) | 0.06 | 0.19 | 0.74 |
+| Home energy bill (per $/month) | −0.41 | 0.10 | < 0.001 |
+| Commuting fuel (per $/year) | −0.12 | 0.02 | < 0.001 |
+
+n = 338, R² = 0.41 (up from 0.25), residual SD = $56.3/sq ft.
+
+- **Home age** has no measurable effect once the other variables are in the model.
+- **Energy bills and commuting fuel** both lower the price buyers pay, as you'd expect. They're partly proxies, though. Energy bills grow with house size, and commuting fuel is built from commute time, which is already in the quality score (correlation 0.65). So read their coefficients as associations, not as the value buyers place on gas or electricity.
+- **Value picks:** 16, and 15 of them are not on the reputation list. Indiana's share drops from 9 picks to 4, because the cheaper Indiana gas and energy costs now explain part of Indiana's lower prices.
+- **Picks in both models (10):** Kentland, Robbins, North Chicago, Joliet 60433, Rensselaer, Mazon, Woodstock, Valparaiso 46383, Grayslake and Highland.
+- **New in the extended model (6):** Schaumburg 60173, Waukegan 60085, Itasca, Morris, Schiller Park and Sycamore.
+
+The same caveats from the hand check apply. Woodstock, Grayslake, Itasca and Schaumburg are the suburban picks with full data that show up across the primary, Illinois-only or extended runs, and they are the most credible leads.

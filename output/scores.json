@@ -40,6 +40,7 @@
    "quality": 52.2,
    "tax_rate": 0.0199,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -53,6 +54,7 @@
    "quality": 51.8,
    "tax_rate": 0.0081,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -66,6 +68,7 @@
    "quality": 31.4,
    "tax_rate": 0.0077,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -79,6 +82,7 @@
    "quality": 34.3,
    "tax_rate": 0.0076,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -92,6 +96,7 @@
    "quality": 50.3,
    "tax_rate": 0.0077,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -105,6 +110,7 @@
    "quality": 42.0,
    "tax_rate": 0.0084,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -118,6 +124,7 @@
    "quality": 59.5,
    "tax_rate": 0.0044,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -131,6 +138,7 @@
    "quality": 39.2,
    "tax_rate": 0.0197,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -144,6 +152,7 @@
    "quality": 63.7,
    "tax_rate": 0.0197,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -157,6 +166,7 @@
    "quality": 58.5,
    "tax_rate": 0.019,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -170,6 +180,7 @@
    "quality": 57.3,
    "tax_rate": 0.0175,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -183,6 +194,7 @@
    "quality": 66.3,
    "tax_rate": 0.0083,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": true,
    "list_entry": "Valparaiso"
   },
@@ -196,6 +208,7 @@
    "quality": 63.9,
    "tax_rate": 0.0112,
    "value_pick": true,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Munster"
   },
@@ -209,6 +222,7 @@
    "quality": 40.8,
    "tax_rate": 0.0092,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -222,6 +236,7 @@
    "quality": 66.3,
    "tax_rate": 0.0091,
    "value_pick": true,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Chesterton"
   },
@@ -235,6 +250,7 @@
    "quality": 28.2,
    "tax_rate": 0.0089,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -248,6 +264,7 @@
    "quality": 25.5,
    "tax_rate": 0.0074,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -261,6 +278,7 @@
    "quality": 29.2,
    "tax_rate": 0.0082,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -274,6 +292,7 @@
    "quality": 67.9,
    "tax_rate": 0.0242,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -287,6 +306,7 @@
    "quality": 49.2,
    "tax_rate": 0.0146,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -300,6 +320,7 @@
    "quality": 63.5,
    "tax_rate": 0.0095,
    "value_pick": true,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Dyer"
   },
@@ -313,6 +334,7 @@
    "quality": 27.4,
    "tax_rate": 0.0067,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -326,6 +348,7 @@
    "quality": 63.6,
    "tax_rate": 0.0155,
    "value_pick": true,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -339,6 +362,7 @@
    "quality": 56.9,
    "tax_rate": 0.0089,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -352,6 +376,7 @@
    "quality": 68.3,
    "tax_rate": 0.0264,
    "value_pick": true,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -365,6 +390,7 @@
    "quality": 43.8,
    "tax_rate": 0.0264,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -378,6 +404,7 @@
    "quality": 51.3,
    "tax_rate": 0.0096,
    "value_pick": true,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -391,6 +418,7 @@
    "quality": 58.4,
    "tax_rate": 0.0082,
    "value_pick": true,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Valparaiso"
   },
@@ -404,6 +432,7 @@
    "quality": 26.2,
    "tax_rate": 0.0103,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -417,6 +446,7 @@
    "quality": 75.6,
    "tax_rate": 0.0186,
    "value_pick": false,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -430,6 +460,7 @@
    "quality": 62.0,
    "tax_rate": 0.0092,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "St. John"
   },
@@ -443,6 +474,7 @@
    "quality": 35.6,
    "tax_rate": 0.0111,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -456,6 +488,7 @@
    "quality": 69.7,
    "tax_rate": 0.0144,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -469,6 +502,7 @@
    "quality": 37.4,
    "tax_rate": 0.0105,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -482,6 +516,7 @@
    "quality": 73.3,
    "tax_rate": 0.0196,
    "value_pick": false,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -495,6 +530,7 @@
    "quality": 44.5,
    "tax_rate": 0.0223,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -508,6 +544,7 @@
    "quality": 31.1,
    "tax_rate": 0.0095,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -521,6 +558,7 @@
    "quality": 53.0,
    "tax_rate": 0.008,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -534,6 +572,7 @@
    "quality": 35.9,
    "tax_rate": 0.0284,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -547,6 +586,7 @@
    "quality": 73.8,
    "tax_rate": 0.0212,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -560,6 +600,7 @@
    "quality": 60.8,
    "tax_rate": 0.0219,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -573,6 +614,7 @@
    "quality": 27.2,
    "tax_rate": 0.0116,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -586,6 +628,7 @@
    "quality": 61.9,
    "tax_rate": 0.0222,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -599,6 +642,7 @@
    "quality": 51.4,
    "tax_rate": 0.0204,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -612,6 +656,7 @@
    "quality": 50.8,
    "tax_rate": 0.0091,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Schererville"
   },
@@ -625,6 +670,7 @@
    "quality": 47.9,
    "tax_rate": 0.0238,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -638,6 +684,7 @@
    "quality": 56.8,
    "tax_rate": 0.0226,
    "value_pick": false,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -651,6 +698,7 @@
    "quality": 52.1,
    "tax_rate": 0.0212,
    "value_pick": false,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -664,6 +712,7 @@
    "quality": 57.5,
    "tax_rate": 0.0201,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -677,6 +726,7 @@
    "quality": 54.8,
    "tax_rate": 0.0182,
    "value_pick": false,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -690,6 +740,7 @@
    "quality": 33.8,
    "tax_rate": 0.0278,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -703,6 +754,7 @@
    "quality": 52.7,
    "tax_rate": 0.0087,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -716,6 +768,7 @@
    "quality": 51.5,
    "tax_rate": 0.019,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -729,6 +782,7 @@
    "quality": 41.8,
    "tax_rate": 0.0216,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -742,6 +796,7 @@
    "quality": 59.6,
    "tax_rate": 0.0222,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -755,6 +810,7 @@
    "quality": 44.7,
    "tax_rate": 0.01,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -768,6 +824,7 @@
    "quality": 56.6,
    "tax_rate": 0.024,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -781,6 +838,7 @@
    "quality": 37.2,
    "tax_rate": 0.0088,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -794,6 +852,7 @@
    "quality": 56.2,
    "tax_rate": 0.0199,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -807,6 +866,7 @@
    "quality": 55.2,
    "tax_rate": 0.0091,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -820,6 +880,7 @@
    "quality": 78.7,
    "tax_rate": 0.0256,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Buffalo Grove"
   },
@@ -833,6 +894,7 @@
    "quality": 51.7,
    "tax_rate": 0.0084,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -846,6 +908,7 @@
    "quality": 58.6,
    "tax_rate": 0.0206,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -859,6 +922,7 @@
    "quality": 56.9,
    "tax_rate": 0.0241,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -872,6 +936,7 @@
    "quality": 36.5,
    "tax_rate": 0.0105,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -885,6 +950,7 @@
    "quality": 46.1,
    "tax_rate": 0.0183,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -898,6 +964,7 @@
    "quality": 67.7,
    "tax_rate": 0.021,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -911,6 +978,7 @@
    "quality": 50.0,
    "tax_rate": 0.0192,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -924,6 +992,7 @@
    "quality": 52.9,
    "tax_rate": 0.0223,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -937,6 +1006,7 @@
    "quality": 58.8,
    "tax_rate": 0.0191,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -950,6 +1020,7 @@
    "quality": 67.9,
    "tax_rate": 0.0185,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -963,6 +1034,7 @@
    "quality": 65.6,
    "tax_rate": 0.0224,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -976,6 +1048,7 @@
    "quality": 27.4,
    "tax_rate": 0.0155,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -989,6 +1062,7 @@
    "quality": 36.5,
    "tax_rate": 0.0116,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1002,6 +1076,7 @@
    "quality": 35.4,
    "tax_rate": 0.01,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1015,6 +1090,7 @@
    "quality": 27.5,
    "tax_rate": 0.0107,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1028,6 +1104,7 @@
    "quality": 57.6,
    "tax_rate": 0.0199,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1041,6 +1118,7 @@
    "quality": 37.2,
    "tax_rate": 0.0204,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1054,6 +1132,7 @@
    "quality": 58.4,
    "tax_rate": 0.0237,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1067,6 +1146,7 @@
    "quality": 59.5,
    "tax_rate": 0.0202,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1080,6 +1160,7 @@
    "quality": 51.7,
    "tax_rate": 0.0181,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1093,6 +1174,7 @@
    "quality": 47.5,
    "tax_rate": 0.0193,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1106,6 +1188,7 @@
    "quality": 65.8,
    "tax_rate": 0.0214,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1119,6 +1202,7 @@
    "quality": 56.4,
    "tax_rate": 0.0238,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1132,6 +1216,7 @@
    "quality": 26.8,
    "tax_rate": 0.0122,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1145,6 +1230,7 @@
    "quality": 28.3,
    "tax_rate": 0.0261,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1158,6 +1244,7 @@
    "quality": 59.3,
    "tax_rate": 0.0228,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1171,6 +1258,7 @@
    "quality": 54.9,
    "tax_rate": 0.0218,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1184,6 +1272,7 @@
    "quality": 74.3,
    "tax_rate": 0.0176,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1197,6 +1286,7 @@
    "quality": 69.0,
    "tax_rate": 0.0207,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1210,6 +1300,7 @@
    "quality": 60.2,
    "tax_rate": 0.0212,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1223,6 +1314,7 @@
    "quality": 44.8,
    "tax_rate": 0.006,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1236,6 +1328,7 @@
    "quality": 49.8,
    "tax_rate": 0.0198,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1249,6 +1342,7 @@
    "quality": 27.7,
    "tax_rate": 0.0113,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1262,6 +1356,7 @@
    "quality": 52.9,
    "tax_rate": 0.0208,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1275,6 +1370,7 @@
    "quality": 73.4,
    "tax_rate": 0.0189,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Naperville"
   },
@@ -1288,6 +1384,7 @@
    "quality": 51.0,
    "tax_rate": 0.0255,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1301,6 +1398,7 @@
    "quality": 50.8,
    "tax_rate": 0.0239,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1314,6 +1412,7 @@
    "quality": 42.8,
    "tax_rate": 0.0079,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1327,6 +1426,7 @@
    "quality": 61.2,
    "tax_rate": 0.0235,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1340,6 +1440,7 @@
    "quality": 48.0,
    "tax_rate": 0.0235,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1353,6 +1454,7 @@
    "quality": 49.3,
    "tax_rate": 0.0207,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1366,6 +1468,7 @@
    "quality": 67.1,
    "tax_rate": 0.0214,
    "value_pick": false,
+   "extended_pick": true,
    "on_list": false,
    "list_entry": null
   },
@@ -1379,6 +1482,7 @@
    "quality": 67.5,
    "tax_rate": 0.0199,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1392,6 +1496,7 @@
    "quality": 55.3,
    "tax_rate": 0.0207,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1405,6 +1510,7 @@
    "quality": 50.8,
    "tax_rate": 0.0226,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1418,6 +1524,7 @@
    "quality": 72.0,
    "tax_rate": 0.0207,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1431,6 +1538,7 @@
    "quality": 32.3,
    "tax_rate": 0.0241,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1444,6 +1552,7 @@
    "quality": 72.5,
    "tax_rate": 0.0238,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Lincolnshire"
   },
@@ -1457,6 +1566,7 @@
    "quality": 51.6,
    "tax_rate": 0.0246,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1470,6 +1580,7 @@
    "quality": 51.6,
    "tax_rate": 0.0239,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1483,6 +1594,7 @@
    "quality": 25.8,
    "tax_rate": 0.0109,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1496,6 +1608,7 @@
    "quality": 29.6,
    "tax_rate": 0.0217,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1509,6 +1622,7 @@
    "quality": 48.6,
    "tax_rate": 0.024,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1522,6 +1636,7 @@
    "quality": 35.3,
    "tax_rate": 0.0119,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1535,6 +1650,7 @@
    "quality": 47.9,
    "tax_rate": 0.0166,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1548,6 +1664,7 @@
    "quality": 61.7,
    "tax_rate": 0.0194,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1561,6 +1678,7 @@
    "quality": 49.7,
    "tax_rate": 0.0223,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1574,6 +1692,7 @@
    "quality": 45.7,
    "tax_rate": 0.0134,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1587,6 +1706,7 @@
    "quality": 45.0,
    "tax_rate": 0.0262,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1600,6 +1720,7 @@
    "quality": 48.3,
    "tax_rate": 0.0228,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1613,6 +1734,7 @@
    "quality": 51.3,
    "tax_rate": 0.0191,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1626,6 +1748,7 @@
    "quality": 34.8,
    "tax_rate": 0.0325,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1639,6 +1762,7 @@
    "quality": 42.4,
    "tax_rate": 0.0165,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1652,6 +1776,7 @@
    "quality": 72.9,
    "tax_rate": 0.0201,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1665,6 +1790,7 @@
    "quality": 63.8,
    "tax_rate": 0.0217,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1678,6 +1804,7 @@
    "quality": 62.6,
    "tax_rate": 0.0188,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1691,6 +1818,7 @@
    "quality": 48.4,
    "tax_rate": 0.019,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1704,6 +1832,7 @@
    "quality": 64.5,
    "tax_rate": 0.0217,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1717,6 +1846,7 @@
    "quality": 45.7,
    "tax_rate": 0.0232,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1730,6 +1860,7 @@
    "quality": 26.6,
    "tax_rate": 0.0102,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1743,6 +1874,7 @@
    "quality": 76.2,
    "tax_rate": 0.0214,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1756,6 +1888,7 @@
    "quality": 59.2,
    "tax_rate": 0.0202,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1769,6 +1902,7 @@
    "quality": 43.3,
    "tax_rate": 0.0197,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1782,6 +1916,7 @@
    "quality": 51.0,
    "tax_rate": 0.0213,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1795,6 +1930,7 @@
    "quality": 38.2,
    "tax_rate": 0.0241,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1808,6 +1944,7 @@
    "quality": 46.5,
    "tax_rate": 0.0268,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1821,6 +1958,7 @@
    "quality": 37.9,
    "tax_rate": 0.0105,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1834,6 +1972,7 @@
    "quality": 44.7,
    "tax_rate": 0.0279,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1847,6 +1986,7 @@
    "quality": 61.4,
    "tax_rate": 0.0235,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1860,6 +2000,7 @@
    "quality": 46.8,
    "tax_rate": 0.029,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1873,6 +2014,7 @@
    "quality": 45.5,
    "tax_rate": 0.0217,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1886,6 +2028,7 @@
    "quality": 32.8,
    "tax_rate": 0.0269,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1899,6 +2042,7 @@
    "quality": 50.0,
    "tax_rate": 0.0178,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1912,6 +2056,7 @@
    "quality": 66.8,
    "tax_rate": 0.0185,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1925,6 +2070,7 @@
    "quality": 63.1,
    "tax_rate": 0.0197,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1938,6 +2084,7 @@
    "quality": 19.2,
    "tax_rate": 0.0238,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1951,6 +2098,7 @@
    "quality": 49.5,
    "tax_rate": 0.0217,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1964,6 +2112,7 @@
    "quality": 58.2,
    "tax_rate": 0.0227,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1977,6 +2126,7 @@
    "quality": 50.0,
    "tax_rate": 0.0199,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -1990,6 +2140,7 @@
    "quality": 49.1,
    "tax_rate": 0.0211,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2003,6 +2154,7 @@
    "quality": 41.3,
    "tax_rate": 0.0158,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2016,6 +2168,7 @@
    "quality": 52.7,
    "tax_rate": 0.0202,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2029,6 +2182,7 @@
    "quality": 52.9,
    "tax_rate": 0.0194,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2042,6 +2196,7 @@
    "quality": 45.5,
    "tax_rate": 0.0154,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2055,6 +2210,7 @@
    "quality": 37.6,
    "tax_rate": 0.0269,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2068,6 +2224,7 @@
    "quality": 65.4,
    "tax_rate": 0.0216,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2081,6 +2238,7 @@
    "quality": 29.0,
    "tax_rate": 0.0258,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2094,6 +2252,7 @@
    "quality": 55.8,
    "tax_rate": 0.0212,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2107,6 +2266,7 @@
    "quality": 63.2,
    "tax_rate": 0.0176,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2120,6 +2280,7 @@
    "quality": 50.9,
    "tax_rate": 0.0229,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2133,6 +2294,7 @@
    "quality": 46.8,
    "tax_rate": 0.0248,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2146,6 +2308,7 @@
    "quality": 25.7,
    "tax_rate": 0.0259,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2159,6 +2322,7 @@
    "quality": 36.1,
    "tax_rate": 0.0219,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2172,6 +2336,7 @@
    "quality": 45.0,
    "tax_rate": 0.0238,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2185,6 +2350,7 @@
    "quality": 71.2,
    "tax_rate": 0.0204,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2198,6 +2364,7 @@
    "quality": 58.8,
    "tax_rate": 0.0227,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2211,6 +2378,7 @@
    "quality": 37.5,
    "tax_rate": 0.019,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2224,6 +2392,7 @@
    "quality": 43.7,
    "tax_rate": 0.024,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2237,6 +2406,7 @@
    "quality": 53.7,
    "tax_rate": 0.0219,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2250,6 +2420,7 @@
    "quality": 54.1,
    "tax_rate": 0.0216,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2263,6 +2434,7 @@
    "quality": 59.3,
    "tax_rate": 0.0213,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2276,6 +2448,7 @@
    "quality": 51.0,
    "tax_rate": 0.0201,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2289,6 +2462,7 @@
    "quality": 14.7,
    "tax_rate": 0.0087,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2302,6 +2476,7 @@
    "quality": 62.1,
    "tax_rate": 0.0164,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2315,6 +2490,7 @@
    "quality": 50.0,
    "tax_rate": 0.0214,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2328,6 +2504,7 @@
    "quality": 56.9,
    "tax_rate": 0.022,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2341,6 +2518,7 @@
    "quality": 53.9,
    "tax_rate": 0.0215,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2354,6 +2532,7 @@
    "quality": 46.1,
    "tax_rate": 0.0226,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2367,6 +2546,7 @@
    "quality": 24.5,
    "tax_rate": 0.0209,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2380,6 +2560,7 @@
    "quality": 62.6,
    "tax_rate": 0.0254,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Vernon Hills"
   },
@@ -2393,6 +2574,7 @@
    "quality": 55.6,
    "tax_rate": 0.0212,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2406,6 +2588,7 @@
    "quality": 27.4,
    "tax_rate": 0.0072,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2419,6 +2602,7 @@
    "quality": 26.2,
    "tax_rate": 0.0096,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2432,6 +2616,7 @@
    "quality": 49.4,
    "tax_rate": 0.0216,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2445,6 +2630,7 @@
    "quality": 54.0,
    "tax_rate": 0.0238,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2458,6 +2644,7 @@
    "quality": 37.6,
    "tax_rate": 0.0196,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2471,6 +2658,7 @@
    "quality": 52.1,
    "tax_rate": 0.0225,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2484,6 +2672,7 @@
    "quality": 60.3,
    "tax_rate": 0.0217,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2497,6 +2686,7 @@
    "quality": 52.0,
    "tax_rate": 0.0238,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2510,6 +2700,7 @@
    "quality": 73.6,
    "tax_rate": 0.0193,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "La Grange"
   },
@@ -2523,6 +2714,7 @@
    "quality": 47.1,
    "tax_rate": 0.0233,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2536,6 +2728,7 @@
    "quality": 42.1,
    "tax_rate": 0.0243,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2549,6 +2742,7 @@
    "quality": 47.2,
    "tax_rate": 0.0275,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2562,6 +2756,7 @@
    "quality": 40.4,
    "tax_rate": 0.0213,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2575,6 +2770,7 @@
    "quality": 57.8,
    "tax_rate": 0.0206,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2588,6 +2784,7 @@
    "quality": 57.9,
    "tax_rate": 0.0215,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2601,6 +2798,7 @@
    "quality": 43.0,
    "tax_rate": 0.0225,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2614,6 +2812,7 @@
    "quality": 72.5,
    "tax_rate": 0.0227,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2627,6 +2826,7 @@
    "quality": 19.9,
    "tax_rate": 0.0294,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2640,6 +2840,7 @@
    "quality": 67.9,
    "tax_rate": 0.0185,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2653,6 +2854,7 @@
    "quality": 43.9,
    "tax_rate": 0.0223,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2666,6 +2868,7 @@
    "quality": 61.3,
    "tax_rate": 0.0206,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2679,6 +2882,7 @@
    "quality": 56.7,
    "tax_rate": 0.02,
    "value_pick": false,
+   "extended_pick": null,
    "on_list": false,
    "list_entry": null
   },
@@ -2692,6 +2896,7 @@
    "quality": 51.6,
    "tax_rate": 0.0179,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2705,6 +2910,7 @@
    "quality": 42.8,
    "tax_rate": 0.0227,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2718,6 +2924,7 @@
    "quality": 61.3,
    "tax_rate": 0.0231,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2731,6 +2938,7 @@
    "quality": 54.8,
    "tax_rate": 0.0148,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2744,6 +2952,7 @@
    "quality": 64.0,
    "tax_rate": 0.0164,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2757,6 +2966,7 @@
    "quality": 35.2,
    "tax_rate": 0.0226,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2770,6 +2980,7 @@
    "quality": 72.5,
    "tax_rate": 0.0153,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2783,6 +2994,7 @@
    "quality": 47.5,
    "tax_rate": 0.0246,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2796,6 +3008,7 @@
    "quality": 34.6,
    "tax_rate": 0.0256,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2809,6 +3022,7 @@
    "quality": 42.3,
    "tax_rate": 0.0221,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2822,6 +3036,7 @@
    "quality": 45.2,
    "tax_rate": 0.0197,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2835,6 +3050,7 @@
    "quality": 66.7,
    "tax_rate": 0.0197,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2848,6 +3064,7 @@
    "quality": 40.1,
    "tax_rate": 0.0228,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2861,6 +3078,7 @@
    "quality": 64.5,
    "tax_rate": 0.0161,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2874,6 +3092,7 @@
    "quality": 37.2,
    "tax_rate": 0.0209,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2887,6 +3106,7 @@
    "quality": 81.8,
    "tax_rate": 0.02,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2900,6 +3120,7 @@
    "quality": 49.3,
    "tax_rate": 0.019,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2913,6 +3134,7 @@
    "quality": 42.8,
    "tax_rate": 0.019,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2926,6 +3148,7 @@
    "quality": 60.4,
    "tax_rate": 0.0174,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2939,6 +3162,7 @@
    "quality": 36.1,
    "tax_rate": 0.0123,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2952,6 +3176,7 @@
    "quality": 29.9,
    "tax_rate": 0.0058,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2965,6 +3190,7 @@
    "quality": 57.0,
    "tax_rate": 0.0189,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2978,6 +3204,7 @@
    "quality": 49.0,
    "tax_rate": 0.0222,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -2991,6 +3218,7 @@
    "quality": 47.2,
    "tax_rate": 0.0208,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3004,6 +3232,7 @@
    "quality": 69.1,
    "tax_rate": 0.0205,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3017,6 +3246,7 @@
    "quality": 20.3,
    "tax_rate": 0.0277,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3030,6 +3260,7 @@
    "quality": 22.4,
    "tax_rate": 0.0138,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3043,6 +3274,7 @@
    "quality": 57.5,
    "tax_rate": 0.0228,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3056,6 +3288,7 @@
    "quality": 28.3,
    "tax_rate": 0.0169,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3069,6 +3302,7 @@
    "quality": 46.7,
    "tax_rate": 0.0203,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3082,6 +3316,7 @@
    "quality": 18.9,
    "tax_rate": 0.0235,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3095,6 +3330,7 @@
    "quality": 42.8,
    "tax_rate": 0.0188,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3108,6 +3344,7 @@
    "quality": 34.8,
    "tax_rate": 0.0126,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3121,6 +3358,7 @@
    "quality": 49.8,
    "tax_rate": 0.0239,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3134,6 +3372,7 @@
    "quality": 69.5,
    "tax_rate": 0.0196,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3147,6 +3386,7 @@
    "quality": 69.3,
    "tax_rate": 0.017,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Naperville"
   },
@@ -3160,6 +3400,7 @@
    "quality": 17.0,
    "tax_rate": 0.0259,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3173,6 +3414,7 @@
    "quality": 72.4,
    "tax_rate": 0.0235,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3186,6 +3428,7 @@
    "quality": 28.0,
    "tax_rate": 0.0219,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3199,6 +3442,7 @@
    "quality": 28.3,
    "tax_rate": 0.0145,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3212,6 +3456,7 @@
    "quality": 72.8,
    "tax_rate": 0.0197,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3225,6 +3470,7 @@
    "quality": 41.2,
    "tax_rate": 0.0245,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3238,6 +3484,7 @@
    "quality": 48.0,
    "tax_rate": 0.0237,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3251,6 +3498,7 @@
    "quality": 47.3,
    "tax_rate": 0.0143,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3264,6 +3512,7 @@
    "quality": 63.0,
    "tax_rate": 0.0194,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3277,6 +3526,7 @@
    "quality": 54.9,
    "tax_rate": 0.0257,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3290,6 +3540,7 @@
    "quality": 37.4,
    "tax_rate": 0.0186,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3303,6 +3554,7 @@
    "quality": 39.0,
    "tax_rate": 0.0128,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3316,6 +3568,7 @@
    "quality": 55.0,
    "tax_rate": 0.0195,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3329,6 +3582,7 @@
    "quality": 48.8,
    "tax_rate": 0.0217,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3342,6 +3596,7 @@
    "quality": 60.8,
    "tax_rate": 0.0199,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3355,6 +3610,7 @@
    "quality": 58.2,
    "tax_rate": 0.0188,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Naperville"
   },
@@ -3368,6 +3624,7 @@
    "quality": 51.7,
    "tax_rate": 0.0179,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3381,6 +3638,7 @@
    "quality": 17.2,
    "tax_rate": 0.0279,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3394,6 +3652,7 @@
    "quality": 33.5,
    "tax_rate": 0.0201,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3407,6 +3666,7 @@
    "quality": 73.5,
    "tax_rate": 0.0208,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3420,6 +3680,7 @@
    "quality": 40.1,
    "tax_rate": 0.0183,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3433,6 +3694,7 @@
    "quality": 65.4,
    "tax_rate": 0.0241,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3446,6 +3708,7 @@
    "quality": 41.5,
    "tax_rate": 0.0146,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3459,6 +3722,7 @@
    "quality": 52.9,
    "tax_rate": 0.0218,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3472,6 +3736,7 @@
    "quality": 54.4,
    "tax_rate": 0.018,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3485,6 +3750,7 @@
    "quality": 58.3,
    "tax_rate": 0.0252,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3498,6 +3764,7 @@
    "quality": 63.9,
    "tax_rate": 0.019,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3511,6 +3778,7 @@
    "quality": 69.4,
    "tax_rate": 0.0148,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Northbrook"
   },
@@ -3524,6 +3792,7 @@
    "quality": 51.8,
    "tax_rate": 0.0161,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3537,6 +3806,7 @@
    "quality": 54.3,
    "tax_rate": 0.0202,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Naperville"
   },
@@ -3550,6 +3820,7 @@
    "quality": 33.5,
    "tax_rate": 0.0223,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3563,6 +3834,7 @@
    "quality": 74.4,
    "tax_rate": 0.0203,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3576,6 +3848,7 @@
    "quality": 27.1,
    "tax_rate": 0.0044,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3589,6 +3862,7 @@
    "quality": 41.2,
    "tax_rate": 0.0213,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3602,6 +3876,7 @@
    "quality": 44.7,
    "tax_rate": 0.0231,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3615,6 +3890,7 @@
    "quality": 30.1,
    "tax_rate": 0.0122,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3628,6 +3904,7 @@
    "quality": 72.4,
    "tax_rate": 0.02,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3641,6 +3918,7 @@
    "quality": 73.0,
    "tax_rate": 0.018,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Clarendon Hills"
   },
@@ -3654,6 +3932,7 @@
    "quality": 44.7,
    "tax_rate": 0.0184,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3667,6 +3946,7 @@
    "quality": 57.9,
    "tax_rate": 0.0221,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3680,6 +3960,7 @@
    "quality": 38.0,
    "tax_rate": 0.0236,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3693,6 +3974,7 @@
    "quality": 77.0,
    "tax_rate": 0.0171,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3706,6 +3988,7 @@
    "quality": 60.8,
    "tax_rate": 0.022,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Riverside"
   },
@@ -3719,6 +4002,7 @@
    "quality": 26.9,
    "tax_rate": 0.0204,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3732,6 +4016,7 @@
    "quality": 28.2,
    "tax_rate": 0.0096,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3745,6 +4030,7 @@
    "quality": 71.6,
    "tax_rate": 0.0172,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3758,6 +4044,7 @@
    "quality": 33.9,
    "tax_rate": 0.0126,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3771,6 +4058,7 @@
    "quality": 62.0,
    "tax_rate": 0.0251,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3784,6 +4072,7 @@
    "quality": 46.1,
    "tax_rate": 0.025,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3797,6 +4086,7 @@
    "quality": 60.4,
    "tax_rate": 0.0185,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Evanston"
   },
@@ -3810,6 +4100,7 @@
    "quality": 28.7,
    "tax_rate": 0.0124,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3823,6 +4114,7 @@
    "quality": 30.5,
    "tax_rate": 0.0141,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3836,6 +4128,7 @@
    "quality": 48.3,
    "tax_rate": 0.0126,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3849,6 +4142,7 @@
    "quality": 14.5,
    "tax_rate": 0.0083,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3862,6 +4156,7 @@
    "quality": 42.8,
    "tax_rate": 0.0153,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3875,6 +4170,7 @@
    "quality": 58.3,
    "tax_rate": 0.0215,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "River Forest"
   },
@@ -3888,6 +4184,7 @@
    "quality": 38.6,
    "tax_rate": 0.015,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3901,6 +4198,7 @@
    "quality": 46.2,
    "tax_rate": 0.0157,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3914,6 +4212,7 @@
    "quality": 36.6,
    "tax_rate": 0.0138,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3927,6 +4226,7 @@
    "quality": 34.2,
    "tax_rate": 0.014,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3940,6 +4240,7 @@
    "quality": 64.7,
    "tax_rate": 0.0173,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3953,6 +4254,7 @@
    "quality": 73.6,
    "tax_rate": 0.0181,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Evanston"
   },
@@ -3966,6 +4268,7 @@
    "quality": 58.8,
    "tax_rate": 0.0136,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Loop"
   },
@@ -3979,6 +4282,7 @@
    "quality": 51.9,
    "tax_rate": 0.016,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -3992,6 +4296,7 @@
    "quality": 63.3,
    "tax_rate": 0.0179,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4005,6 +4310,7 @@
    "quality": 30.8,
    "tax_rate": 0.0128,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4018,6 +4324,7 @@
    "quality": 41.1,
    "tax_rate": 0.015,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4031,6 +4338,7 @@
    "quality": 43.9,
    "tax_rate": 0.0149,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4044,6 +4352,7 @@
    "quality": 69.3,
    "tax_rate": 0.0172,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4057,6 +4366,7 @@
    "quality": 36.6,
    "tax_rate": 0.014,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4070,6 +4380,7 @@
    "quality": 28.9,
    "tax_rate": 0.013,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4083,6 +4394,7 @@
    "quality": 55.6,
    "tax_rate": 0.0178,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4096,6 +4408,7 @@
    "quality": 69.4,
    "tax_rate": 0.017,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Western Springs"
   },
@@ -4109,6 +4422,7 @@
    "quality": 48.3,
    "tax_rate": 0.015,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4122,6 +4436,7 @@
    "quality": 39.1,
    "tax_rate": 0.0159,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4135,6 +4450,7 @@
    "quality": 30.8,
    "tax_rate": 0.0148,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4148,6 +4464,7 @@
    "quality": 34.1,
    "tax_rate": 0.0166,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4161,6 +4478,7 @@
    "quality": 61.8,
    "tax_rate": 0.0157,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4174,6 +4492,7 @@
    "quality": 66.3,
    "tax_rate": 0.0164,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Hinsdale"
   },
@@ -4187,6 +4506,7 @@
    "quality": 58.7,
    "tax_rate": 0.0163,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Loop"
   },
@@ -4200,6 +4520,7 @@
    "quality": 32.9,
    "tax_rate": 0.0147,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4213,6 +4534,7 @@
    "quality": 56.6,
    "tax_rate": 0.0181,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "West Loop"
   },
@@ -4226,6 +4548,7 @@
    "quality": 34.1,
    "tax_rate": 0.0168,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4239,6 +4562,7 @@
    "quality": 52.4,
    "tax_rate": 0.0166,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4252,6 +4576,7 @@
    "quality": 54.2,
    "tax_rate": 0.0161,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "River North"
   },
@@ -4265,6 +4590,7 @@
    "quality": 64.0,
    "tax_rate": 0.0176,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Wilmette"
   },
@@ -4278,6 +4604,7 @@
    "quality": 56.9,
    "tax_rate": 0.0158,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4291,6 +4618,7 @@
    "quality": 58.3,
    "tax_rate": 0.0175,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "River North"
   },
@@ -4304,6 +4632,7 @@
    "quality": 77.6,
    "tax_rate": 0.016,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4317,6 +4646,7 @@
    "quality": 36.1,
    "tax_rate": 0.0155,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4330,6 +4660,7 @@
    "quality": 46.3,
    "tax_rate": 0.0156,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4343,6 +4674,7 @@
    "quality": 58.1,
    "tax_rate": 0.0167,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "West Loop"
   },
@@ -4356,6 +4688,7 @@
    "quality": 53.5,
    "tax_rate": 0.0151,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Loop"
   },
@@ -4369,6 +4702,7 @@
    "quality": 38.5,
    "tax_rate": 0.0142,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4382,6 +4716,7 @@
    "quality": 36.1,
    "tax_rate": 0.0165,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4395,6 +4730,7 @@
    "quality": 64.2,
    "tax_rate": 0.0139,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4408,6 +4744,7 @@
    "quality": 52.9,
    "tax_rate": 0.0171,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": true,
    "list_entry": "Loop"
   },
@@ -4421,6 +4758,7 @@
    "quality": 43.0,
    "tax_rate": 0.0158,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   },
@@ -4434,6 +4772,7 @@
    "quality": 68.4,
    "tax_rate": 0.0189,
    "value_pick": false,
+   "extended_pick": false,
    "on_list": false,
    "list_entry": null
   }
