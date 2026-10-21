@@ -112,3 +112,13 @@ The model as pre-registered, on the same 338 zips: `price_per_sqft = b0 + b1 * q
 - 16 value picks, 11 not on the reputation list, so it also met the decision rule.
 - 9 of its 16 picks were in Indiana. Indiana zips sat about $61/sq ft below the line, and the tax-rate term didn't absorb Indiana's homestead tax cap. Adding running costs (cheaper gas and energy in Indiana) cut Indiana's picks to 4.
 - 10 picks are in both runs: Kentland, Robbins, North Chicago, Joliet 60433, Rensselaer, Mazon, Woodstock, Valparaiso 46383, Grayslake and Highland. The first run's other picks were Munster, Chesterton, Dyer, Coal City, Griffith and Valparaiso 46385; the main model adds Schaumburg, Waukegan, Itasca, Morris, Schiller Park and Sycamore.
+
+## Value map (post-hoc, 2026-10-21)
+
+The post now uses a weighted value score that readers can change (method and reasons in the change log of [decisions.md](decisions.md); code in `src/value.py`). With the defaults (every quality factor weighted 1, price 50% of the score), the 20 value areas are:
+
+- **Buying (338 zips):** 7 of 20 on the reputation list, all of them Indiana entries (Valparaiso 46383 and 46385, Chesterton, Munster, Dyer, Schererville, St. John). None of the 25 zips from Niche's Illinois top 20 is a value area; their median value rank is 290 of 338. They have a median quality of 66 against 52 for other Illinois zips, and a median of $305/sq ft against $206.
+- **Renting (347 zips):** 5 of 20 on the list (St. John, Clarendon Hills, Valparaiso, Chesterton, Dyer); 14 of the 20 are in Illinois.
+- With the price share at 0% (a pure quality ranking), 5 Illinois list zips come back into the top 20 (Lincolnshire, Buffalo Grove, Clarendon Hills, Naperville twice).
+
+Full lists: `output/value.json`, per-zip scores: `output/value.csv`.

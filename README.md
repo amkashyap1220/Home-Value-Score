@@ -6,12 +6,13 @@
 
 ## Method in short
 
-1. Score each zip from 0 to 100 on quality: schools, safety, commute time and walkability, as equal-weighted percentile ranks.
-2. Regress median price per square foot on the quality score, the property tax rate, and what a home costs to run: home age, the monthly energy bill and the yearly cost of commuting fuel. (The running costs were added after a first run without them; see the change log in [docs/decisions.md](docs/decisions.md).)
-3. A zip is a **value pick** if its quality is above the metro median and its price is more than one standard deviation below what the model predicts.
-4. Compare the value picks with a "word of mouth" list built from Niche's 2026 Best Places to Live rankings.
+The post on the site is an interactive value map (since 2026-10-21; see the change log in [docs/decisions.md](docs/decisions.md)):
 
-The full definitions, thresholds and the rule for accepting or rejecting the hypothesis are in [docs/decisions.md](docs/decisions.md). Race and ethnicity, and proxies for them, are not used anywhere.
+1. Rank each zip from 0 to 100 on six things: schools, safety, commute time, walkability, home age, and price per square foot (buyers) or median rent (renters).
+2. Quality = weighted average of the first five. Value = (1 − price share) × quality + price share × the price rank. Readers set the weights, the price share and optional targets, alone or with a second person.
+3. The 20 highest value scores among zips with above-median quality are the value areas. Compare them with a "word of mouth" list built from Niche's 2026 Best Places to Live rankings.
+
+The original pre-registered study (a regression of price per sq ft on quality, taxes and running costs, with value picks more than one standard deviation below the line) is still computed by `src/model.py`; its result is below. Race and ethnicity, and proxies for them, are not used anywhere.
 
 ## Sources
 
@@ -33,6 +34,9 @@ The full definitions, thresholds and the rule for accepting or rejecting the hyp
 | Home value trend (context only) | Zillow Home Value Index, zip, all homes, smoothed, seasonally adjusted (through 2026-09) | https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv | 2026-10-21 | Zillow Research terms of use, with attribution |
 | Home age, energy bills, means of commuting (added after the first run) | ACS 5-year 2020–2024 summary file, tables B25035, B25132, B25133, B08301 | https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/ | 2026-10-21 | Public domain |
 | Gasoline prices (added after the first run) | EIA weekly retail regular gasoline, Chicago (EMM_EPMR_PTE_YORD_DPG) and Midwest (EMM_EPMR_PTE_R20_DPG) | https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm | 2026-10-21 | Public domain |
+| Rent (added for the value map) | ACS 5-year 2020–2024 summary file, tables B25064 (median gross rent) and B25003 (renter-occupied homes) | https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/ | 2026-10-21 | Public domain |
+| Rent, context only | Zillow Observed Rent Index, zip, all homes, smoothed (through 2026-09) | https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_uc_sfrcondomfr_sm_month.csv | 2026-10-21 | Zillow Research terms of use, with attribution |
+| Zip shapes for the map | Census 2020 ZCTA cartographic boundaries, 1:500,000 | https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip | 2026-10-21 | Public domain |
 | Chicago neighborhoods | City of Chicago, Boundaries – Neighborhoods | https://data.cityofchicago.org/d/9wp7-iasj | 2026-10-21 | City of Chicago Data Portal terms of use |
 
 Each file's exact URL and download time is in `data/raw/manifest.csv`. Missing police agencies and other data gaps are listed in [docs/data_notes.md](docs/data_notes.md).
@@ -50,9 +54,11 @@ docs/            pre-registration and notes
 
 ## Result
 
-**H1 is supported**: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. The strongest leads are Woodstock, Schaumburg 60173, Joliet 60433, Itasca and Sycamore. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
+**Value map (the post).** With my default weights (everything equal, price half the score), none of Niche's Illinois top 20 is among my 20 value areas for buying. 7 of the 20 are on the list, all from Niche's Indiana ranking (Valparaiso, Chesterton, Munster, Dyer, Schererville, St. John). The Illinois value areas include Woodstock, Sycamore, Grayslake, Gilberts, Coal City and Joliet 60433. For renting, 5 of 20 are on the list. Numbers: `output/value.json`.
 
-Write-up, with an interactive chart where readers can set their own weights: [Where's the best home value in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
+**Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
+
+Write-up with the interactive map: [Where's the best home value in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
 
 ## How to rerun
 
@@ -70,7 +76,10 @@ cd src
 ../.venv/bin/python prices.py        # Redfin 12-month price per sq ft and sales (+ Zillow ZHVI context)
 ../.venv/bin/python extras.py       # running costs and home age: home age, energy bills, commuting fuel
 ../.venv/bin/python model.py         # quality score, regression, value picks, robustness -> output/
-../.venv/bin/python site_data.py     # small JSON for the chart on alexanderk.dev -> output/site/
+../.venv/bin/python rent.py          # median gross rent and renter-occupied homes (+ Zillow ZORI context)
+../.venv/bin/python value.py         # value score with the default weights, buyers and renters -> output/value.*
+../.venv/bin/python map.py           # simplified zip shapes for the map -> output/site/
+../.venv/bin/python site_data.py     # small JSON for the map on alexanderk.dev -> output/site/
 ```
 
-Each script downloads what it needs into `data/raw/` (about 4.5 GB, not committed) and skips files already there.
+Each script downloads what it needs into `data/raw/` (about 4.6 GB, not committed) and skips files already there. Copy the two files in `output/site/` to `writing/` in the site repo.

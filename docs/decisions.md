@@ -117,6 +117,19 @@ Everything else is unchanged: the sample filter (plus one zip dropped for missin
 
 **This breaks the pre-registration**, and the write-up says so. The controls were chosen after the first run's results were seen. The first run (quality and tax rate only) is still computed by `src/model.py` and saved in `output/first_run.json`. It also met the decision rule: 16 value picks, 11 not on the reputation list.
 
+**Change (2026-10-21, after all results were seen): the post uses a weighted value score with reader weights, not the regression.** Alex asked for the post to be an interactive tool: sliders set the weights in the value equation and a map shows the value areas, for buyers and for renters, with optional targets and a second person. The property tax rate, energy bills and commuting fuel are dropped; home age becomes a weighted factor. Reason: the point of the project is that "value" depends on what the buyer cares about, and a weighted score lets each reader set that, while the regression residual can't take a price weight. The new method (`src/value.py`, `js/chicago-home-value-model.js` on the site):
+
+- Six percentile ranks within the sample, higher is better: schools, safety, commute, walkability, newer homes (median year built, B25035), and low price (median price per sq ft for buyers; median gross rent, ACS B25064, for renters).
+- `quality = weighted mean of the first five` (default weight 1 each). A missing indicator now counts as 50 instead of being skipped, so a zip with no crime data isn't scored on its other indicators alone (the hand check flagged Robbins for this).
+- `value = (1 - price share) * quality + price share * low price`, default price share 50%.
+- Value areas: the 20 highest value scores among zips with above-median quality (the pre-registered "high quality" rule).
+- Targets: a zip that meets a reader's target scores 100 on that factor; one that misses scores `100 * percentile / target percentile`. A buyer's budget is compared with the median sale price.
+- Two people: "best for both" ranks by the lower of the two value scores, among zips above both quality medians.
+- Samples: buyers as before (at least 20 sales, a price per sq ft, at most one missing quality indicator, a home age: 338 zips). Renters: a median gross rent and at least 100 renter-occupied homes (B25003), same other rules (347 zips). ACS rent is used rather than Zillow's ZORI because ZORI covers only 229 of the 380 zips; the two correlate at 0.75.
+- The reputation comparison is now "how many of the 20 value areas are on the list".
+
+These choices (the 50% default, the top 20, the 100-renter minimum, missing = 50) were made after the regression results were seen, so this is not a pre-registered test. The pre-registered test and its result (H1 supported, `output/first_run.json`, `docs/results.md`) stay as they are. With the defaults, 7 of the 20 buyer value areas are on the reputation list, all of them from the Indiana list; none of the Illinois top 20 is in them. For renters it's 5 of 20.
+
 Clarifications. These fill in details the plan didn't specify; none changes a definition above.
 
 - **Vintages.** ACS 5-year 2020–2024 (latest on the pull date). Crime: 2025, the latest full year in the FBI Crime Data Explorer. Schools: Illinois 2025 Report Card (2024–25 tests, the latest published); Indiana spring 2026 ILEARN and SAT.
