@@ -7,3 +7,7 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+!data/raw/manifest.csv
+
+# Large intermediate, rebuilt by src/blocks.py
+data/processed/blocks.parquet

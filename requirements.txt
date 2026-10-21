@@ -5,3 +5,5 @@ statsmodels
 matplotlib
 jupyter
 requests
+pyarrow
+openpyxl
