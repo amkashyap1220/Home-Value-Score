@@ -6,6 +6,7 @@ Outputs:
   output/excluded_zips.csv               dropped zips and why
   output/model_summary.txt               regression output for the main test
   output/robustness.json                 Illinois-only and drop-one-indicator results
+  output/extended.json                   post-hoc model with home age and energy costs
 """
 import json
 
@@ -39,7 +40,11 @@ def sample():
     return df[df.exclusion == ""].drop(columns="exclusion").reset_index(drop=True), excluded
 
 
-def run(df, indicators=INDICATORS):
+# Post-hoc controls (added 2026-10-21 at Alex's request, after the results were seen)
+EXTRA_CONTROLS = ["home_age", "home_energy_month", "commute_fuel_year"]
+
+
+def run(df, indicators=INDICATORS, controls=()):
     """Percentiles within this sample, quality score, OLS, residuals and value picks."""
     df = df.copy()
     for col, higher_better in indicators.items():
@@ -48,7 +53,7 @@ def run(df, indicators=INDICATORS):
     pcols = [f"p_{LABELS[c]}" for c in indicators]
     df["quality"] = df[pcols].mean(axis=1)
     df["quality_flag"] = df[pcols].isna().any(axis=1)
-    fit = smf.ols("ppsf ~ quality + tax_rate", data=df).fit()
+    fit = smf.ols(" + ".join(["ppsf ~ quality", "tax_rate", *controls]), data=df).fit()
     df["predicted"] = fit.fittedvalues
     df["residual"] = df.ppsf - df.predicted
     sd = df.residual.std(ddof=1)
@@ -95,15 +100,29 @@ def main():
     }
     (OUT / "robustness.json").write_text(json.dumps(robustness, indent=2, default=float))
 
+    # Post-hoc extended model: same sample, percentiles and thresholds, plus extra controls.
+    extras = pd.read_csv(P / "extras.csv", dtype={"zcta": str})[["zcta", *EXTRA_CONTROLS]]
+    ext_in = df.merge(extras, on="zcta", how="left").dropna(subset=EXTRA_CONTROLS)
+    ext_df, ext_fit, ext_sd = run(ext_in, controls=EXTRA_CONTROLS)
+    main_df["extended_pick"] = main_df.zcta.map(ext_df.set_index("zcta").value_pick)
+    main_df["extended_residual"] = main_df.zcta.map(ext_df.set_index("zcta").residual)
+    extended = {**decide(ext_df), "n": len(ext_df), "r2": ext_fit.rsquared, "residual_sd": ext_sd,
+                "coefficients": ext_fit.params.to_dict(), "std_errors": ext_fit.bse.to_dict(),
+                "p_values": ext_fit.pvalues.to_dict()}
+    (OUT / "extended.json").write_text(json.dumps(extended, indent=2, default=float))
+    with open(OUT / "model_summary.txt", "a") as f:
+        f.write(f"\n\nPost-hoc extended model (not pre-registered): {len(ext_df)} zips\n\n{ext_fit.summary()}\n")
+
     cols = ["zcta", "place_name", "state", "county", "sales_12m", "ppsf", "predicted", "residual", "residual_sd",
             "quality", "p_schools", "p_safety", "p_commute", "p_walkability", "quality_flag", "tax_rate",
             "high_quality", "underpriced", "value_pick", "robust_pick", "il_only_pick", "dropone_runs_as_pick",
+            "extended_pick", "extended_residual",
             "on_list", "list_entry", "median_price", "zhvi_1y_change", "school_pct", "crimes_per_1000",
             "crime_year", "commute_min", "walk_index"]
     scores = main_df[cols].sort_values("residual")
     scores.to_csv(OUT / "scores.csv", index=False, float_format="%.4g")
     site = scores[["zcta", "place_name", "state", "ppsf", "predicted", "residual", "quality", "tax_rate",
-                   "value_pick", "on_list", "list_entry"]].round({"ppsf": 1, "predicted": 1, "residual": 1, "quality": 1, "tax_rate": 4})
+                   "value_pick", "extended_pick", "on_list", "list_entry"]].round({"ppsf": 1, "predicted": 1, "residual": 1, "quality": 1, "tax_rate": 4})
     meta = {"n": len(main_df), "intercept": fit.params.Intercept, "b_quality": fit.params.quality,
             "b_tax_rate": fit.params.tax_rate, "r2": fit.rsquared, "residual_sd": sd,
             "quality_median": main_df.quality.median(), **result}
@@ -114,6 +133,8 @@ def main():
     print(fit.summary().tables[1], f"\nR2 = {fit.rsquared:.3f}, residual SD = {sd:.1f}")
     print("MAIN:", result)
     print("IL ONLY:", robustness["illinois_only"])
+    print("EXTENDED:", {k: v for k, v in extended.items() if k not in ("std_errors",)})
+    print(ext_fit.summary().tables[1])
     print("DROP ONE:", {k: v["value_picks"] for k, v in robustness["drop_one"].items()})
     show = ["zcta", "place_name", "county", "sales_12m", "ppsf", "predicted", "residual_sd", "quality",
             "p_schools", "p_safety", "p_commute", "p_walkability", "tax_rate", "on_list", "dropone_runs_as_pick", "il_only_pick"]

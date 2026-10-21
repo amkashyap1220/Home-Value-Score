@@ -998,3 +998,9 @@ IL0162100_property-crime_2024.json,https://cde.ucr.cjis.gov/LATEST/summarized/ag
 chicago_neighborhoods_2012.zip,https://data.cityofchicago.org/download/9wp7-iasj/application%2Fzip,2026-10-21T19:19:11Z
 zip_code_market_tracker.tsv000.gz,https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz,2026-10-21T19:29:31Z
 Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv,https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv,2026-10-21T19:31:06Z
+EMM_EPMR_PTE_YORD_DPGw.xls,https://www.eia.gov/dnav/pet/hist_xls/EMM_EPMR_PTE_YORD_DPGw.xls,2026-10-21T19:37:43Z
+EMM_EPMR_PTE_R20_DPGw.xls,https://www.eia.gov/dnav/pet/hist_xls/EMM_EPMR_PTE_R20_DPGw.xls,2026-10-21T19:37:43Z
+acsdt5y2024-b25035.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25035.dat,2026-10-21T19:38:13Z
+acsdt5y2024-b25132.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25132.dat,2026-10-21T19:38:15Z
+acsdt5y2024-b25133.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25133.dat,2026-10-21T19:38:16Z
+acsdt5y2024-b08301.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b08301.dat,2026-10-21T19:38:17Z
