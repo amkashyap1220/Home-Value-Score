@@ -2,7 +2,7 @@
 
 **Question:** are there high-quality zip codes in the Chicago metro where homes sell for less per square foot than their quality predicts, and are those zips mostly outside the places people usually recommend?
 
-**Status:** method pre-registered in [docs/decisions.md](docs/decisions.md) on 2026-10-21, before any price data was downloaded. Step 2 is done: the zip list, the four quality indicators, the tax rate and the reputation list are built for 380 zips ([data notes](docs/data_notes.md)). No price data has been downloaded yet.
+**Status:** method pre-registered in [docs/decisions.md](docs/decisions.md) on 2026-10-21, before any price data was downloaded. Steps 2 and 3 are done: the inputs for 380 zips ([data notes](docs/data_notes.md)), then prices, the model and the robustness checks ([results](docs/results.md)).
 
 ## Method in short
 
@@ -29,6 +29,8 @@ The full definitions, thresholds and the rule for accepting or rejecting the hyp
 | Indiana schools | Indiana DOE, ILEARN 2026 grades 3–8 and SAT 2026 grade 11, by corporation | https://www.in.gov/doe/it/data-center-and-reports/ | 2026-10-21 | Indiana public data, no license stated |
 | District ids (state id to NCES id) | NCES Common Core of Data 2024 directory, via the Urban Institute Education Data API | https://educationdata.urban.org/api/v1/school-districts/ccd/directory/2024/ | 2026-10-21 | ODC Attribution License (Urban Institute); CCD is public domain |
 | Crime | FBI Crime Data Explorer, agency list and monthly violent and property offenses, 2024–2025 | https://cde.ucr.cjis.gov/LATEST/ | 2026-10-21 | Public domain |
+| Prices | Redfin Data Center, zip code market tracker (All Residential, 90-day periods), window 2025-06 to 2026-05 | https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz | 2026-10-21 | Redfin Data Center terms: free to use with attribution to Redfin |
+| Home value trend (context only) | Zillow Home Value Index, zip, all homes, smoothed, seasonally adjusted (through 2026-09) | https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv | 2026-10-21 | Zillow Research terms of use, with attribution |
 | Chicago neighborhoods | City of Chicago, Boundaries – Neighborhoods | https://data.cityofchicago.org/d/9wp7-iasj | 2026-10-21 | City of Chicago Data Portal terms of use |
 
 Each file's exact URL and download time is in `data/raw/manifest.csv`. Missing police agencies and other data gaps are listed in [docs/data_notes.md](docs/data_notes.md).
@@ -46,7 +48,7 @@ docs/            pre-registration and notes
 
 ## Result
 
-Not yet available.
+By the pre-registered rule, **H1 is supported**: 16 of 339 zips are both above-median quality and more than one standard deviation ($63.5/sq ft) cheaper than predicted, and 11 of them are not on the reputation list. The result is fragile, though. Much of it is Indiana being cheap, only 4 picks survive dropping an indicator, and the hand check flags several picks as measurement artifacts. An Illinois-only rerun still supports H1. Details: [docs/results.md](docs/results.md).
 
 ## How to rerun
 
@@ -61,6 +63,8 @@ cd src
 ../.venv/bin/python crime.py
 ../.venv/bin/python reputation.py
 ../.venv/bin/python indicators.py    # joins everything into data/processed/indicators.csv
+../.venv/bin/python prices.py        # Redfin 12-month price per sq ft and sales (+ Zillow ZHVI context)
+../.venv/bin/python model.py         # quality score, regression, value picks, robustness -> output/
 ```
 
-Each script downloads what it needs into `data/raw/` (about 3 GB, not committed) and skips files already there. Price data and the model come in step 3.
+Each script downloads what it needs into `data/raw/` (about 4.5 GB, not committed) and skips files already there.

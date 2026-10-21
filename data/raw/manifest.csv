@@ -996,3 +996,5 @@ IL0168000_property-crime_2024.json,https://cde.ucr.cjis.gov/LATEST/summarized/ag
 IL0162100_violent-crime_2024.json,https://cde.ucr.cjis.gov/LATEST/summarized/agency/IL0162100/violent-crime?from=01-2024&to=12-2024,2026-10-21T19:18:25Z
 IL0162100_property-crime_2024.json,https://cde.ucr.cjis.gov/LATEST/summarized/agency/IL0162100/property-crime?from=01-2024&to=12-2024,2026-10-21T19:18:25Z
 chicago_neighborhoods_2012.zip,https://data.cityofchicago.org/download/9wp7-iasj/application%2Fzip,2026-10-21T19:19:11Z
+zip_code_market_tracker.tsv000.gz,https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz,2026-10-21T19:29:31Z
+Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv,https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv,2026-10-21T19:31:06Z
