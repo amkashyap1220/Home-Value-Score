@@ -1,0 +1,9 @@
+# Downloads are large and can be re-fetched; see README for sources
+data/raw/*
+!data/raw/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/

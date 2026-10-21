@@ -1,0 +1,7 @@
+pandas
+duckdb
+geopandas
+statsmodels
+matplotlib
+jupyter
+requests
