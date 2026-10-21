@@ -111,6 +111,12 @@ All entries below were made on 2026-10-21, during step 2 (quality and tax data),
 
 **Post-hoc addition (2026-10-21, after the step 3 results were seen): extended model with running costs and home age.** At Alex's request, a second model adds three controls: median home age (ACS B25035), the estimated monthly home electricity and natural gas bill (ACS B25132, B25133), and the estimated yearly gasoline cost of commuting (drive share × commute time × EIA pump price). It uses the same sample, percentiles and thresholds. Reason: a buyer pays these costs on top of the price, and home age was listed above as an unmeasured confounder. Because this was added after the results were seen, **the pre-registered model stays the primary test and decides H1**. The extended model is reported as a labeled secondary analysis. Details are in `src/extras.py` and `docs/results.md`.
 
+**Change (2026-10-21, after all results were seen): the model with running costs and home age becomes the main model.** Alex asked for the extended model above to be the main ranking instead of a secondary analysis. The reason: a buyer judges value on what a home costs to own and run, not only its sale price, so energy bills, commuting fuel and home age belong in the definition of value from the start. The value model is now
+`price_per_sqft = b0 + b1 * quality + b2 * tax_rate + b3 * home_age + b4 * home_energy_month + b5 * commute_fuel_year`.
+Everything else is unchanged: the sample filter (plus one zip dropped for missing home age or cost data, 338 zips), the quality score, the thresholds, the reputation list, the decision rule and the robustness checks, which are rerun on this model.
+
+**This breaks the pre-registration**, and the write-up says so. The controls were chosen after the first run's results were seen. The first run (quality and tax rate only) is still computed by `src/model.py` and saved in `output/first_run.json`. It also met the decision rule: 16 value picks, 11 not on the reputation list.
+
 Clarifications. These fill in details the plan didn't specify; none changes a definition above.
 
 - **Vintages.** ACS 5-year 2020–2024 (latest on the pull date). Crime: 2025, the latest full year in the FBI Crime Data Explorer. Schools: Illinois 2025 Report Card (2024–25 tests, the latest published); Indiana spring 2026 ILEARN and SAT.

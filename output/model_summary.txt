@@ -1,36 +1,4 @@
-Main test: 339 zips, residual SD = 63.46 $/sqft
-
-                            OLS Regression Results                            
-==============================================================================
-Dep. Variable:                   ppsf   R-squared:                       0.251
-Model:                            OLS   Adj. R-squared:                  0.247
-Method:                 Least Squares   F-statistic:                     56.33
-Date:                Wed, 21 Oct 2026   Prob (F-statistic):           8.02e-22
-Time:                        19:39:12   Log-Likelihood:                -1887.5
-No. Observations:                 339   AIC:                             3781.
-Df Residuals:                     336   BIC:                             3792.
-Df Model:                           2                                         
-Covariance Type:            nonrobust                                         
-==============================================================================
-                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-Intercept     88.7840     16.178      5.488      0.000      56.961     120.607
-quality        2.6179      0.250     10.474      0.000       2.126       3.110
-tax_rate    -199.8177    667.883     -0.299      0.765   -1513.576    1113.940
-==============================================================================
-Omnibus:                      115.288   Durbin-Watson:                   1.204
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              350.957
-Skew:                           1.549   Prob(JB):                     6.18e-77
-Kurtosis:                       6.904   Cond. No.                     1.00e+04
-==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large,  1e+04. This might indicate that there are
-strong multicollinearity or other numerical problems.
-
-
-Post-hoc extended model (not pre-registered): 338 zips
+Main test: 338 zips, residual SD = 56.31 $/sqft
 
                             OLS Regression Results                            
 ==============================================================================
@@ -38,7 +6,7 @@ Dep. Variable:                   ppsf   R-squared:                       0.412
 Model:                            OLS   Adj. R-squared:                  0.403
 Method:                 Least Squares   F-statistic:                     46.50
 Date:                Wed, 21 Oct 2026   Prob (F-statistic):           2.34e-36
-Time:                        19:39:12   Log-Likelihood:                -1841.6
+Time:                        19:54:57   Log-Likelihood:                -1841.6
 No. Observations:                 338   AIC:                             3695.
 Df Residuals:                     332   BIC:                             3718.
 Df Model:                           5                                         
@@ -62,4 +30,36 @@ Kurtosis:                       8.760   Cond. No.                     2.43e+05
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 [2] The condition number is large, 2.43e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+First run, without running costs and home age: 338 zips
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   ppsf   R-squared:                       0.251
+Model:                            OLS   Adj. R-squared:                  0.247
+Method:                 Least Squares   F-statistic:                     56.18
+Date:                Wed, 21 Oct 2026   Prob (F-statistic):           9.12e-22
+Time:                        19:54:57   Log-Likelihood:                -1882.4
+No. Observations:                 338   AIC:                             3771.
+Df Residuals:                     335   BIC:                             3782.
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     88.5698     16.212      5.463      0.000      56.679     120.461
+quality        2.6215      0.251     10.460      0.000       2.129       3.114
+tax_rate    -200.6506    668.847     -0.300      0.764   -1516.319    1115.018
+==============================================================================
+Omnibus:                      114.565   Durbin-Watson:                   1.202
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              346.697
+Skew:                           1.546   Prob(JB):                     5.20e-76
+Kurtosis:                       6.880   Cond. No.                     1.00e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large,  1e+04. This might indicate that there are
 strong multicollinearity or other numerical problems.
