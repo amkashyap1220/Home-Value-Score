@@ -1,0 +1,42 @@
+zcta,place_name,state,county,pop2020,sales_12m,exclusion
+46301,Beverly Shores,IN,Porter,580,1,fewer than 20 sales in the 12-month window
+46302,,IN,Porter,141,0,fewer than 20 sales in the 12-month window; no price per sq ft
+46376,Schneider,IN,Lake,367,3,fewer than 20 sales in the 12-month window
+46377,Shelby,IN,Lake,194,0,fewer than 20 sales in the 12-month window; no price per sq ft; no tax rate
+46379,,IN,Newton,295,1,fewer than 20 sales in the 12-month window; no tax rate; missing two or more quality indicators
+46381,,IN,Newton,287,4,fewer than 20 sales in the 12-month window; missing two or more quality indicators
+46393,Wheeler,IN,Porter,376,0,fewer than 20 sales in the 12-month window; no price per sq ft
+47922,Brook,IN,Newton,1482,12,fewer than 20 sales in the 12-month window
+47943,,IN,Jasper,914,3,fewer than 20 sales in the 12-month window
+47964,Mount Ayr,IN,Newton,114,1,fewer than 20 sales in the 12-month window
+47977,Remington,IN,Jasper,2235,18,fewer than 20 sales in the 12-month window
+60029,Golf,IL,Cook,514,5,fewer than 20 sales in the 12-month window
+60034,Hebron,IL,McHenry,2148,17,fewer than 20 sales in the 12-month window
+60072,Ringwood,IL,McHenry,988,6,fewer than 20 sales in the 12-month window
+60075,,IL,Lake,40,0,fewer than 20 sales in the 12-month window; no price per sq ft; no tax rate
+60088,North Chicago,IL,Lake,14188,0,fewer than 20 sales in the 12-month window; no price per sq ft; no tax rate
+60109,Burlington,IL,Kane,580,1,fewer than 20 sales in the 12-month window
+60111,,IL,DeKalb,258,2,fewer than 20 sales in the 12-month window
+60129,,IL,DeKalb,213,0,fewer than 20 sales in the 12-month window; no price per sq ft
+60141,,IL,Cook,131,0,fewer than 20 sales in the 12-month window; no price per sq ft; no tax rate
+60144,Kaneville,IL,Kane,71,0,fewer than 20 sales in the 12-month window; no price per sq ft
+60145,Kingston,IL,DeKalb,2350,14,fewer than 20 sales in the 12-month window
+60157,Roselle,IL,DuPage,2668,18,fewer than 20 sales in the 12-month window
+60165,Stone Park,IL,Cook,4576,19,fewer than 20 sales in the 12-month window
+60180,Union,IL,McHenry,1568,19,fewer than 20 sales in the 12-month window
+60183,Campton Hills,IL,Kane,71,1,fewer than 20 sales in the 12-month window; no tax rate
+60184,Wayne,IL,DuPage,2326,19,fewer than 20 sales in the 12-month window
+60208,Evanston,IL,Cook,213,0,fewer than 20 sales in the 12-month window; no price per sq ft; no tax rate
+60301,Oak Park,IL,Cook,3043,15,fewer than 20 sales in the 12-month window
+60407,Braceville,IL,Grundy,1532,19,fewer than 20 sales in the 12-month window
+60424,Gardner,IL,Grundy,2102,19,fewer than 20 sales in the 12-month window
+60437,Kinsman,IL,Grundy,168,4,fewer than 20 sales in the 12-month window
+60474,South Wilmington,IL,Grundy,824,3,fewer than 20 sales in the 12-month window
+60479,Verona,IL,Grundy,685,9,fewer than 20 sales in the 12-month window
+60511,Big Rock,IL,Kane,1721,14,fewer than 20 sales in the 12-month window
+60512,Yorkville,IL,Kendall,1165,10,fewer than 20 sales in the 12-month window
+60519,Aurora,IL,DuPage,76,2,fewer than 20 sales in the 12-month window; no tax rate
+60536,Millbrook,IL,Kendall,80,1,fewer than 20 sales in the 12-month window
+60539,,IL,Kane,275,0,fewer than 20 sales in the 12-month window; no price per sq ft; no tax rate
+60550,Shabbona,IL,DeKalb,1293,10,fewer than 20 sales in the 12-month window
+60604,Chicago,IL,Cook,897,12,fewer than 20 sales in the 12-month window
