@@ -122,3 +122,7 @@ The post now uses a weighted value score that readers can change (method and rea
 - With the price share at 0% (a pure quality ranking), 5 Illinois list zips come back into the top 20 (Lincolnshire, Buffalo Grove, Clarendon Hills, Naperville twice).
 
 Full lists: `output/value.json`, per-zip scores: `output/value.csv`.
+
+## Target map (2026-10-21)
+
+The weighted value score above was replaced by a target score (change log in [decisions.md](decisions.md)): each reader's ranking depends on their own targets and weights, so there is no single list to report. With the example targets (schools 50th percentile, 11 crimes per 1,000, 30-minute commute, walk index 11, homes 50 years old, $350,000 or $1,400 a month, all weights equal), the top 20 are middle-of-the-road suburbs such as Palos Heights, Bolingbrook, West Dundee and Hanover Park for buyers, and Carpentersville, West Dundee and Elgin for renters. None of the top 20 are on the Niche list in either case. Full lists: `output/value.json`.

@@ -6,11 +6,11 @@
 
 ## Method in short
 
-The post on the site is an interactive value map (since 2026-10-21; see the change log in [docs/decisions.md](docs/decisions.md)):
+The post on the site is an interactive map that scores each zip against the reader's own targets (since 2026-10-21; see the change log in [docs/decisions.md](docs/decisions.md)):
 
-1. Rank each zip from 0 to 100 on six things: schools, safety, commute time, walkability, home age, and price per square foot (buyers) or median rent (renters).
-2. Quality = weighted average of the first five. Value = (1 − price share) × quality + price share × the price rank. Readers set the weights, the price share and optional targets, alone or with a second person.
-3. The 20 highest value scores among zips with above-median quality are the value areas. Compare them with a "word of mouth" list built from Niche's 2026 Best Places to Live rankings.
+1. The reader sets a target and a weight for six things: schools, safety, commute time, walkability, home age, and median sale price (buyers) or median rent (renters).
+2. Each value and each target becomes a percentile among the metro's zips. Closeness = 100 − the gap between the zip's percentile and the target's, so it's 100 exactly on target.
+3. Score = the weighted average of the six closeness values. The 20 highest are the reader's top areas, shown next to the places on Niche's 2026 Best Places to Live lists. With two people, "best for both" ranks by the lower of their two scores.
 
 The original pre-registered study (a regression of price per sq ft on quality, taxes and running costs, with value picks more than one standard deviation below the line) is still computed by `src/model.py`; its result is below. Race and ethnicity, and proxies for them, are not used anywhere.
 
@@ -54,7 +54,7 @@ docs/            pre-registration and notes
 
 ## Result
 
-**Value map (the post).** With my default weights (everything equal, price half the score), none of Niche's Illinois top 20 is among my 20 value areas for buying. 7 of the 20 are on the list, all from Niche's Indiana ranking (Valparaiso, Chesterton, Munster, Dyer, Schererville, St. John). The Illinois value areas include Woodstock, Sycamore, Grayslake, Gilberts, Coal City and Joliet 60433. For renting, 5 of 20 are on the list. Numbers: `output/value.json`.
+**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the example with typical targets (round numbers near the medians, every weight equal), which is what the page's "Fill in typical values" button gives: for buyers the closest match is Palos Heights (60463), and none of the top 20 are on the Niche list.
 
 **Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
@@ -77,7 +77,7 @@ cd src
 ../.venv/bin/python extras.py       # running costs and home age: home age, energy bills, commuting fuel
 ../.venv/bin/python model.py         # quality score, regression, value picks, robustness -> output/
 ../.venv/bin/python rent.py          # median gross rent and renter-occupied homes (+ Zillow ZORI context)
-../.venv/bin/python value.py         # value score with the default weights, buyers and renters -> output/value.*
+../.venv/bin/python value.py         # target scores for the example targets, buyers and renters -> output/value.*
 ../.venv/bin/python map.py           # simplified zip shapes for the map -> output/site/
 ../.venv/bin/python site_data.py     # small JSON for the map on alexanderk.dev -> output/site/
 ```

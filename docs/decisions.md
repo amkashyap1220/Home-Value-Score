@@ -130,6 +130,15 @@ Everything else is unchanged: the sample filter (plus one zip dropped for missin
 
 These choices (the 50% default, the top 20, the 100-renter minimum, missing = 50) were made after the regression results were seen, so this is not a pre-registered test. The pre-registered test and its result (H1 supported, `output/first_run.json`, `docs/results.md`) stay as they are. With the defaults, 7 of the 20 buyer value areas are on the reputation list, all of them from the Indiana list; none of the Illinois top 20 is in them. For renters it's 5 of 20.
 
+**Change (2026-10-21): the map scores closeness to the reader's targets, replacing the weighted value score above.** Alex's reason: a target isn't a pass/fail limit, it's the value the reader wants, and the weight says how much it matters. So a zip should score by how close it is to each target, with the weight as a multiplier; with price weighted highest and everything else low, a zip whose median price equals the target should score near 100. The method (`src/value.py`, `js/chicago-home-value-model.js` on the site):
+
+- Six factors, each with a target and a weight: schools (state percentile), crimes per 1,000, commute minutes, walk index, home age in years, and price (median sale price for buyers, which replaces price per sq ft, since a reader's target is a price; median gross rent for renters).
+- `pct(x)` = share of the sample's zips below x, ties counting half. `closeness = 100 - |pct(zip) - pct(target)|`, symmetric: a zip is penalized for being off target in either direction, as Alex described it. A missing value counts as 50.
+- `score = sum(weight * closeness) / sum(weight)`; weights 0, 0.5, 1, 2, 3 (Ignore to Top). The top areas are the 20 highest scores; the above-median-quality rule is gone, because there's no separate quality score any more.
+- Two people: each gets a score; "best for both" ranks by the lower of the two.
+- The page scores nothing until every factor with a weight above zero has a target. Its "Fill in typical values" button uses round numbers near the sample medians (`EXAMPLE` in `src/value.py`), which is what `output/value.json` reports, so the two can be checked against each other.
+- Samples unchanged (338 buyer zips, 347 renter zips).
+
 Clarifications. These fill in details the plan didn't specify; none changes a definition above.
 
 - **Vintages.** ACS 5-year 2020–2024 (latest on the pull date). Crime: 2025, the latest full year in the FBI Crime Data Explorer. Schools: Illinois 2025 Report Card (2024–25 tests, the latest published); Indiana spring 2026 ILEARN and SAT.
