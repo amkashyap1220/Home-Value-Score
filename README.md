@@ -7,7 +7,7 @@
 ## Method in short
 
 1. Score each zip from 0 to 100 on quality: schools, safety, commute time and walkability, as equal-weighted percentile ranks.
-2. Regress median price per square foot on the quality score and the property tax rate.
+2. Regress median price per square foot on the quality score, the property tax rate, and what a home costs to run: home age, the monthly energy bill and the yearly cost of commuting fuel. (The running costs were added after a first run without them; see the change log in [docs/decisions.md](docs/decisions.md).)
 3. A zip is a **value pick** if its quality is above the metro median and its price is more than one standard deviation below what the model predicts.
 4. Compare the value picks with a "word of mouth" list built from Niche's 2026 Best Places to Live rankings.
 
@@ -31,8 +31,8 @@ The full definitions, thresholds and the rule for accepting or rejecting the hyp
 | Crime | FBI Crime Data Explorer, agency list and monthly violent and property offenses, 2024–2025 | https://cde.ucr.cjis.gov/LATEST/ | 2026-10-21 | Public domain |
 | Prices | Redfin Data Center, zip code market tracker (All Residential, 90-day periods), window 2025-06 to 2026-05 | https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz | 2026-10-21 | Redfin Data Center terms: free to use with attribution to Redfin |
 | Home value trend (context only) | Zillow Home Value Index, zip, all homes, smoothed, seasonally adjusted (through 2026-09) | https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv | 2026-10-21 | Zillow Research terms of use, with attribution |
-| Home age, energy bills, means of commuting (post-hoc) | ACS 5-year 2020–2024 summary file, tables B25035, B25132, B25133, B08301 | https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/ | 2026-10-21 | Public domain |
-| Gasoline prices (post-hoc) | EIA weekly retail regular gasoline, Chicago (EMM_EPMR_PTE_YORD_DPG) and Midwest (EMM_EPMR_PTE_R20_DPG) | https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm | 2026-10-21 | Public domain |
+| Home age, energy bills, means of commuting (added after the first run) | ACS 5-year 2020–2024 summary file, tables B25035, B25132, B25133, B08301 | https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/ | 2026-10-21 | Public domain |
+| Gasoline prices (added after the first run) | EIA weekly retail regular gasoline, Chicago (EMM_EPMR_PTE_YORD_DPG) and Midwest (EMM_EPMR_PTE_R20_DPG) | https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm | 2026-10-21 | Public domain |
 | Chicago neighborhoods | City of Chicago, Boundaries – Neighborhoods | https://data.cityofchicago.org/d/9wp7-iasj | 2026-10-21 | City of Chicago Data Portal terms of use |
 
 Each file's exact URL and download time is in `data/raw/manifest.csv`. Missing police agencies and other data gaps are listed in [docs/data_notes.md](docs/data_notes.md).
@@ -50,7 +50,7 @@ docs/            pre-registration and notes
 
 ## Result
 
-By the pre-registered rule, **H1 is supported**: 16 of 339 zips are both above-median quality and more than one standard deviation ($63.5/sq ft) cheaper than predicted, and 11 of them are not on the reputation list. The result is fragile, though. Much of it is Indiana being cheap, only 4 picks survive dropping an indicator, and the hand check flags several picks as measurement artifacts. An Illinois-only rerun still supports H1. A post-hoc model that also controls for home age, home energy bills and commuting fuel costs (added after the results were seen, so it doesn't decide H1) raises R² from 0.25 to 0.41 and finds 16 picks, 15 of them off the list. Details: [docs/results.md](docs/results.md).
+**H1 is supported**: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) cheaper than the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. The strongest leads are Woodstock, Schaumburg 60173, Joliet 60433, Itasca and Sycamore. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
 Write-up with the interactive chart: [Is there a cheap good zip code in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
 
@@ -68,7 +68,7 @@ cd src
 ../.venv/bin/python reputation.py
 ../.venv/bin/python indicators.py    # joins everything into data/processed/indicators.csv
 ../.venv/bin/python prices.py        # Redfin 12-month price per sq ft and sales (+ Zillow ZHVI context)
-../.venv/bin/python extras.py       # post-hoc controls: home age, energy bills, commuting fuel
+../.venv/bin/python extras.py       # running costs and home age: home age, energy bills, commuting fuel
 ../.venv/bin/python model.py         # quality score, regression, value picks, robustness -> output/
 ../.venv/bin/python site_data.py     # small JSON for the chart on alexanderk.dev -> output/site/
 ```

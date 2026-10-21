@@ -1,12 +1,17 @@
-"""Step 3: quality score, value model, value picks and the pre-registered decision,
-plus the robustness checks. Every threshold here comes from docs/decisions.md.
+"""Step 3: quality score, value model, value picks and the decision, plus the
+robustness checks. Every threshold here comes from docs/decisions.md.
+
+The main model controls for the property tax rate and for running costs and home age
+(home_age, home_energy_month, commute_fuel_year from extras.py). Those three were added
+on 2026-10-21 after a first run without them, and made the main model at Alex's request
+(see the change log in docs/decisions.md). The first run is still computed and saved.
 
 Outputs:
   output/scores.csv, output/scores.json  final table for the site
   output/excluded_zips.csv               dropped zips and why
-  output/model_summary.txt               regression output for the main test
+  output/model_summary.txt               regression output for the main model and the first run
   output/robustness.json                 Illinois-only and drop-one-indicator results
-  output/extended.json                   post-hoc model with home age and energy costs
+  output/first_run.json                  the first run: quality + tax rate only
 """
 import json
 
@@ -23,16 +28,22 @@ INDICATORS = {"school_pct": True, "crimes_per_1000": False, "commute_min": False
 LABELS = {"school_pct": "schools", "crimes_per_1000": "safety", "commute_min": "commute", "walk_index": "walkability"}
 
 
+# Running costs and home age (made by extras.py)
+CONTROLS = ["home_age", "home_energy_month", "commute_fuel_year"]
+
+
 def sample():
     ind = pd.read_csv(P / "indicators.csv", dtype={"zcta": str})
     prices = pd.read_csv(P / "prices.csv", dtype={"zcta": str})
-    df = ind.merge(prices, on="zcta", how="left")
+    extras = pd.read_csv(P / "extras.csv", dtype={"zcta": str})[["zcta", *CONTROLS]]
+    df = ind.merge(prices, on="zcta", how="left").merge(extras, on="zcta", how="left")
     reasons = pd.Series("", index=df.index)
     for mask, why in [
         (df.sales_12m < MIN_SALES, f"fewer than {MIN_SALES} sales in the 12-month window"),
         (df.ppsf.isna(), "no price per sq ft"),
         (df.tax_rate.isna(), "no tax rate"),
         (df.quality_missing >= 2, "missing two or more quality indicators"),
+        (df[CONTROLS].isna().any(axis=1), "no home age or running-cost data"),
     ]:
         reasons[mask] = reasons[mask] + "; " + why
     df["exclusion"] = reasons.str.lstrip("; ")
@@ -40,11 +51,7 @@ def sample():
     return df[df.exclusion == ""].drop(columns="exclusion").reset_index(drop=True), excluded
 
 
-# Post-hoc controls (added 2026-10-21 at Alex's request, after the results were seen)
-EXTRA_CONTROLS = ["home_age", "home_energy_month", "commute_fuel_year"]
-
-
-def run(df, indicators=INDICATORS, controls=()):
+def run(df, indicators=INDICATORS, controls=CONTROLS):
     """Percentiles within this sample, quality score, OLS, residuals and value picks."""
     df = df.copy()
     for col, higher_better in indicators.items():
@@ -100,31 +107,29 @@ def main():
     }
     (OUT / "robustness.json").write_text(json.dumps(robustness, indent=2, default=float))
 
-    # Post-hoc extended model: same sample, percentiles and thresholds, plus extra controls.
-    extras = pd.read_csv(P / "extras.csv", dtype={"zcta": str})[["zcta", *EXTRA_CONTROLS]]
-    ext_in = df.merge(extras, on="zcta", how="left").dropna(subset=EXTRA_CONTROLS)
-    ext_df, ext_fit, ext_sd = run(ext_in, controls=EXTRA_CONTROLS)
-    main_df["extended_pick"] = main_df.zcta.map(ext_df.set_index("zcta").value_pick)
-    main_df["extended_residual"] = main_df.zcta.map(ext_df.set_index("zcta").residual)
-    extended = {**decide(ext_df), "n": len(ext_df), "r2": ext_fit.rsquared, "residual_sd": ext_sd,
-                "coefficients": ext_fit.params.to_dict(), "std_errors": ext_fit.bse.to_dict(),
-                "p_values": ext_fit.pvalues.to_dict()}
-    (OUT / "extended.json").write_text(json.dumps(extended, indent=2, default=float))
+    # The first run, before the running-cost controls were added: same sample, quality + tax rate only
+    first_df, first_fit, first_sd = run(df, controls=())
+    main_df["first_run_pick"] = main_df.zcta.map(first_df.set_index("zcta").value_pick)
+    main_df["first_run_residual"] = main_df.zcta.map(first_df.set_index("zcta").residual)
+    first = {**decide(first_df), "n": len(first_df), "r2": first_fit.rsquared, "residual_sd": first_sd,
+             "coefficients": first_fit.params.to_dict(), "std_errors": first_fit.bse.to_dict(),
+             "p_values": first_fit.pvalues.to_dict()}
+    (OUT / "first_run.json").write_text(json.dumps(first, indent=2, default=float))
     with open(OUT / "model_summary.txt", "a") as f:
-        f.write(f"\n\nPost-hoc extended model (not pre-registered): {len(ext_df)} zips\n\n{ext_fit.summary()}\n")
+        f.write(f"\n\nFirst run, without running costs and home age: {len(first_df)} zips\n\n{first_fit.summary()}\n")
 
     cols = ["zcta", "place_name", "state", "county", "sales_12m", "ppsf", "predicted", "residual", "residual_sd",
             "quality", "p_schools", "p_safety", "p_commute", "p_walkability", "quality_flag", "tax_rate",
             "high_quality", "underpriced", "value_pick", "robust_pick", "il_only_pick", "dropone_runs_as_pick",
-            "extended_pick", "extended_residual",
+            "first_run_pick", "first_run_residual", *CONTROLS,
             "on_list", "list_entry", "median_price", "zhvi_1y_change", "school_pct", "crimes_per_1000",
             "crime_year", "commute_min", "walk_index"]
     scores = main_df[cols].sort_values("residual")
     scores.to_csv(OUT / "scores.csv", index=False, float_format="%.4g")
     site = scores[["zcta", "place_name", "state", "ppsf", "predicted", "residual", "quality", "tax_rate",
-                   "value_pick", "extended_pick", "on_list", "list_entry"]].round({"ppsf": 1, "predicted": 1, "residual": 1, "quality": 1, "tax_rate": 4})
-    meta = {"n": len(main_df), "intercept": fit.params.Intercept, "b_quality": fit.params.quality,
-            "b_tax_rate": fit.params.tax_rate, "r2": fit.rsquared, "residual_sd": sd,
+                   "value_pick", "first_run_pick", "on_list", "list_entry"]].round({"ppsf": 1, "predicted": 1, "residual": 1, "quality": 1, "tax_rate": 4})
+    meta = {"n": len(main_df), "coefficients": fit.params.to_dict(), "std_errors": fit.bse.to_dict(),
+            "p_values": fit.pvalues.to_dict(), "r2": fit.rsquared, "residual_sd": sd,
             "quality_median": main_df.quality.median(), **result}
     (OUT / "scores.json").write_text(json.dumps(
         {"meta": meta, "zips": json.loads(site.to_json(orient="records"))}, indent=1, default=float))
@@ -133,8 +138,7 @@ def main():
     print(fit.summary().tables[1], f"\nR2 = {fit.rsquared:.3f}, residual SD = {sd:.1f}")
     print("MAIN:", result)
     print("IL ONLY:", robustness["illinois_only"])
-    print("EXTENDED:", {k: v for k, v in extended.items() if k not in ("std_errors",)})
-    print(ext_fit.summary().tables[1])
+    print("FIRST RUN:", {k: v for k, v in first.items() if k not in ("std_errors", "p_values")})
     print("DROP ONE:", {k: v["value_picks"] for k, v in robustness["drop_one"].items()})
     show = ["zcta", "place_name", "county", "sales_12m", "ppsf", "predicted", "residual_sd", "quality",
             "p_schools", "p_safety", "p_commute", "p_walkability", "tax_rate", "on_list", "dropone_runs_as_pick", "il_only_pick"]
