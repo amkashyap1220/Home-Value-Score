@@ -9,7 +9,8 @@ A reader sets a target and a weight for each of six factors:
                 workplace zip, the drive time from each zip to it (src/commute.py)
   walkability   EPA National Walkability Index (1 to 20)
   home age      median age of the homes, years (ACS B25035)
-  price         median sale price (buyers, Redfin) or median gross rent a month (renters, ACS B25064)
+  price         median sale price (buyers, Redfin) or rent per person a month (renters: median gross
+                rent, ACS B25064, divided by the average renter household size, B25010)
 
 How close a zip is to a target is measured in percentile points, so that minutes,
 dollars and crime rates are comparable:
@@ -33,7 +34,7 @@ page. The same targets without a workplace (the Census average commute) are a se
 Samples:
   buyers   at least 20 sales in the 12-month window (as pre-registered), a median sale
            price, at most one missing quality indicator, and a home age
-  renters  a median gross rent and at least 100 renter-occupied homes, at most one missing
+  renters  a rent per person and at least 100 renter-occupied homes, at most one missing
            quality indicator, and a home age
 
 Outputs: output/value.csv (one row per zip and sample, sample scores), output/value.json
@@ -49,14 +50,14 @@ MIN_SALES, MIN_RENTERS = 20, 100
 TOP = 20
 NAMES = ["schools", "safety", "commute", "walkability", "home_age", "price"]
 COLUMNS = {"buy": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "median_price"],
-           "rent": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "rent"]}
+           "rent": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "rent_per_person"]}
 # Which way is "better than the target": +1 higher is better, -1 lower is better, 0 no better side
 DIRECTION = [1, -1, 0, 0, 0, -1]
 # Sample values the page starts with: round numbers near each sample's medians, every
 # weight Normal, and a job in the Loop (60606)
 SAMPLE = {
     "buy": {"targets": [50, 11, 30, 11, 50, 350000], "weights": [1, 1, 1, 1, 1, 1], "workplace": "60606"},
-    "rent": {"targets": [50, 11, 30, 11, 50, 1400], "weights": [1, 1, 1, 1, 1, 1], "workplace": "60606"},
+    "rent": {"targets": [50, 11, 30, 11, 50, 650], "weights": [1, 1, 1, 1, 1, 1], "workplace": "60606"},
 }
 
 
@@ -64,11 +65,11 @@ def load():
     df = (pd.read_csv(P / "indicators.csv", dtype={"zcta": str})
           .merge(pd.read_csv(P / "prices.csv", dtype={"zcta": str}), on="zcta", how="left")
           .merge(pd.read_csv(P / "extras.csv", dtype={"zcta": str})[["zcta", "home_age"]], on="zcta", how="left")
-          .merge(pd.read_csv(P / "rent.csv", dtype={"zcta": str})[["zcta", "rent", "renter_units"]], on="zcta", how="left"))
+          .merge(pd.read_csv(P / "rent.csv", dtype={"zcta": str})[["zcta", "rent_per_person", "renter_units"]], on="zcta", how="left"))
     ok = (df.quality_missing < 2) & df.home_age.notna()
     return {
         "buy": df[ok & (df.sales_12m >= MIN_SALES) & df.median_price.notna()].reset_index(drop=True),
-        "rent": df[ok & (df.renter_units >= MIN_RENTERS) & df.rent.notna()].reset_index(drop=True),
+        "rent": df[ok & (df.renter_units >= MIN_RENTERS) & df.rent_per_person.notna()].reset_index(drop=True),
     }
 
 
