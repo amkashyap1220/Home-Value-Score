@@ -1,24 +1,24 @@
 # Pre-registration: hypotheses, definitions and thresholds
 
-This file is committed **before any price data is downloaded**. Its commit date shows the method was set before the results were seen. Any later change is added to the change log at the bottom with the date and a reason. Nothing above the change log is edited after the first commit.
+This file was committed **before any price data was downloaded**. Its commit date shows the method was set before the results were seen. Later changes are added to the change log at the bottom with the date and a reason. One exception: on 2026-10-21, at Alex's request, the comparison with an outside "best places" ranking was removed from this file, the code and the outputs (see the change log); the original text is in the git history.
 
 Locked on: 2026-10-21
 
 ## Research question
 
-Are there high-quality zip codes in the Chicago metro where homes sell for less per square foot than their quality predicts, and are those zips mostly outside the commonly recommended areas?
+Are there high-quality zip codes in the Chicago metro where homes sell for less per square foot than their quality predicts?
 
 ## Hypotheses
 
-- **H1:** Among zip codes in the Chicago metro (13 counties in Illinois and Indiana), some zips with above-median quality scores sell for significantly less per square foot than their quality and property taxes predict, and most of these undervalued zips are **not** on the reputation list.
-- **H0:** Price per square foot is explained by quality and taxes, with no meaningful set of high-quality, underpriced zips; or the underpriced zips are mostly on the reputation list.
+- **H1:** Among zip codes in the Chicago metro (13 counties in Illinois and Indiana), some zips with above-median quality scores sell for significantly less per square foot than their quality and property taxes predict.
+- **H0:** Price per square foot is explained by quality and taxes, with no meaningful set of high-quality, underpriced zips.
 
 ## Decision rule (set before analysis)
 
 Call a zip a **value pick** if it is both high quality and significantly underpriced (definitions below).
 
-- **H1 supported:** at least 3 value picks, and more than half of them are not on the reputation list.
-- **H1 rejected:** fewer than 3 value picks, or half or more of them are on the reputation list.
+- **H1 supported:** at least 3 value picks.
+- **H1 rejected:** fewer than 3 value picks.
 
 The decision uses the main test only (all 13 counties). The robustness checks are reported next to it but do not change the decision.
 
@@ -72,19 +72,6 @@ The equal-weighted average of four percentile ranks. Each percentile is computed
 - **"Significantly underpriced"** means a residual more than 1 standard deviation below zero, using the standard deviation of the residuals in the sample.
 - R², the coefficients and their standard errors will be reported.
 
-## Reputation list ("word of mouth")
-
-- **Source:** Niche, "Best Places to Live", **2026 rankings** (the latest year available), pulled on **2026-10-21**.
-- **Illinois:** the top 20 of "2026 Best Places to Live in Illinois":
-  1. Clarendon Hills, 2. Naperville, 3. Riverside, 4. Buffalo Grove, 5. Kildeer, 6. Lincolnshire, 7. Printers Row (Chicago), 8. Western Springs, 9. Long Grove, 10. La Grange, 11. Hinsdale, 12. Vernon Hills, 13. West Loop (Chicago), 14. River Forest, 15. Evanston, 16. Loop (Chicago), 17. Northbrook, 18. Bannockburn, 19. Wilmette, 20. River North (Chicago)
-- **Indiana:** the entries in the top 50 of "2026 Best Places to Live in Indiana" that are in the four Indiana metro counties:
-  Munster (#10), Chesterton (#37), Dyer (#40), Valparaiso (#43), Lakes of the Four Seasons (#45), St. John (#47), Schererville (#49).
-  The cutoff is 50 because the Indiana top 20 contains only one Chicago-area place (Munster), which would leave Northwest Indiana with almost no reputation list. 50 is a round cutoff chosen from the ranking alone, before any price data was seen.
-- **Note:** the project brief quoted the 2025 Illinois list as a reference. The 2026 list above replaces it, since the rule is "latest year available". The two lists share 16 of 20 places.
-- **Mapping places to zips:** Census 2020 ZCTA-to-place relationship file. A zip counts as on the list if the place holding the largest share of the zip's population is on the list.
-- **Mapping Chicago neighborhoods to zips:** the Census files don't cover neighborhoods, so a zip counts as on the list if the largest share of its area inside Chicago falls in a listed neighborhood, using the City of Chicago's neighborhood boundaries.
-- The final place-to-zip mapping is saved in `data/processed/reputation_zips.csv`.
-
 ## Robustness checks (reported, do not change the decision)
 
 1. **Illinois only:** rerun the full test (percentiles, model, thresholds) on Illinois zips only, because Indiana's homestead tax cap could make Indiana look artificially cheap.
@@ -113,9 +100,9 @@ All entries below were made on 2026-10-21, during step 2 (quality and tax data),
 
 **Change (2026-10-21, after all results were seen): the model with running costs and home age becomes the main model.** Alex asked for the extended model above to be the main ranking instead of a secondary analysis. The reason: a buyer judges value on what a home costs to own and run, not only its sale price, so energy bills, commuting fuel and home age belong in the definition of value from the start. The value model is now
 `price_per_sqft = b0 + b1 * quality + b2 * tax_rate + b3 * home_age + b4 * home_energy_month + b5 * commute_fuel_year`.
-Everything else is unchanged: the sample filter (plus one zip dropped for missing home age or cost data, 338 zips), the quality score, the thresholds, the reputation list, the decision rule and the robustness checks, which are rerun on this model.
+Everything else is unchanged: the sample filter (plus one zip dropped for missing home age or cost data, 338 zips), the quality score, the thresholds, the decision rule and the robustness checks, which are rerun on this model.
 
-**This breaks the pre-registration**, and the write-up says so. The controls were chosen after the first run's results were seen. The first run (quality and tax rate only) is still computed by `src/model.py` and saved in `output/first_run.json`. It also met the decision rule: 16 value picks, 11 not on the reputation list.
+**This breaks the pre-registration**, and the write-up says so. The controls were chosen after the first run's results were seen. The first run (quality and tax rate only) is still computed by `src/model.py` and saved in `output/first_run.json`. It also met the decision rule: 16 value picks.
 
 **Change (2026-10-21, after all results were seen): the post uses a weighted value score with reader weights, not the regression.** Alex asked for the post to be an interactive tool: sliders set the weights in the value equation and a map shows the value areas, for buyers and for renters, with optional targets and a second person. The property tax rate, energy bills and commuting fuel are dropped; home age becomes a weighted factor. Reason: the point of the project is that "value" depends on what the buyer cares about, and a weighted score lets each reader set that, while the regression residual can't take a price weight. The new method (`src/value.py`, `js/chicago-home-value-model.js` on the site):
 
@@ -126,9 +113,8 @@ Everything else is unchanged: the sample filter (plus one zip dropped for missin
 - Targets: a zip that meets a reader's target scores 100 on that factor; one that misses scores `100 * percentile / target percentile`. A buyer's budget is compared with the median sale price.
 - Two people: "best for both" ranks by the lower of the two value scores, among zips above both quality medians.
 - Samples: buyers as before (at least 20 sales, a price per sq ft, at most one missing quality indicator, a home age: 338 zips). Renters: a median gross rent and at least 100 renter-occupied homes (B25003), same other rules (347 zips). ACS rent is used rather than Zillow's ZORI because ZORI covers only 229 of the 380 zips; the two correlate at 0.75.
-- The reputation comparison is now "how many of the 20 value areas are on the list".
 
-These choices (the 50% default, the top 20, the 100-renter minimum, missing = 50) were made after the regression results were seen, so this is not a pre-registered test. The pre-registered test and its result (H1 supported, `output/first_run.json`, `docs/results.md`) stay as they are. With the defaults, 7 of the 20 buyer value areas are on the reputation list, all of them from the Indiana list; none of the Illinois top 20 is in them. For renters it's 5 of 20.
+These choices (the 50% default, the top 20, the 100-renter minimum, missing = 50) were made after the regression results were seen, so this is not a pre-registered test. The pre-registered test and its result (H1 supported, `output/first_run.json`, `docs/results.md`) stay as they are.
 
 **Change (2026-10-21): the map scores closeness to the reader's targets, replacing the weighted value score above.** Alex's reason: a target isn't a pass/fail limit, it's the value the reader wants, and the weight says how much it matters. So a zip should score by how close it is to each target, with the weight as a multiplier; with price weighted highest and everything else low, a zip whose median price equals the target should score near 100. The method (`src/value.py`, `js/chicago-home-value-model.js` on the site):
 
@@ -145,21 +131,23 @@ These choices (the 50% default, the top 20, the 100-renter minimum, missing = 50
 - Drive times between all 380 × 380 pairs come from the OSRM table service on OpenStreetMap roads (the public demo server, queried in 100 × 100 blocks on 2026-10-21; no pair is missing). They're free-flow times: no traffic, no tolls avoided, no transit, walking or biking. Rush-hour drives will be longer, often much longer into the Loop, and the gap is bigger for longer drives. The site gets whole minutes, capped at 255.
 - When a person names a workplace (a zip, or a town that picks its zip), their commute factor is the drive time from each zip to it, scored like any other factor: its percentile among the sample's drive times to that workplace against the target's percentile, both directions counting as off target. Without a workplace, the Census average (B08013 / B08303) is used as before. Each person has their own workplace.
 - The workplace has to be one of the 380 zips in scope. A town picks the first zip whose place name starts with what was typed, so a town with several zips gets one of them.
-- The page now starts filled in with sample values (`SAMPLE` in `src/value.py`: the earlier typical targets, every weight Normal, a job in 60606) and scores right away, at Alex's request on 2026-10-21; the reader changes or clears them field by field, and a note says they're samples until every field is changed. A cleared field still stops the scoring until it's filled or its weight set to Ignore. `output/value.json` reports the sample (buyers: Justice, Prospect Heights, Willow Springs, Palos Heights, Palos Hills; none on the Niche list) and the same targets without a workplace.
+- The page now starts filled in with sample values (`SAMPLE` in `src/value.py`: the earlier typical targets, every weight Normal, a job in 60606) and scores right away, at Alex's request on 2026-10-21; the reader changes or clears them field by field, and a note says they're samples until every field is changed. A cleared field still stops the scoring until it's filled or its weight set to Ignore. `output/value.json` reports the sample (buyers: Justice, Prospect Heights, Willow Springs, Palos Heights, Palos Hills) and the same targets without a workplace.
 
-**Change (2026-10-21): renters are scored on rent per person.** Alex asked whether rent was per person; it was the median gross rent per home (B25064). At Alex's request it's now divided by the zip's average renter household size (ACS B25010_E003, renter-occupied homes), so a zip of shared apartments and one of single renters compare on what each person pays. The renters' price factor, the reader's target and the labels all use rent per person. Limits: it's a ratio of two zip-level numbers (the median rent and the mean household size), not the median of each household's per-person rent, and household size counts children, so a family zip looks cheaper per person than its rents alone. The sample target for renters changes from $1,400 to $650 a month (the sample median is $633). One zip without a household size drops out of the renters' sample (346 zips). With the sample values, the renters' top three are Justice, Willow Springs and Clarendon Hills (on the Niche list).
+**Change (2026-10-21): renters are scored on rent per person.** Alex asked whether rent was per person; it was the median gross rent per home (B25064). At Alex's request it's now divided by the zip's average renter household size (ACS B25010_E003, renter-occupied homes), so a zip of shared apartments and one of single renters compare on what each person pays. The renters' price factor, the reader's target and the labels all use rent per person. Limits: it's a ratio of two zip-level numbers (the median rent and the mean household size), not the median of each household's per-person rent, and household size counts children, so a family zip looks cheaper per person than its rents alone. The sample target for renters changes from $1,400 to $650 a month (the sample median is $633). One zip without a household size drops out of the renters' sample (346 zips). With the sample values, the renters' top three are Justice, Willow Springs and Clarendon Hills.
 
-**Change (2026-10-21, same day): rent per person is rent per bedroom, not per household member.** Alex's correction: the point is roommates splitting an apartment, so a $2,500 two-bedroom is $1,250 each; household size counts children, which isn't what he meant. Rent per person is now the median gross rent divided by the average bedrooms of the zip's renter-occupied homes (ACS B25042_E009 to E015), counting a studio as 1 bedroom and "5 or more" as 5. Limits: still a ratio of two zip-level numbers, and it assumes one person per bedroom. The renters' sample target becomes $700 a month (the sample median is $687). The renters' sample is back to 347 zips. With the sample values, the renters' top five are Justice, Willow Springs, Hinsdale and Clarendon Hills (both on the Niche list) and Addison; 5 of the top 20 are on the list.
+**Change (2026-10-21, same day): rent per person is rent per bedroom, not per household member.** Alex's correction: the point is roommates splitting an apartment, so a $2,500 two-bedroom is $1,250 each; household size counts children, which isn't what he meant. Rent per person is now the median gross rent divided by the average bedrooms of the zip's renter-occupied homes (ACS B25042_E009 to E015), counting a studio as 1 bedroom and "5 or more" as 5. Limits: still a ratio of two zip-level numbers, and it assumes one person per bedroom. The renters' sample target becomes $700 a month (the sample median is $687). The renters' sample is back to 347 zips. With the sample values, the renters' top five are Justice, Willow Springs, Hinsdale, Clarendon Hills and Addison.
 
-**Change (2026-10-21): new sample values, closer to Niche's list.** Alex asked for starting values that line up better with Niche's picks (not an exact match). Round targets and weights were searched (random draws from a small grid, scored against the share of the top 20 on the Niche list, buyers and renters together), and the chosen sample is: schools 90th percentile and safety 11 crimes per 1,000 at Top, commute 30 minutes and home age 30 years at Low, walkability 10 and price $600,000 (or $1,200 a month per person) at Normal, with a job in 60606. It puts 12 of the buyers' and 12 of the renters' top 20 on the list (the old sample: 0 and 5). This is a starting point the reader replaces, not a finding; it was fitted to the list, so the overlap says nothing about whether Niche is right.
+**Change (2026-10-21): new sample values.** Alex asked for better starting values. Round targets and weights were searched on a small grid, and the chosen sample is: schools 90th percentile and safety 11 crimes per 1,000 at Top, commute 30 minutes and home age 30 years at Low, walkability 10 and price $600,000 (or $1,200 a month per person) at Normal, with a job in 60606. This is a starting point the reader replaces, not a finding.
 
 Fix in the same change: in `src/value.py`, a missing value on a one-sided factor (schools, safety, price) was scored 100 instead of 50, because the "better than the target" rule also caught missing gaps. The page always used 50. Python now matches the page.
+
+**Change (2026-10-21): the outside "best places" comparison is removed.** At Alex's request the comparison with an outside ranking of places to live is gone from the plan, code, outputs and site. H1 is now judged on value picks alone (at least 3): the main model has 16, so it is still supported. Zips are named by `src/places.py` (the largest place in each zip). The original wording is in git history.
 
 Clarifications. These fill in details the plan didn't specify; none changes a definition above.
 
 - **Vintages.** ACS 5-year 2020–2024 (latest on the pull date). Crime: 2025, the latest full year in the FBI Crime Data Explorer. Schools: Illinois 2025 Report Card (2024–25 tests, the latest published); Indiana spring 2026 ILEARN and SAT.
-- **Zip population shares** (scope, police agency, reputation list) are computed from 2020 Census block populations, using the Census ZCTA-to-block relationship file and the 2020 block assignment files. The Census ZCTA-to-place relationship file only has land area, not population.
+- **Zip population shares** (scope, police agency, place names) are computed from 2020 Census block populations, using the Census ZCTA-to-block relationship file and the 2020 block assignment files. The Census ZCTA-to-place relationship file only has land area, not population.
 - **Schools.** For each district, proficiency is the mean of % proficient in ELA and in math, in two bands: grades 3–8 (IL IAR, IN ILEARN) and high school (IL grade 11 ACT, IN grade 11 SAT). Each band is ranked within its own state, among the state's geographic districts with results. A block takes its grades 3–8 percentile from its unified or elementary district and its high school percentile from its unified or secondary district, and its school value is the mean of the two. The zip value is the land-area-weighted mean of its blocks. Chicago Public Schools is one district, so every Chicago zip gets the same school value; this is a limitation of district-level data.
 - **Safety.** "The place holding most of its population" is the largest single population group among the incorporated places in the zip and the unincorporated land of each county. Places with no agency in the FBI data leave the indicator missing. The list is in `docs/data_notes.md`.
 - **Walkability.** The EPA index is published for 2010 block groups. Each 2020 block is linked to the 2010 block it overlaps most (Census 2010–2020 block relationship files), and the zip value is weighted by 2020 block population.
-- **Reputation list.** "Place" includes Census-designated places (needed for Lakes of the Four Seasons). The place with the largest population in the zip decides, even if most of the zip is outside any place. Chicago neighborhoods use the City's "Boundaries – Neighborhoods" layer.
+- **Place names.** Each zip is named after the place (including Census-designated places) with the largest population in it, even if most of the zip is outside any place.

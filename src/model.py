@@ -73,9 +73,8 @@ def run(df, indicators=INDICATORS, controls=CONTROLS):
 
 def decide(df):
     picks = df[df.value_pick]
-    off_list = int((~picks.on_list).sum())
-    supported = len(picks) >= 3 and off_list > len(picks) / 2
-    return {"value_picks": len(picks), "not_on_list": off_list, "h1_supported": bool(supported),
+    supported = len(picks) >= 3
+    return {"value_picks": len(picks), "h1_supported": bool(supported),
             "zips": picks.sort_values("residual").zcta.tolist()}
 
 
@@ -122,12 +121,12 @@ def main():
             "quality", "p_schools", "p_safety", "p_commute", "p_walkability", "quality_flag", "tax_rate",
             "high_quality", "underpriced", "value_pick", "robust_pick", "il_only_pick", "dropone_runs_as_pick",
             "first_run_pick", "first_run_residual", *CONTROLS,
-            "on_list", "list_entry", "median_price", "zhvi_1y_change", "school_pct", "crimes_per_1000",
+            "median_price", "zhvi_1y_change", "school_pct", "crimes_per_1000",
             "crime_year", "commute_min", "walk_index"]
     scores = main_df[cols].sort_values("residual")
     scores.to_csv(OUT / "scores.csv", index=False, float_format="%.4g")
     site = scores[["zcta", "place_name", "state", "ppsf", "predicted", "residual", "quality", "tax_rate",
-                   "value_pick", "first_run_pick", "on_list", "list_entry"]].round({"ppsf": 1, "predicted": 1, "residual": 1, "quality": 1, "tax_rate": 4})
+                   "value_pick", "first_run_pick"]].round({"ppsf": 1, "predicted": 1, "residual": 1, "quality": 1, "tax_rate": 4})
     meta = {"n": len(main_df), "coefficients": fit.params.to_dict(), "std_errors": fit.bse.to_dict(),
             "p_values": fit.pvalues.to_dict(), "r2": fit.rsquared, "residual_sd": sd,
             "quality_median": main_df.quality.median(), **result}
@@ -141,7 +140,7 @@ def main():
     print("FIRST RUN:", {k: v for k, v in first.items() if k not in ("std_errors", "p_values")})
     print("DROP ONE:", {k: v["value_picks"] for k, v in robustness["drop_one"].items()})
     show = ["zcta", "place_name", "county", "sales_12m", "ppsf", "predicted", "residual_sd", "quality",
-            "p_schools", "p_safety", "p_commute", "p_walkability", "tax_rate", "on_list", "dropone_runs_as_pick", "il_only_pick"]
+            "p_schools", "p_safety", "p_commute", "p_walkability", "tax_rate", "dropone_runs_as_pick", "il_only_pick"]
     print("\nVALUE PICKS:\n", main_df[main_df.value_pick].sort_values("residual")[show].round(2).to_string(index=False))
     print("\nMOST UNDERPRICED 10:\n", scores.head(10)[show].round(2).to_string(index=False))
     print("\nMOST OVERPRICED 10:\n", scores.tail(10)[show].round(2).to_string(index=False))

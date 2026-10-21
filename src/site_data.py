@@ -1,7 +1,7 @@
 """Step 4: the small JSON files the value map on alexanderk.dev reads.
 
 Reads output/value.csv (made by value.py) and writes:
-  output/site/chicago-home-value.json       one record per zip: name, Niche list entry, and
+  output/site/chicago-home-value.json       one record per zip: name, and
                                             for buyers and renters the six raw values, so
                                             the page can score them against the reader's
                                             own targets and weights
@@ -27,7 +27,6 @@ def main():
             "zip": r.zcta,
             "place": r.place_name if isinstance(r.place_name, str) else "",
             "state": r.state,
-            "list": r.list_entry if r.on_list else None,
         })
         # [school percentile in state, crimes per 1,000, commute min, walk index, home age, price or rent]
         # null when missing; the page computes percentiles and closeness from these
