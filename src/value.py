@@ -10,7 +10,7 @@ A reader sets a target and a weight for each of six factors:
   walkability   EPA National Walkability Index (1 to 20)
   home age      median age of the homes, years (ACS B25035)
   price         median sale price (buyers, Redfin) or rent per person a month (renters: median gross
-                rent, ACS B25064, divided by the average renter household size, B25010)
+                rent, ACS B25064, divided by the average bedrooms of rented homes, B25042)
 
 How close a zip is to a target is measured in percentile points, so that minutes,
 dollars and crime rates are comparable:
@@ -57,7 +57,7 @@ DIRECTION = [1, -1, 0, 0, 0, -1]
 # weight Normal, and a job in the Loop (60606)
 SAMPLE = {
     "buy": {"targets": [50, 11, 30, 11, 50, 350000], "weights": [1, 1, 1, 1, 1, 1], "workplace": "60606"},
-    "rent": {"targets": [50, 11, 30, 11, 50, 650], "weights": [1, 1, 1, 1, 1, 1], "workplace": "60606"},
+    "rent": {"targets": [50, 11, 30, 11, 50, 700], "weights": [1, 1, 1, 1, 1, 1], "workplace": "60606"},
 }
 
 
