@@ -1,0 +1,243 @@
+ori,agency_name,kind,violent,property,months,agency_pop,offenses_prev_year,change_vs_prev_year,incomplete,under_reported,crime_year,crimes_per_1000
+IL0490000,Lake County Sheriff's Office,sheriff,99,524,12,136402,,,False,False,2025,4.567
+IL0220000,DuPage County Sheriff's Office,sheriff,38,280,12,97926,400,-0.205,False,False,2025,3.247
+IL0453400,Campton Hills Police Department,municipal,0,7,12,10899,6,0.1667,False,False,2025,0.6423
+IL0190000,DeKalb County Sheriff's Office,sheriff,28,98,12,16333,134,-0.0597,False,False,2025,7.714
+IL0160000,Cook County Sheriff's Office,sheriff,876,1399,12,114817,2090,0.08852,False,False,2025,19.81
+IN0640000,Porter County Sheriff's Office,sheriff,46,125,12,73754,115,0.487,False,False,2025,2.319
+IN0450000,Lake County Sheriff's Office,sheriff,54,126,12,52201,223,-0.1928,False,False,2025,3.448
+IL0163200,Evanston Police Department,municipal,87,1803,12,75562,2152,-0.1217,False,False,2025,25.01
+IL0450000,Kane County Sheriff's Office,sheriff,78,187,12,63525,289,-0.08304,False,False,2025,4.172
+IN0560000,Newton County Sheriff's Office,sheriff,0,7,4,14246,,,True,False,,
+IL0320000,Grundy County Sheriff's Office,sheriff,12,50,12,15599,98,-0.3673,False,False,2025,3.975
+IL0164100,Golf Police Department,municipal,0,0,12,503,6,-1,False,False,2025,0
+IN0370000,Jasper County Sheriff's Office,sheriff,0,0,1,26598,,,True,False,,
+ILCPD0000,Chicago Police Department,municipal,11417,80265,12,2715488,1.063e+05,-0.1378,False,False,2025,33.76
+IL0320300,Mazon Police Department,municipal,0,0,12,983,0,,False,False,2025,0
+IL0560000,McHenry County Sheriff's Office,sheriff,31,140,12,65751,219,-0.2192,False,False,2025,2.601
+IL0470000,Kendall County Sheriff's Office,sheriff,41,126,12,28142,173,-0.03468,False,False,2025,5.934
+IN0370300,Remington Police Department,municipal,0,0,0,1372,,,True,False,,
+IL0560600,Hebron Police Department,municipal,0,0,12,1399,1,-1,False,False,2025,0
+IL0190600,Waterman Police Department,municipal,0,0,5,1574,0,,True,False,2024,0
+IL0190900,Kirkland Police Department,municipal,0,2,12,1615,3,-0.3333,False,False,2025,1.238
+IL0190200,Hinckley Police Department,municipal,1,8,12,1971,19,-0.5263,False,False,2025,4.566
+IL0561300,Richmond Police Department,municipal,0,10,12,2133,19,-0.4737,False,False,2025,4.688
+IL0991700,Elwood Police Department,municipal,1,22,12,2254,21,0.09524,False,False,2025,10.2
+IL0221800,Wayne Police Department,municipal,0,1,1,2286,2,-0.5,True,False,2024,0.8949
+IL0164B00,Thornton Police Department,municipal,5,47,12,2281,46,0.1304,False,False,2025,22.8
+IL0165600,Kenilworth Police Department,municipal,0,10,12,2420,9,0.1111,False,False,2025,4.132
+IL0168100,Oak Park Police Department,municipal,124,1575,12,52550,2028,-0.1622,False,False,2025,32.33
+IL0991000,Peotone Police Department,municipal,0,32,12,4247,19,0.6842,False,False,2025,7.535
+IL0165100,Hometown Police Department,municipal,0,0,2,4160,71,-1,True,False,2024,17.42
+IL0190700,Cortland Police Department,municipal,5,31,12,4642,24,0.5,False,False,2025,7.755
+IL0161B00,Stone Park Police Department,municipal,3,2,12,4451,11,-0.5455,False,False,2025,1.123
+IL0169700,Robbins Police Department,municipal,0,0,0,4554,,,True,False,,
+IL0164A00,Skokie Police Department,municipal,100,1675,12,65401,1865,-0.04826,False,False,2025,27.14
+IL0560400,Fox River Grove Police Department,municipal,2,16,12,4763,19,-0.05263,False,False,2025,3.779
+IL0990100,Beecher Police Department,municipal,5,21,12,4733,21,0.2381,False,False,2025,5.493
+IL0168200,Olympia Fields Police Department,municipal,8,176,12,4564,211,-0.128,False,False,2025,40.32
+IL0162A00,Schaumburg Police Department,municipal,52,1262,12,76773,1898,-0.3077,False,False,2025,17.12
+IL0490800,Highwood Police Department,municipal,3,25,12,5430,35,-0.2,False,False,2025,5.157
+IL0990900,Monee Police Department,municipal,7,61,12,5145,89,-0.236,False,False,2025,13.22
+IL0161C00,Willow Springs Police Department,municipal,0,22,12,5779,22,0,False,False,2025,3.807
+IL0160800,Berkeley Police Department,municipal,3,36,12,5115,36,0.08333,False,False,2025,7.625
+IL0190100,Genoa Police Department,municipal,0,0,0,5567,,,True,False,,
+IL0169100,Posen Police Department,municipal,31,132,12,5374,130,0.2538,False,False,2025,30.33
+IL0561900,Spring Grove Police Department,municipal,1,14,12,5573,23,-0.3478,False,False,2025,2.692
+IN0450500,Gary Police Department,municipal,936,2068,12,67197,3162,-0.04997,False,False,2025,44.7
+IL0990300,Braidwood Police Department,municipal,8,28,12,6259,29,0.2414,False,False,2025,5.752
+IL0490900,Lake Bluff Police Department,municipal,3,59,12,5598,48,0.2917,False,False,2025,11.08
+IL0991400,Wilmington Police Department,municipal,12,55,12,5624,57,0.1754,False,False,2025,11.91
+IL0320100,Coal City Police Department,municipal,2,26,12,5838,27,0.03704,False,False,2025,4.796
+IN0370100,Rensselaer Police Department,municipal,0,0,0,5611,,,True,False,,
+IL0450500,Elburn Police Department,municipal,2,35,12,6990,39,-0.05128,False,False,2025,5.293
+IL0492200,Winthrop Harbor Police Department,municipal,5,23,12,6560,,,False,False,2025,4.268
+IL0992000,University Park Police Department,municipal,12,130,12,7021,142,0,False,False,2025,20.23
+IL0492900,Lincolnshire Police Department,municipal,4,80,12,8025,77,0.09091,False,False,2025,10.47
+IN0450700,Hammond Police Department,municipal,445,1877,12,75605,2891,-0.1968,False,False,2025,30.71
+IL0190300,Sandwich Police Department,municipal,5,16,12,7321,23,-0.08696,False,False,2025,2.868
+IL0561000,Marengo Police Department,municipal,15,51,12,7736,67,-0.01493,False,False,2025,8.532
+IL0451700,West Dundee Police Department,municipal,8,61,12,7912,89,-0.2247,False,False,2025,8.721
+IL0161200,Broadview Police Department,municipal,0,0,0,7844,,,True,False,,
+IL0492400,Island Lake Police Department,municipal,2,35,12,8074,49,-0.2449,False,False,2025,4.583
+IL0221500,Oak Brook Police Department,municipal,8,485,12,8198,512,-0.03711,False,False,2025,60.14
+IL0164700,Hillside Police Department,municipal,16,163,12,7970,170,0.05294,False,False,2025,22.46
+IL0452100,Gilberts Police Department,municipal,0,14,12,9261,22,-0.3636,False,False,2025,1.512
+IL0990500,Crete Police Department,municipal,13,78,12,8355,91,0,False,False,2025,10.89
+IL0163800,Glencoe Police Department,municipal,0,45,12,8694,53,-0.1509,False,False,2025,5.176
+IL0490400,Fox Lake Police Department,municipal,29,94,12,10916,219,-0.4384,False,False,2025,11.27
+IL0164000,Glenwood Police Department,municipal,10,82,12,8352,162,-0.4321,False,False,2025,11.02
+IL0220500,Clarendon Hills Police Department,municipal,4,39,12,8707,40,0.075,False,False,2025,4.939
+IL0990000,Will County Sheriff's Office,sheriff,161,484,12,103299,736,-0.1236,False,False,2025,6.244
+IL0451500,Sugar Grove Police Department,municipal,0,23,12,9359,33,-0.303,False,False,2025,2.458
+IL0169600,Riverside Police Department,municipal,4,91,12,8891,75,0.2667,False,False,2025,10.68
+IL0991600,Manhattan Police Department,municipal,5,23,12,11108,25,0.12,False,False,2025,2.521
+IL0560500,Harvard Police Department,municipal,8,53,12,9396,71,-0.1408,False,False,2025,6.492
+IL0222200,Winfield Police Department,municipal,5,21,12,10300,41,-0.3659,False,False,2025,2.524
+IL0168A00,Steger Police Department,municipal,22,161,12,9326,191,-0.04188,False,False,2025,19.62
+IL0221100,Itasca Police Department,municipal,3,45,12,9497,76,-0.3684,False,False,2025,5.054
+IL0163400,Flossmoor Police Department,municipal,8,206,12,9303,257,-0.1673,False,False,2025,23
+IL0451100,Pingree Grove Police Department,municipal,6,17,12,11809,19,0.2105,False,False,2025,1.948
+IL0169500,River Grove Police Department,municipal,11,125,12,10387,156,-0.1282,False,False,2025,13.09
+IL0169300,Riverdale Police Department,municipal,39,252,12,10221,358,-0.1872,False,False,2025,28.47
+IN0451200,Lowell Police Department,municipal,1,13,12,11643,26,-0.4615,False,False,2025,1.202
+IL0160300,Barrington Police Department,municipal,8,60,12,10592,101,-0.3267,False,False,2025,6.42
+IL0166300,Lyons Police Department,municipal,0,0,0,10359,,,True,False,,
+IL0162400,Crestwood Police Department,municipal,15,258,12,10473,235,0.1617,False,False,2025,26.07
+IL0164C00,Worth Police Department,municipal,23,91,12,10593,137,-0.1679,False,False,2025,10.76
+IL0223100,Burr Ridge Police Department,municipal,7,78,12,11208,96,-0.1146,False,False,2025,7.584
+IL0163B00,Summit Police Department,municipal,20,104,12,10675,211,-0.4123,False,False,2025,11.62
+IL0166500,Markham Police Department,municipal,0,0,0,11210,,,True,False,,
+IN0450400,Lake Station Police Department,municipal,0,0,0,12975,,,True,False,,
+IL0163A00,Schiller Park Police Department,municipal,0,0,0,11242,,,True,False,,
+IL0169400,River Forest Police Department,municipal,12,188,12,11833,285,-0.2982,False,False,2025,16.9
+IL0470100,Plano Police Department,municipal,6,61,12,12878,83,-0.1928,False,False,2025,5.203
+IL0168500,Palos Heights Police Department,municipal,6,100,12,12007,107,-0.009346,False,False,2025,8.828
+IL0165500,Justice Police Department,municipal,4,27,12,12194,,,False,False,2025,2.542
+IL0169200,Richton Park Police Department,municipal,37,230,12,12446,300,-0.11,False,False,2025,21.45
+IL0320600,Minooka Police Department,municipal,6,25,12,12945,44,-0.2955,False,False,2025,2.395
+IL0163C00,Winnetka Police Department,municipal,1,58,12,12445,91,-0.3516,False,False,2025,4.741
+IL0167700,Northlake Police Department,municipal,18,92,12,12345,223,-0.5067,False,True,2024,18.43
+IL0991800,Channahon Police Department,municipal,9,48,12,14629,84,-0.3214,False,False,2025,3.896
+IL0164500,Hazel Crest Police Department,municipal,46,294,12,12941,411,-0.1727,False,False,2025,26.27
+IL0222500,Warrenville Police Department,municipal,13,109,12,15685,117,0.04274,False,False,2025,7.778
+IL0165800,La Grange Park Police Department,municipal,8,52,12,13402,91,-0.3407,False,False,2025,4.477
+IL0166100,Lincolnwood Police Department,municipal,16,233,12,12968,338,-0.2633,False,False,2025,19.2
+IL0167B00,Western Springs Police Department,municipal,3,31,12,13515,37,-0.08108,False,False,2025,2.516
+IL0163900,Glenview Police Department,municipal,43,456,12,47409,639,-0.2191,False,False,2025,10.53
+IN0450100,Cedar Lake Police Department,municipal,14,33,12,17007,57,-0.1754,False,False,2025,2.764
+IL0222300,Wood Dale Police Department,municipal,9,128,12,13971,162,-0.1543,False,False,2025,9.806
+IL0492000,Wauconda Police Department,municipal,6,16,12,14052,34,-0.3529,False,False,2025,1.566
+IL0320400,Morris Police Department,municipal,22,155,12,14677,275,-0.3564,False,False,2025,12.06
+IL0491500,North Chicago Police Department,municipal,62,195,12,30614,233,0.103,False,False,2025,8.395
+IN0640100,Chesterton Police Department,municipal,13,73,12,14752,,,False,False,2025,5.83
+IL0167000,Midlothian Police Department,municipal,30,164,12,13775,238,-0.1849,False,False,2025,14.08
+IL0163500,Forest Park Police Department,municipal,34,408,12,13740,439,0.006834,False,False,2025,32.17
+IL0493000,Lindenhurst Police Department,municipal,8,26,12,14612,27,0.2593,False,False,2025,2.327
+IL0164600,Hickory Hills Police Department,municipal,4,107,12,14035,154,-0.2792,False,False,2025,7.909
+IL0162000,Chicago Ridge Police Department,municipal,26,227,12,13952,302,-0.1623,False,False,2025,18.13
+IL0490100,Antioch Police Department,municipal,8,110,12,15234,103,0.1456,False,False,2025,7.746
+IL0167400,Norridge Police Department,municipal,18,475,12,14723,564,-0.1259,False,False,2025,33.49
+IL0990700,Joliet Police Department,municipal,524,1759,12,152211,2425,-0.05856,False,False,2025,15
+IL0991100,Plainfield Police Department,municipal,36,213,12,49912,357,-0.3025,False,False,2025,4.989
+IL0165000,Hoffman Estates Police Department,municipal,38,338,12,50564,574,-0.3449,False,False,2025,7.436
+IL0169G00,Prospect Heights Police Department,municipal,7,84,12,15462,122,-0.2541,False,False,2025,5.885
+IL0165700,La Grange Police Department,municipal,12,105,12,15856,154,-0.2403,False,False,2025,7.379
+IN0450600,Griffith Police Department,municipal,25,132,12,16110,187,-0.1604,False,False,2025,9.745
+IN0451300,Dyer Police Department,municipal,4,28,12,16302,58,-0.4483,False,False,2025,1.963
+IL0450100,Aurora Police Department,municipal,398,1957,12,180824,2680,-0.1213,False,False,2025,13.02
+IL0162200,Country Club Hills Police Department,municipal,45,315,12,16122,453,-0.2053,False,False,2025,22.33
+IL0166B00,Westchester Police Department,municipal,1,14,12,16187,108,-0.8611,False,True,2024,6.811
+IL0161100,Bridgeview Police Department,municipal,0,0,0,16461,,,True,False,,
+IN0451500,St. John Police Department,municipal,7,36,12,25285,38,0.1316,False,False,2025,1.701
+IL0221000,Hinsdale Police Department,municipal,7,89,12,17656,97,-0.01031,False,False,2025,5.437
+IL0166000,Lemont Police Department,municipal,10,88,12,18306,104,-0.05769,False,False,2025,5.353
+IL0990400,Crest Hill Police Department,municipal,28,135,12,20175,224,-0.2723,False,False,2025,8.079
+IL0560200,Cary Police Department,municipal,8,64,12,18087,88,-0.1818,False,False,2025,3.981
+IL0450600,Elgin Police Department,municipal,250,1065,12,114717,1568,-0.1614,False,False,2025,11.46
+IL0163700,Franklin Park Police Department,municipal,24,206,12,18040,280,-0.1786,False,False,2025,12.75
+IL0992100,Shorewood Police Department,municipal,11,119,12,18608,173,-0.2486,False,False,2025,6.986
+IL0451000,North Aurora Police Department,municipal,28,227,12,19600,196,0.301,False,False,2025,13.01
+IL0168600,Palos Hills Police Department,municipal,4,116,12,17919,87,0.3793,False,False,2025,6.697
+IL0190500,Sycamore Police Department,municipal,9,157,12,19042,199,-0.1658,False,False,2025,8.718
+IL0160700,Bellwood Police Department,municipal,47,185,12,17990,267,-0.1311,False,False,2025,12.9
+IL0220200,Bensenville Police Department,municipal,9,175,12,18594,235,-0.217,False,False,2025,9.896
+IL0160100,Alsip Police Department,municipal,51,494,12,18361,606,-0.1007,False,False,2025,29.68
+IL0166600,Matteson Police Department,municipal,0,0,0,18455,,,True,False,,
+IL0491200,Lake Zurich Police Department,municipal,14,186,12,20004,254,-0.2126,False,False,2025,9.998
+IL0490300,Deerfield Police Department,municipal,4,135,12,19140,197,-0.2944,False,False,2025,7.262
+IL0491000,Lake Forest Police Department,municipal,4,99,12,19716,127,-0.189,False,False,2025,5.224
+IL0161300,Brookfield Police Department,municipal,9,98,12,18749,135,-0.2074,False,False,2025,5.707
+IL0165200,Homewood Police Department,municipal,29,488,12,18646,416,0.2428,False,False,2025,27.73
+IL0168300,Orland Park Police Department,municipal,5,576,12,57891,641,-0.0936,False,False,2025,10.04
+IL0165M00,Tinley Park Police Department,municipal,51,605,12,54618,722,-0.09141,False,False,2025,12.01
+IL0992200,Mokena Police Department,municipal,11,125,12,19928,161,-0.1553,False,False,2025,6.825
+IL0450900,Montgomery Police Department,municipal,34,272,12,22357,235,0.3021,False,False,2025,13.69
+IL0163300,Evergreen Park Police Department,municipal,25,1050,12,19163,1117,-0.0376,False,False,2025,56.1
+IL0990600,Frankfort Police Department,municipal,8,131,12,21378,148,-0.06081,False,False,2025,6.502
+IL0164300,Harvey Police Department,municipal,177,451,12,19668,428,0.4673,False,False,2025,31.93
+IL0491300,Libertyville Police Department,municipal,12,51,12,20663,134,-0.5299,False,True,2024,6.615
+IL0490500,Grayslake Police Department,municipal,6,110,12,24803,174,-0.3333,False,False,2025,4.677
+IL0450700,Geneva Police Department,municipal,29,161,12,21126,123,0.5447,False,False,2025,8.994
+IL0162700,Dolton Police Department,municipal,0,0,0,20541,,,True,False,,
+IL0470200,Yorkville Police Department,municipal,23,125,12,27164,119,0.2437,False,False,2025,5.448
+IL0167A00,South Holland Police Department,municipal,34,359,12,20625,497,-0.2093,False,False,2025,19.05
+IL0492100,Waukegan Police Department,municipal,333,1375,12,88433,1850,-0.07676,False,False,2025,19.31
+IL0168800,Park Forest Police Department,municipal,59,246,12,20869,370,-0.1757,False,False,2025,14.61
+IL0222700,Darien Police Department,municipal,3,160,12,22020,207,-0.2126,False,False,2025,7.402
+IL099900X,Homer Glen Police Department,municipal,8,72,12,24941,76,0.05263,False,False,2025,3.208
+IL0162500,Des Plaines Police Department,municipal,62,464,12,58435,738,-0.2873,False,False,2025,9.001
+IL0990200,Bolingbrook Police Department,municipal,165,495,12,74990,722,-0.08587,False,False,2025,8.801
+IL0220600,Downers Grove Police Department,municipal,40,389,12,50647,497,-0.1368,False,False,2025,8.47
+IL0221700,Villa Park Police Department,municipal,31,250,12,21974,382,-0.2644,False,False,2025,12.79
+IL0220300,Bloomingdale Police Department,municipal,0,28,1,22690,334,-0.9162,True,False,2024,14.99
+IL0161000,Blue Island Police Department,municipal,63,452,12,21643,662,-0.2221,False,False,2025,23.8
+IL0221600,Roselle Police Department,municipal,10,35,7,22859,106,-0.5755,True,False,2024,4.738
+IL0169800,Rolling Meadows Police Department,municipal,17,304,12,23621,357,-0.1008,False,False,2025,13.59
+IL0222000,Westmont Police Department,municipal,17,239,12,24282,270,-0.05185,False,False,2025,10.54
+IL0166700,Maywood Police Department,municipal,0,0,0,23351,,,True,False,,
+IN0451600,Schererville Police Department,municipal,22,280,12,29809,412,-0.267,False,False,2025,10.13
+IL0451300,South Elgin Police Department,municipal,31,141,12,25198,210,-0.181,False,False,2025,6.826
+IN0451000,Munster Police Department,municipal,17,210,12,23571,255,-0.1098,False,False,2025,9.63
+IN0450800,Highland Police Department,municipal,37,288,12,23382,397,-0.1814,False,False,2025,13.9
+IL0221200,Lisle Police Department,municipal,11,115,12,23520,116,0.08621,False,False,2025,5.357
+IL0163100,Elmwood Park Police Department,municipal,22,283,12,23520,296,0.03041,False,False,2025,12.97
+IL0492300,Zion Police Department,municipal,82,215,12,24546,352,-0.1562,False,False,2025,12.1
+IL0166800,Melrose Park Police Department,municipal,57,323,12,23827,488,-0.2213,False,False,2025,15.95
+IN0640300,Valparaiso Police Department,municipal,45,293,12,35293,310,0.09032,False,False,2025,9.577
+IL0167100,Morton Grove Police Department,municipal,10,252,12,24287,283,-0.0742,False,False,2025,10.79
+IL0221900,West Chicago Police Department,municipal,37,156,12,25446,204,-0.05392,False,False,2025,7.585
+IL0561500,Woodstock Police Department,municipal,12,142,12,25952,170,-0.09412,False,False,2025,5.934
+IL0561200,McHenry Police Department,municipal,9,149,12,29207,205,-0.2293,False,False,2025,5.41
+IL0222100,Wheaton Police Department,municipal,18,254,12,53702,313,-0.131,False,False,2025,5.065
+IL0990800,Lockport Police Department,municipal,11,113,12,27110,180,-0.3111,False,False,2025,4.574
+IL0491700,Round Lake Beach Police Department,municipal,23,209,12,27062,265,-0.1245,False,False,2025,8.573
+IL0450200,Batavia Police Department,municipal,20,206,12,26566,221,0.02262,False,False,2025,8.507
+IN0450300,East Chicago Police Department,municipal,147,326,12,25626,628,-0.2468,False,False,2025,18.46
+IL0492600,Vernon Hills Police Department,municipal,19,289,12,27046,410,-0.2488,False,False,2025,11.39
+IN0450900,Hobart Police Department,municipal,47,650,12,29343,711,-0.01969,False,False,2025,23.75
+IL0451400,St. Charles Police Department,municipal,32,330,12,33584,378,-0.04233,False,False,2025,10.78
+IL0991500,New Lenox Police Department,municipal,17,230,12,28798,280,-0.1179,False,False,2025,8.577
+IL0167900,Oak Forest Police Department,municipal,9,93,12,26677,139,-0.2662,False,False,2025,3.824
+IL0161900,Chicago Heights Police Department,municipal,211,783,12,26329,1025,-0.03024,False,False,2025,37.75
+IL0560700,Huntley Police Department,municipal,5,132,12,28679,132,0.03788,False,False,2025,4.777
+IL0162C00,Wilmette Police Department,municipal,9,236,12,27288,324,-0.2438,False,False,2025,8.978
+IL0220900,Glen Ellyn Police Department,municipal,11,138,12,28855,185,-0.1946,False,False,2025,5.164
+IL0160200,Arlington Heights Police Department,municipal,32,575,12,75155,710,-0.1451,False,False,2025,8.077
+IL0560900,Lake in the Hills Police Department,municipal,22,78,12,28651,147,-0.3197,False,False,2025,3.49
+IL0165900,Lansing Police Department,municipal,77,442,12,27898,611,-0.1506,False,False,2025,18.6
+IL0168C00,Burbank Police Department,municipal,45,499,12,28424,620,-0.1226,False,False,2025,19.14
+IL0560100,Algonquin Police Department,municipal,15,289,12,30758,382,-0.2042,False,False,2025,9.884
+IL0490700,Highland Park Police Department,municipal,17,231,12,30956,263,-0.05703,False,False,2025,8.011
+IL0490600,Gurnee Police Department,municipal,37,609,12,30518,727,-0.1114,False,False,2025,21.17
+IL0167300,Niles Police Department,municipal,11,566,12,29705,664,-0.131,False,False,2025,19.42
+IL0491400,Mundelein Police Department,municipal,24,182,12,32923,250,-0.176,False,False,2025,6.257
+IL0168400,Palatine Police Department,municipal,56,461,12,65532,651,-0.2058,False,False,2025,7.889
+IL0163000,Elk Grove Village Police Department,municipal,34,424,12,31583,567,-0.1922,False,False,2025,14.5
+IL0220800,Glendale Heights Police Department,municipal,34,243,12,32808,352,-0.2131,False,False,2025,8.443
+IL0222400,Woodridge Police Department,municipal,15,226,12,34100,300,-0.1967,False,False,2025,7.067
+IN0450200,Crown Point Police Department,municipal,32,133,12,35378,226,-0.2699,False,False,2025,4.664
+IL0221400,Naperville Police Department,municipal,108,876,12,154062,1472,-0.3315,False,False,2025,6.387
+IL0470300,Oswego Police Department,municipal,28,172,12,39860,226,-0.115,False,False,2025,5.018
+IN0451400,Merrillville Police Department,municipal,47,500,12,37124,522,0.04789,False,False,2025,14.73
+IL0167500,Northbrook Police Department,municipal,7,313,12,34398,426,-0.2488,False,False,2025,9.303
+IL0220100,Addison Police Department,municipal,49,246,12,35753,369,-0.2005,False,False,2025,8.251
+IL0161700,Calumet City Police Department,municipal,78,657,12,34599,687,0.06987,False,False,2025,21.24
+IL0560300,Crystal Lake Police Department,municipal,48,462,12,41838,503,0.01392,False,False,2025,12.19
+IL0164200,Hanover Park Police Department,municipal,36,152,12,36523,195,-0.0359,False,False,2025,5.147
+IL0450300,Carpentersville Police Department,municipal,66,251,12,36955,329,-0.03647,False,False,2025,8.578
+IN0640200,Portage Police Department,municipal,97,439,12,38731,548,-0.0219,False,False,2025,13.84
+IL0169B00,Wheeling Police Department,municipal,37,300,12,38111,362,-0.06906,False,False,2025,8.843
+IL0162B00,Streamwood Police Department,municipal,39,209,12,38094,315,-0.2127,False,False,2025,6.51
+IL0168900,Park Ridge Police Department,municipal,11,261,12,38187,354,-0.2316,False,False,2025,7.123
+IL0991300,Romeoville Police Department,municipal,47,342,12,41271,483,-0.1946,False,False,2025,9.426
+IL0220400,Carol Stream Police Department,municipal,23,253,12,39506,306,-0.09804,False,False,2025,6.986
+IL0190800,DeKalb Police Department,municipal,109,904,12,40558,1175,-0.1379,False,False,2025,24.98
+IL0160500,Bartlett Police Department,municipal,17,100,12,40644,167,-0.2994,False,False,2025,2.879
+IL0161400,Buffalo Grove Police Department,municipal,12,185,12,43067,321,-0.3863,False,False,2025,4.574
+IL0221300,Lombard Police Department,municipal,36,694,12,44509,756,-0.03439,False,False,2025,16.4
+IL0220700,Elmhurst Police Department,municipal,12,345,12,46205,400,-0.1075,False,False,2025,7.726
+IL0167200,Mount Prospect Police Department,municipal,31,439,12,55157,530,-0.1132,False,False,2025,8.521
+IL0160900,Berwyn Police Department,municipal,88,873,12,54703,836,0.1495,False,False,2025,17.57
+IL0168000,Oak Lawn Police Department,municipal,41,782,12,56136,1052,-0.2177,False,False,2025,14.66
+IL0162100,Cicero Police Department,municipal,182,826,12,81401,1493,-0.3248,False,False,2025,12.38

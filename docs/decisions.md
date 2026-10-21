@@ -103,4 +103,17 @@ The equal-weighted average of four percentile ranks. Each percentile is computed
 
 Any change after the first commit goes here: date, what changed, and why.
 
-- _none yet_
+All entries below were made on 2026-10-21, during step 2 (quality and tax data), **before any price data was downloaded**.
+
+**Change: property tax rate uses aggregates instead of medians.** The pre-registered measure was median taxes paid (B25103) ÷ median home value (B25077). In the 2020–2024 ACS, B25103 is top-coded at "$10,000 or more", and 42 of the 380 in-scope zips hit that cap, which would understate the tax rate exactly in the high-tax suburbs. The tax rate is now aggregate real estate taxes paid (B25090) ÷ aggregate value of owner-occupied homes (B25082), same vintage. Where the median isn't top-coded the two measures correlate at 0.93. The median version is kept in `data/processed/acs.csv` as `tax_rate_median`.
+
+**Change: crime data-quality rule, chosen by Alex.** A police agency's 2025 data is treated as unusable if it covers fewer than 12 months, or if its 2025 offense total is under half of its 2024 total with at least 50 offenses in 2024 (Westchester, Libertyville and Northlake: their 2025 reports cover all 12 months but are far below 2024, which points to incomplete NIBRS submissions rather than a real drop; the median agency fell 14%). For those agencies the 2024 rate is used when 2024 covers all 12 months; otherwise the safety indicator is missing. This uses 2024 for 8 zips. Reason: keep as many zips as possible with a real crime value, at the cost of mixing two years in one indicator.
+
+Clarifications. These fill in details the plan didn't specify; none changes a definition above.
+
+- **Vintages.** ACS 5-year 2020–2024 (latest on the pull date). Crime: 2025, the latest full year in the FBI Crime Data Explorer. Schools: Illinois 2025 Report Card (2024–25 tests, the latest published); Indiana spring 2026 ILEARN and SAT.
+- **Zip population shares** (scope, police agency, reputation list) are computed from 2020 Census block populations, using the Census ZCTA-to-block relationship file and the 2020 block assignment files. The Census ZCTA-to-place relationship file only has land area, not population.
+- **Schools.** For each district, proficiency is the mean of % proficient in ELA and in math, in two bands: grades 3–8 (IL IAR, IN ILEARN) and high school (IL grade 11 ACT, IN grade 11 SAT). Each band is ranked within its own state, among the state's geographic districts with results. A block takes its grades 3–8 percentile from its unified or elementary district and its high school percentile from its unified or secondary district, and its school value is the mean of the two. The zip value is the land-area-weighted mean of its blocks. Chicago Public Schools is one district, so every Chicago zip gets the same school value; this is a limitation of district-level data.
+- **Safety.** "The place holding most of its population" is the largest single population group among the incorporated places in the zip and the unincorporated land of each county. Places with no agency in the FBI data leave the indicator missing. The list is in `docs/data_notes.md`.
+- **Walkability.** The EPA index is published for 2010 block groups. Each 2020 block is linked to the 2010 block it overlaps most (Census 2010–2020 block relationship files), and the zip value is weighted by 2020 block population.
+- **Reputation list.** "Place" includes Census-designated places (needed for Lakes of the Four Seasons). The place with the largest population in the zip decides, even if most of the zip is outside any place. Chicago neighborhoods use the City's "Boundaries – Neighborhoods" layer.
