@@ -52,6 +52,8 @@ docs/            pre-registration and notes
 
 By the pre-registered rule, **H1 is supported**: 16 of 339 zips are both above-median quality and more than one standard deviation ($63.5/sq ft) cheaper than predicted, and 11 of them are not on the reputation list. The result is fragile, though. Much of it is Indiana being cheap, only 4 picks survive dropping an indicator, and the hand check flags several picks as measurement artifacts. An Illinois-only rerun still supports H1. A post-hoc model that also controls for home age, home energy bills and commuting fuel costs (added after the results were seen, so it doesn't decide H1) raises R² from 0.25 to 0.41 and finds 16 picks, 15 of them off the list. Details: [docs/results.md](docs/results.md).
 
+Write-up with the interactive chart: [Is there a cheap good zip code in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
+
 ## How to rerun
 
 ```
@@ -68,6 +70,7 @@ cd src
 ../.venv/bin/python prices.py        # Redfin 12-month price per sq ft and sales (+ Zillow ZHVI context)
 ../.venv/bin/python extras.py       # post-hoc controls: home age, energy bills, commuting fuel
 ../.venv/bin/python model.py         # quality score, regression, value picks, robustness -> output/
+../.venv/bin/python site_data.py     # small JSON for the chart on alexanderk.dev -> output/site/
 ```
 
 Each script downloads what it needs into `data/raw/` (about 4.5 GB, not committed) and skips files already there.
