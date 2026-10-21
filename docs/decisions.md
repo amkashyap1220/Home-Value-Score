@@ -139,6 +139,14 @@ These choices (the 50% default, the top 20, the 100-renter minimum, missing = 50
 - The page scores nothing until every factor with a weight above zero has a target. Its "Fill in typical values" button uses round numbers near the sample medians (`EXAMPLE` in `src/value.py`), which is what `output/value.json` reports, so the two can be checked against each other.
 - Samples unchanged (338 buyer zips, 347 renter zips).
 
+**Change (2026-10-21): the reader can name where they work, and the commute becomes the drive time there.** Alex's reason: the Census commute is how long the people who already live in a zip travel, to wherever they work, which says little about the reader's own trip. A reader who works in Naperville and one who works in the Loop want different zips. The method (`src/commute.py`, `drive_to` in `src/value.py`, and the page):
+
+- Each zip is a point: the representative point (always inside the shape) of its Census 2020 ZCTA cartographic boundary.
+- Drive times between all 380 × 380 pairs come from the OSRM table service on OpenStreetMap roads (the public demo server, queried in 100 × 100 blocks on 2026-10-21; no pair is missing). They're free-flow times: no traffic, no tolls avoided, no transit, walking or biking. Rush-hour drives will be longer, often much longer into the Loop, and the gap is bigger for longer drives. The site gets whole minutes, capped at 255.
+- When a person names a workplace (a zip, or a town that picks its zip), their commute factor is the drive time from each zip to it, scored like any other factor: its percentile among the sample's drive times to that workplace against the target's percentile, both directions counting as off target. Without a workplace, the Census average (B08013 / B08303) is used as before. Each person has their own workplace.
+- The workplace has to be one of the 380 zips in scope. A town picks the first zip whose place name starts with what was typed, so a town with several zips gets one of them.
+- The page now starts filled in with sample values (`SAMPLE` in `src/value.py`: the earlier typical targets, every weight Normal, a job in 60606) and scores right away, at Alex's request on 2026-10-21; the reader changes or clears them field by field, and a note says they're samples until every field is changed. A cleared field still stops the scoring until it's filled or its weight set to Ignore. `output/value.json` reports the sample (buyers: Justice, Prospect Heights, Willow Springs, Palos Heights, Palos Hills; none on the Niche list) and the same targets without a workplace.
+
 Clarifications. These fill in details the plan didn't specify; none changes a definition above.
 
 - **Vintages.** ACS 5-year 2020–2024 (latest on the pull date). Crime: 2025, the latest full year in the FBI Crime Data Explorer. Schools: Illinois 2025 Report Card (2024–25 tests, the latest published); Indiana spring 2026 ILEARN and SAT.
