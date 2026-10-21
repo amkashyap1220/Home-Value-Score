@@ -50,9 +50,9 @@ docs/            pre-registration and notes
 
 ## Result
 
-**H1 is supported**: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) cheaper than the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. The strongest leads are Woodstock, Schaumburg 60173, Joliet 60433, Itasca and Sycamore. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
+**H1 is supported**: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts, and 15 of them are not on the reputation list. The model explains 41% of the variation in price. The strongest leads are Woodstock, Schaumburg 60173, Joliet 60433, Itasca and Sycamore. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks, 11 off the list) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
-Write-up with the interactive chart: [Is there a cheap good zip code in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
+Write-up, with an interactive chart where readers can set their own weights: [Where's the best home value in Chicagoland?](https://alexanderk.dev/writing/chicago-home-value.html)
 
 ## How to rerun
 

@@ -2,7 +2,9 @@
 
 Reads output/scores.csv and output/scores.json (made by model.py) and writes
 output/site/chicago-home-value.json: one short record per zip, plus the numbers
-the chart needs (quality median, residual SD). Copy that file to
+the chart needs (quality median, residual SD). Each record also carries the four
+indicator percentiles and the model's controls, so the page can refit the model
+with the reader's own weights. Copy that file to
 writing/chicago-home-value.json in the site repo.
 """
 import json
@@ -29,6 +31,14 @@ def main():
         "pick": bool(r.value_pick),
         "on_list": bool(r.on_list),
         "list_entry": r.list_entry if isinstance(r.list_entry, str) else None,
+        # Inputs for the reader's own weights on the site: the four percentiles (null when missing)
+        # and the model's controls, so the page can rebuild the score and refit the regression
+        "p": [None if pd.isna(v) else round(v, 3) for v in (r.p_schools, r.p_safety, r.p_commute, r.p_walkability)],
+        "price": round(r.ppsf, 2),
+        "tax": float(f"{r.tax_rate:.5g}"),
+        "age": round(r.home_age, 1),
+        "energy": round(r.home_energy_month, 2),
+        "fuel": round(r.commute_fuel_year, 1),
     } for r in scores.itertuples()]
 
     site = {
