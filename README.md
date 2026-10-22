@@ -8,9 +8,9 @@
 
 The post on the site is an interactive map that scores each zip against the reader's own targets (since 2026-10-21; see the change log in [docs/decisions.md](docs/decisions.md)):
 
-1. The reader sets a target and a weight for six things: schools, safety, commute time, walkability, home age, and median sale price (buyers) or rent per bedroom (renters: median gross rent divided by the average bedrooms of rented homes, so each roommate's share). If they name the town or zip they work in, commute becomes the drive time from each zip to that workplace (OpenStreetMap roads via OSRM, free-flow, so no traffic and no transit) instead of the Census average. Two people can name different workplaces. The page starts filled in with sample values (`SAMPLE` in `src/value.py`) that the reader changes to their own.
-2. Each value and each target becomes a percentile among the metro's zips. Closeness = 100 − the gap between the zip's percentile and the target's, so it's 100 exactly on target. For schools, safety and price, beating the target also counts as 100.
-3. Score = the weighted average of the six closeness values. The 20 highest are the reader's top areas, each linked to listings. With two people, "best for both" ranks by the lower of their two scores.
+1. The reader sets a target and a weight for seven things: schools, safety, commute time, distance to the nearest train station, walkability, home age, and median sale price (buyers) or rent per bedroom (renters: median gross rent divided by the average bedrooms of rented homes, so each roommate's share). If they name the town or zip they work in, commute becomes the drive time from each zip to that workplace (OpenStreetMap roads via OSRM, free-flow, so no traffic and no transit) instead of the Census average. Train station distance is the straight-line miles to the nearest Metra, CTA 'L' or South Shore Line station, averaged over where people in the zip live (Census 2020 block-group population centers). Two people can name different workplaces. The page starts filled in with sample values (`SAMPLE` in `src/value.py`) that the reader changes to their own.
+2. Each value and each target becomes a percentile among the metro's zips. Closeness = 100 − the gap between the zip's percentile and the target's, so it's 100 exactly on target. For schools, safety, price and train station, beating the target also counts as 100.
+3. Score = the weighted average of the seven closeness values. The 20 highest are the reader's top areas, each linked to listings. With two people, "best for both" ranks by the lower of their two scores.
 
 The original pre-registered study (a regression of price per sq ft on quality, taxes and running costs, with value picks more than one standard deviation below the line) is still computed by `src/model.py`; its result is below. Race and ethnicity, and proxies for them, are not used anywhere.
 
@@ -36,6 +36,10 @@ The original pre-registered study (a regression of price per sq ft on quality, t
 | Rent (added for the value map) | ACS 5-year 2020–2024 summary file, tables B25064 (median gross rent), B25003 (renter-occupied homes) and B25042 (bedrooms by tenure) | https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/ | 2026-10-21 | Public domain |
 | Rent, context only | Zillow Observed Rent Index, zip, all homes, smoothed (through 2026-09) | https://files.zillowstatic.com/research/public_csvs/zori/Zip_zori_uc_sfrcondomfr_sm_month.csv | 2026-10-21 | Zillow Research terms of use, with attribution |
 | Zip shapes for the map | Census 2020 ZCTA cartographic boundaries, 1:500,000 | https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip | 2026-10-21 | Public domain |
+| Metra stations | Metra GTFS schedule feed (stops.txt) | https://schedules.metrarail.com/gtfs/schedule.zip | 2026-10-22 | Metra GTFS terms of use |
+| CTA 'L' stations | City of Chicago Data Portal, CTA System Information – List of 'L' Stops | https://data.cityofchicago.org/d/8pix-ypme | 2026-10-22 | City of Chicago Data Portal terms of use |
+| South Shore Line stations | NICTD GTFS feed (stops.txt) | http://www.mysouthshoreline.com/google/google_transit.zip | 2026-10-22 | NICTD GTFS terms of use |
+| Where people live (for station distance) | Census 2020 centers of population by block group (IL, IN) | https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/ | 2026-10-22 | Public domain |
 | Drive times between zips (added for the workplace commute) | OSRM table service on OpenStreetMap roads (public demo server), from each zip's representative point to every other | https://router.project-osrm.org/ | 2026-10-21 | Map data © OpenStreetMap contributors, ODbL; OSRM is BSD-2 |
 
 Each file's exact URL and download time is in `data/raw/manifest.csv`. Missing police agencies and other data gaps are listed in [docs/data_notes.md](docs/data_notes.md).
@@ -78,6 +82,7 @@ cd src
 ../.venv/bin/python rent.py          # median gross rent, rent per bedroom, renter-occupied homes (+ Zillow ZORI context)
 ../.venv/bin/python map.py           # simplified zip shapes for the map -> output/site/
 ../.venv/bin/python commute.py       # drive times between all 380 zips (OSRM) -> data/processed/, output/site/
+../.venv/bin/python stations.py      # miles to the nearest Metra, CTA or South Shore Line station -> data/processed/
 ../.venv/bin/python value.py         # target scores for the sample values, buyers and renters -> output/value.*
 ../.venv/bin/python site_data.py     # small JSON for the map on alexanderk.dev -> output/site/
 ```

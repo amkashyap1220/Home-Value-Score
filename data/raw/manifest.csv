@@ -1010,3 +1010,8 @@ Zip_zori_uc_sfrcondomfr_sm_month.csv,https://files.zillowstatic.com/research/pub
 cb_2020_us_zcta520_500k.zip,https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip,2026-10-21T20:17:08Z
 acsdt5y2024-b25010.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25010.dat,2026-10-21T21:43:18Z
 acsdt5y2024-b25042.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25042.dat,2026-10-21T21:48:11Z
+metra_gtfs.zip,https://schedules.metrarail.com/gtfs/schedule.zip,2026-10-22T03:07:08Z
+south_shore_gtfs.zip,http://www.mysouthshoreline.com/google/google_transit.zip,2026-10-22T03:07:09Z
+cta_l_stops.json,https://data.cityofchicago.org/resource/8pix-ypme.json?$limit=1000,2026-10-22T03:07:09Z
+cenpop2020_bg17.txt,https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/CenPop2020_Mean_BG17.txt,2026-10-22T03:07:19Z
+cenpop2020_bg18.txt,https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/CenPop2020_Mean_BG18.txt,2026-10-22T03:07:19Z

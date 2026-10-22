@@ -1,0 +1,407 @@
+agency,name,lat,lon
+Metra,Geneva,41.881667,-88.31
+Metra,West Chicago,41.881111,-88.198889
+Metra,Winfield,41.87,-88.156944
+Metra,Wheaton,41.864444,-88.111944
+Metra,College Ave,41.868333,-88.090278
+Metra,Glen Ellyn,41.876667,-88.064722
+Metra,Lombard,41.886667,-88.018611
+Metra,Villa Park,41.896389,-87.9775
+Metra,Elmhurst,41.899722,-87.940833
+Metra,Berkeley,41.896111,-87.915278
+Metra,Bellwood,41.891389,-87.8825
+Metra,Melrose Park,41.890278,-87.855556
+Metra,Maywood,41.888333,-87.838611
+Metra,River Forest,41.886944,-87.825
+Metra,Oak Park,41.886944,-87.801111
+Metra,Kedzie,41.888333,-87.706944
+Metra,Aurora,41.760833,-88.308333
+Metra,Route 59,41.777778,-88.208611
+Metra,Naperville,41.779722,-88.145556
+Metra,Lisle,41.797778,-88.071944
+Metra,Belmont,41.795278,-88.038056
+Metra,Downers Grove,41.795278,-88.009722
+Metra,Fairview Ave.,41.795278,-87.993611
+Metra,Westmont,41.795556,-87.976389
+Metra,Clarendon Hills,41.796944,-87.953611
+Metra,West Hinsdale,41.798889,-87.945278
+Metra,Hinsdale,41.802778,-87.928333
+Metra,Highlands,41.805,-87.918333
+Metra,Western Springs,41.808889,-87.901111
+Metra,Stone Ave.,41.814167,-87.878333
+Metra,LaGrange Road,41.815833,-87.871111
+Metra,Congress Park,41.818889,-87.8575
+Metra,Brookfield,41.821944,-87.843056
+Metra,Hollywood,41.824444,-87.833889
+Metra,Riverside,41.827222,-87.82
+Metra,Harlem Ave.,41.831389,-87.801944
+Metra,Berwyn,41.833056,-87.793611
+Metra,Lavergne,41.835556,-87.783333
+Metra,Cicero,41.844167,-87.745556
+Metra,Western Avenue,41.857778,-87.685278
+Metra,Halsted Street,41.860278,-87.647222
+Metra,Joliet,41.524444,-88.079722
+Metra,Lockport,41.585,-88.060278
+Metra,Lemont,41.673611,-88.0025
+Metra,Willow Springs,41.733333,-87.878333
+Metra,Summit,41.795,-87.809722
+Metra,Orland Park 179th,41.563889,-87.9025
+Metra,Orland Park 153rd,41.609444,-87.873333
+Metra,Orland Park 143rd,41.630556,-87.859167
+Metra,Palos Park,41.668889,-87.820278
+Metra,Worth,41.691389,-87.795833
+Metra,Chicago Ridge,41.703333,-87.780278
+Metra,Oak Lawn Patriot,41.719444,-87.748611
+Metra,Ashburn,41.741667,-87.7125
+Metra,Wrightwood,41.748889,-87.703611
+Metra,Clybourn,41.916944,-87.668056
+Metra,Ravenswood,41.968333,-87.674444
+Metra,Rogers Park,42.009444,-87.675556
+Metra,Main St.,42.033333,-87.68
+Metra,Evanston (Davis St.),42.048056,-87.684722
+Metra,Central St.,42.064167,-87.698056
+Metra,Wilmette,42.077222,-87.709167
+Metra,Kenilworth,42.086389,-87.716667
+Metra,Winnetka,42.105278,-87.732778
+Metra,Hubbard Woods,42.118056,-87.743611
+Metra,Glencoe,42.135556,-87.758056
+Metra,Braeside,42.152778,-87.7725
+Metra,Ravinia,42.165,-87.782778
+Metra,Highland Park,42.183333,-87.7975
+Metra,Highwood,42.203333,-87.810556
+Metra,Fort Sheridan,42.2175,-87.820833
+Metra,Lake Forest.,42.2525,-87.839722
+Metra,Lake Bluff,42.279722,-87.846667
+Metra,Great Lakes,42.306944,-87.846389
+Metra,North Chicago,42.328611,-87.836944
+Metra,Waukegan,42.360556,-87.828333
+Metra,Zion,42.449167,-87.818056
+Metra,Winthrop Harbor,42.482778,-87.816111
+Metra,Fox Lake,42.398333,-88.182222
+Metra,Ingleside,42.383889,-88.153611
+Metra,Long Lake,42.368056,-88.128056
+Metra,Round Lake,42.354444,-88.094167
+Metra,Grayslake,42.333611,-88.043333
+Metra,Libertyville,42.291111,-87.956389
+Metra,Lake Forest,42.223611,-87.874722
+Metra,Deerfield,42.168056,-87.85
+Metra,Lake-Cook,42.151667,-87.841389
+Metra,Northbrook,42.126944,-87.827778
+Metra,Glen/N. Glenview,42.0975,-87.815833
+Metra,Glenview,42.075,-87.805556
+Metra,Golf,42.058333,-87.796944
+Metra,Morton Grove,42.035,-87.785278
+Metra,Edgebrook,41.997778,-87.765556
+Metra,Forest Glen,41.978056,-87.755556
+Metra,Mayfair,41.959722,-87.745833
+Metra,Grayland,41.948889,-87.740278
+Metra,Healy,41.924722,-87.727778
+Metra,Western Ave,41.889167,-87.688056
+Metra,Ravinia Park,42.158056,-87.776944
+Metra,Indian Hill,42.094444,-87.723889
+Metra,Kenosha,42.585833,-87.825833
+Metra,Harvard,42.419722,-88.6175
+Metra,Woodstock,42.316944,-88.4475
+Metra,Crystal Lake,42.244167,-88.317222
+Metra,McHenry,42.343333,-88.276111
+Metra,Cary,42.208889,-88.241389
+Metra,Fox River Grove,42.197778,-88.219444
+Metra,Barrington,42.152778,-88.131944
+Metra,Palatine,42.113056,-88.048333
+Metra,Arlington Park,42.095278,-88.009167
+Metra,Arlington Heights,42.084167,-87.983611
+Metra,Mt. Prospect,42.063056,-87.936111
+Metra,Cumberland,42.0525,-87.912222
+Metra,Des Plaines,42.040833,-87.886667
+Metra,Dee Road,42.024167,-87.856111
+Metra,Park Ridge,42.010278,-87.831667
+Metra,Irving Park,41.9525,-87.729722
+Metra,Big Timber,42.058611,-88.327778
+Metra,Elgin,42.036111,-88.286111
+Metra,National St,42.026389,-88.278889
+Metra,Hanover Park,41.988056,-88.149167
+Metra,Schaumburg,41.989167,-88.118056
+Metra,Roselle,41.981389,-88.067222
+Metra,Medinah,41.978056,-88.050833
+Metra,Itasca,41.971389,-88.014167
+Metra,Wood Dale,41.9625,-87.975278
+Metra,Bensenville,41.956944,-87.941944
+Metra,Mannheim,41.941667,-87.883333
+Metra,Franklin Park,41.936667,-87.866389
+Metra,Mont Clare,41.921667,-87.801667
+Metra,Mars,41.919167,-87.794444
+Metra,Galewood,41.916389,-87.785833
+Metra,Hanson Park,41.916667,-87.766944
+Metra,Grand/Cicero,41.914444,-87.746111
+Metra,O'Hare Transfer,41.995,-87.880556
+Metra,Prospect Hts,42.092222,-87.908056
+Metra,Wheeling,42.136389,-87.927222
+Metra,Buffalo Grove,42.168611,-87.941389
+Metra,Prairie View,42.198056,-87.955833
+Metra,Vernon Hills,42.215556,-87.964444
+Metra,Mundelein,42.266944,-87.998056
+Metra,Prairie Crossing.,42.318056,-88.017222
+Metra,Round Lake Beach,42.385,-88.065556
+Metra,Lake Villa,42.4175,-88.079444
+Metra,Antioch,42.481111,-88.0925
+Metra,New Lenox,41.514444,-87.965278
+Metra,Mokena,41.530833,-87.886667
+Metra,Hickory Creek,41.548611,-87.845556
+Metra,Tinley-80th,41.564444,-87.809444
+Metra,Tinley Park,41.575833,-87.782778
+Metra,Oak Forest,41.604444,-87.738333
+Metra,Midlothian,41.626389,-87.711667
+Metra,Robbins,41.640833,-87.694444
+Metra,Kensington,41.685833,-87.612222
+Metra,59th St. (U. of Chicago),41.788056,-87.588611
+Metra,University Park,41.459444,-87.723333
+Metra,Richton Park,41.485556,-87.709444
+Metra,Matteson,41.498611,-87.702222
+Metra,211th St.,41.506111,-87.698333
+Metra,Olympia Fields,41.521389,-87.69
+Metra,Flossmoor,41.543056,-87.678611
+Metra,Homewood,41.562222,-87.668611
+Metra,Calumet,41.573611,-87.6625
+Metra,Edison Park,42.002222,-87.8175
+Metra,Norwood Park,41.991667,-87.798889
+Metra,Gladstone Park,41.979722,-87.778056
+Metra,Jefferson Park,41.971389,-87.763333
+Metra,Bartlett,41.992222,-88.183889
+Metra,47th St. (Kenwood),41.809722,-87.591389
+Metra,51st/53rd St. (Hyde Park),41.8,-87.586944
+Metra,55th - 56th - 57th St.,41.793333,-87.5875
+Metra,63rd St.,41.780278,-87.590556
+Metra,Prairie Crossing,42.320833,-88.015278
+Metra,River Grove,41.931111,-87.836111
+Metra,Elmwood Park,41.924722,-87.814722
+Metra,Riverdale,41.646667,-87.623333
+Metra,Ivanhoe,41.633333,-87.630278
+Metra,147th St.,41.622778,-87.636111
+Metra,Harvey,41.608333,-87.643889
+Metra,Hazel Crest,41.580833,-87.658611
+Metra,Millennium Station,41.884167,-87.623056
+Metra,Van Buren St.,41.876944,-87.623056
+Metra,Museum Campus/11th St.,41.868611,-87.621389
+Metra,18th St.,41.858333,-87.618056
+Metra,McCormick Place,41.851389,-87.616389
+Metra,27th St.,41.844167,-87.613333
+Metra,75th St. (Grand Crossing),41.758889,-87.595278
+Metra,79th St. (Chatham),41.750833,-87.597222
+Metra,83rd St. (Avalon Park),41.744167,-87.598611
+Metra,87th St. (Woodruff),41.736944,-87.600278
+Metra,91st St.,41.729444,-87.601944
+Metra,95th St.,41.721944,-87.603889
+Metra,103rd St. (Rosemoor),41.706944,-87.607222
+Metra,107th St.,41.699722,-87.608889
+Metra,111th St. (Pullman),41.692778,-87.610556
+Metra,Stony Island,41.766111,-87.586944
+Metra,Bryn Mawr,41.766111,-87.576667
+Metra,South Shore,41.765278,-87.565833
+Metra,Windsor Park,41.758611,-87.559444
+Metra,Cheltenham (79th St.),41.752222,-87.5525
+Metra,83rd St.,41.745,-87.551667
+Metra,87th St.,41.737778,-87.548333
+Metra,South Chicago (93rd),41.726667,-87.547778
+Metra,LaSalle Street,41.876389,-87.632222
+Metra,Gresham,41.736389,-87.644722
+Metra,Blue Island-Vermont,41.654722,-87.677778
+Metra,95th St.-Longwood,41.721111,-87.650278
+Metra,103rd St.-Washington Hts.,41.705556,-87.655833
+Metra,Brainerd,41.732222,-87.658889
+Metra,91st St. - Beverly Hills,41.728056,-87.667222
+Metra,Prairie St.,41.6625,-87.675
+Metra,123rd St.,41.67,-87.673611
+Metra,119th St.,41.676389,-87.6725
+Metra,115th St. - Morgan Park,41.685,-87.671667
+Metra,111th St. - Morgan Park,41.692778,-87.670556
+Metra,107th St. - Beverly Hills,41.698889,-87.67
+Metra,103rd St. - Beverly Hills,41.706111,-87.668889
+Metra,99th St. - Beverly Hills,41.713611,-87.6675
+Metra,95th St. - Beverly Hills,41.721389,-87.667222
+Metra,Blue Island,41.656111,-87.675833
+Metra,Burr Oak,41.662222,-87.668889
+Metra,Ashland,41.669444,-87.660556
+Metra,Racine,41.674167,-87.651944
+Metra,West Pullman,41.674167,-87.642222
+Metra,Stewart Ridge,41.674444,-87.631667
+Metra,State St.,41.674444,-87.621944
+Metra,Schiller Park,41.962778,-87.870556
+Metra,Palos Heights,41.681944,-87.806944
+Metra,Pingree Road,42.234167,-88.298056
+Metra,Chicago Union Station,41.878889,-87.638889
+Metra,Chicago OTC,41.882222,-87.640556
+Metra,Laraway Road,41.484722,-87.959722
+Metra,Manhattan,41.418333,-87.989167
+Metra,Washington St (Grayslake),42.359167,-88.050556
+Metra,Rosemont,41.976111,-87.873889
+Metra,Franklin Pk,41.937778,-87.86
+Metra,La Fox,41.886667,-88.412222
+Metra,Elburn,41.890556,-88.463889
+Metra,35th St. - Lou Jones,41.831389,-87.629167
+Metra,Romeoville,41.637222,-88.049444
+Metra,Peterson/Ridge,41.991111,-87.675
+CTA,Austin,41.870851,-87.776812
+CTA,Harlem/Lake,41.886848,-87.803176
+CTA,Pulaski,41.885412,-87.725404
+CTA,Quincy/Wells,41.878723,-87.63374
+CTA,Davis,42.04771,-87.683543
+CTA,Belmont,41.938132,-87.712359
+CTA,Jackson,41.878183,-87.629296
+CTA,Sheridan,41.953775,-87.654929
+CTA,Damen,41.966286,-87.678639
+CTA,Morse,42.008362,-87.665909
+CTA,35th/Archer,41.829353,-87.680622
+CTA,51st,41.80209,-87.618487
+CTA,Dempster-Skokie,42.038951,-87.751919
+CTA,Pulaski,41.853732,-87.724311
+CTA,LaSalle/Van Buren,41.8768,-87.631739
+CTA,Ashland,41.885269,-87.666969
+CTA,Oak Park,41.872108,-87.791602
+CTA,Sox-35th,41.831191,-87.630636
+CTA,Damen,41.854517,-87.675975
+CTA,Western,41.875478,-87.688436
+CTA,Cumberland,41.984246,-87.838028
+CTA,79th,41.750419,-87.625112
+CTA,Kedzie-Homan,41.874341,-87.70604
+CTA,State/Lake,41.88574,-87.627835
+CTA,Main,42.033456,-87.679538
+CTA,Central,41.887389,-87.76565
+CTA,Ashland/63rd,41.77886,-87.663766
+CTA,Indiana,41.821732,-87.621371
+CTA,Western,41.804546,-87.684019
+CTA,Division,41.903355,-87.666496
+CTA,Grand,41.891665,-87.628021
+CTA,Berwyn,41.977984,-87.658668
+CTA,UIC-Halsted,41.875474,-87.649707
+CTA,Southport,41.943744,-87.663619
+CTA,Washington,41.883164,-87.62944
+CTA,Clark/Lake,41.885737,-87.630886
+CTA,Forest Park,41.874257,-87.817318
+CTA,Noyes,42.058282,-87.683337
+CTA,Cicero,41.85182,-87.745336
+CTA,Clinton,41.875539,-87.640984
+CTA,California,41.854109,-87.694774
+CTA,95th/Dan Ryan,41.722377,-87.624342
+CTA,Merchandise Mart,41.888969,-87.633924
+CTA,Racine,41.87592,-87.659458
+CTA,Cicero,41.886519,-87.744698
+CTA,Grand,41.891189,-87.647578
+CTA,Garfield,41.795172,-87.618327
+CTA,Foster,42.05416,-87.68356
+CTA,Diversey,41.932732,-87.653131
+CTA,Wilson,41.964273,-87.657588
+CTA,Irving Park,41.952925,-87.729229
+CTA,Jackson,41.878153,-87.627596
+CTA,California,41.921939,-87.69689
+CTA,54th/Cermak,41.851773,-87.756692
+CTA,Damen,41.909744,-87.677437
+CTA,Kostner,41.853751,-87.733258
+CTA,Ridgeland,41.887159,-87.783661
+CTA,Clark/Division,41.90392,-87.631412
+CTA,North/Clybourn,41.910655,-87.649177
+CTA,Armitage,41.918217,-87.652644
+CTA,Western,41.916157,-87.687364
+CTA,Adams/Wabash,41.879507,-87.626037
+CTA,Dempster,42.041655,-87.681602
+CTA,Laramie,41.887163,-87.754986
+CTA,Chicago,41.89681,-87.635924
+CTA,Cottage Grove,41.780309,-87.605857
+CTA,Washington/Wells,41.882695,-87.63378
+CTA,Western,41.854225,-87.685129
+CTA,Harlem,41.98227,-87.8089
+CTA,Granville,41.993664,-87.659202
+CTA,Lawrence,41.969139,-87.658493
+CTA,Central Park,41.853839,-87.714842
+CTA,Monroe,41.880703,-87.629378
+CTA,Sedgwick,41.910409,-87.639302
+CTA,Illinois Medical District,41.875706,-87.673932
+CTA,Rosemont,41.983507,-87.859388
+CTA,18th,41.857908,-87.669147
+CTA,South Boulevard,42.027612,-87.678329
+CTA,Harold Washington Library-State/Van Buren,41.876862,-87.628196
+CTA,Francisco,41.966046,-87.701644
+CTA,Thorndale,41.990259,-87.659076
+CTA,O'Hare,41.977665,-87.904223
+CTA,Howard,42.019063,-87.672892
+CTA,63rd,41.780536,-87.630952
+CTA,Pulaski,41.873797,-87.725663
+CTA,Midway,41.78661,-87.737875
+CTA,Halsted,41.778943,-87.644244
+CTA,Pulaski,41.799756,-87.724493
+CTA,Cicero,41.871574,-87.745154
+CTA,Harlem,41.87349,-87.806961
+CTA,69th,41.768367,-87.625724
+CTA,Cermak-Chinatown,41.853206,-87.630968
+CTA,Rockwell,41.966115,-87.6941
+CTA,Logan Square,41.929728,-87.708541
+CTA,Polk,41.871551,-87.66953
+CTA,Kedzie,41.853964,-87.705408
+CTA,Linden,42.073153,-87.69073
+CTA,Ashland,41.839234,-87.665317
+CTA,Kedzie,41.884321,-87.706155
+CTA,47th,41.809209,-87.618826
+CTA,Monroe,41.880745,-87.627696
+CTA,35th-Bronzeville-IIT,41.831677,-87.625826
+CTA,Halsted,41.84678,-87.648088
+CTA,King Drive,41.78013,-87.615546
+CTA,Kedzie,41.804236,-87.704406
+CTA,Clinton,41.885678,-87.641782
+CTA,Garfield,41.79542,-87.631157
+CTA,Kedzie,41.965996,-87.708821
+CTA,Jarvis,42.015876,-87.669092
+CTA,Argyle,41.973453,-87.65853
+CTA,Wellington,41.936033,-87.653266
+CTA,Fullerton,41.925051,-87.652866
+CTA,47th,41.810318,-87.63094
+CTA,Addison,41.94738,-87.71906
+CTA,Central,42.063987,-87.685617
+CTA,Austin,41.887293,-87.774135
+CTA,43rd,41.816462,-87.619021
+CTA,Jefferson Park,41.970634,-87.760892
+CTA,Kimball,41.967901,-87.713065
+CTA,Loyola,42.001073,-87.661061
+CTA,Paulina,41.943623,-87.670907
+CTA,Belmont,41.939751,-87.65338
+CTA,Montrose,41.961539,-87.743574
+CTA,LaSalle,41.875568,-87.631722
+CTA,Oak Park,41.886988,-87.793783
+CTA,California,41.88422,-87.696234
+CTA,Bryn Mawr,41.983504,-87.65884
+CTA,Roosevelt,41.867368,-87.627402
+CTA,Chicago,41.896075,-87.655214
+CTA,Addison,41.947428,-87.653626
+CTA,87th,41.735372,-87.624717
+CTA,Addison,41.947028,-87.674642
+CTA,Chicago,41.896671,-87.628176
+CTA,Irving Park,41.954521,-87.674868
+CTA,Western,41.966163,-87.688502
+CTA,Harrison,41.874039,-87.627479
+CTA,Montrose,41.961756,-87.675047
+CTA,Morgan,41.885586,-87.652193
+CTA,Lake,41.884809,-87.627813
+CTA,Conservatory,41.884904,-87.716523
+CTA,Oakton-Skokie,42.026243,-87.747221
+CTA,Cermak-McCormick Place,41.853115,-87.626402
+CTA,Washington/Wabash,41.88322,-87.626189
+CTA,Damen,41.884974,-87.676891
+South Shore Line,Millennium Station,41.884167,-87.623056
+South Shore Line,Van Buren St.,41.876997,-87.623976
+South Shore Line,Museum Campus/11th St.,41.868611,-87.621389
+South Shore Line,57th St. (Hyde Park),41.793333,-87.5875
+South Shore Line,63rd St.,41.780278,-87.590556
+South Shore Line,Hegewisch,41.646189,-87.543468
+South Shore Line,Hammond Gateway,41.631048,-87.518848
+South Shore Line,East Chicago,41.611781,-87.479299
+South Shore Line,Gary/Chicago Airport,41.605503,-87.39424
+South Shore Line,Gary Metro Center,41.604727,-87.33792
+South Shore Line,Miller,41.597858,-87.267972
+South Shore Line,Portage/Ogden Dunes,41.617331,-87.186869
+South Shore Line,Dune Park,41.644902,-87.060817
+South Shore Line,Beverly Shores,41.673214,-86.98552
+South Shore Line,11th St. (Michigan City),41.711786,-86.897917
+South Shore Line,Carroll Ave. (Michigan City),41.713266,-86.867686
+South Shore Line,Hudson Lake,41.709454,-86.537663
+South Shore Line,South Bend Airport,41.70076,-86.310951
+South Shore Line,South Hammond,41.580984,-87.5189
+South Shore Line,Munster Ridge Station,41.564158,-87.519088
+South Shore Line,Munster Dyer Station,41.524071,-87.520262

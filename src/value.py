@@ -1,7 +1,7 @@
 """The target score behind the interactive map on alexanderk.dev (replaces the
 weighted value score on 2026-10-21; see the change log in docs/decisions.md).
 
-A reader sets a target and a weight for each of six factors:
+A reader sets a target and a weight for each of seven factors:
 
   schools       district proficiency percentile within the state (0 to 100)
   safety        crimes per 1,000 residents a year
@@ -11,6 +11,8 @@ A reader sets a target and a weight for each of six factors:
   home age      median age of the homes, years (ACS B25035)
   price         median sale price (buyers, Redfin) or rent per person a month (renters: median gross
                 rent, ACS B25064, divided by the average bedrooms of rented homes, B25042)
+  train         straight-line miles from where people live to the nearest Metra, CTA 'L' or
+                South Shore Line station (src/stations.py; added 2026-10-22)
 
 How close a zip is to a target is measured in percentile points, so that minutes,
 dollars and crime rates are comparable:
@@ -18,9 +20,9 @@ dollars and crime rates are comparable:
   pct(x)      = share of the sample's zips below x (ties count half), 0 to 100
   closeness   = 100 - |pct(zip's value) - pct(target)|
                 100 when the zip is exactly on target, lower the further away it is.
-                For schools, safety and price, doing better than the target (better schools,
-                less crime, a lower price) also counts as 100; for the other three, being off
-                in either direction lowers it. A missing value counts as 50.
+                For schools, safety, price and train, doing better than the target (better
+                schools, less crime, a lower price, a closer station) also counts as 100; for the
+                other three, being off in either direction lowers it. A missing value counts as 50.
   score       = sum(weight x closeness) / sum(weight)
   top areas   = the 20 highest scores
 
@@ -39,8 +41,10 @@ Samples:
 
 Outputs: output/value.csv (one row per zip and sample, sample scores), output/value.json
 """
+import base64
 import json
 
+import numpy as np
 import pandas as pd
 
 from fetch import ROOT
@@ -48,16 +52,16 @@ from fetch import ROOT
 P, OUT = ROOT / "data/processed", ROOT / "output"
 MIN_SALES, MIN_RENTERS = 20, 100
 TOP = 20
-NAMES = ["schools", "safety", "commute", "walkability", "home_age", "price"]
-COLUMNS = {"buy": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "median_price"],
-           "rent": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "rent_per_person"]}
+NAMES = ["schools", "safety", "commute", "walkability", "home_age", "price", "train"]
+COLUMNS = {"buy": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "median_price", "station_mi"],
+           "rent": ["school_pct", "crimes_per_1000", "commute_min", "walk_index", "home_age", "rent_per_person", "station_mi"]}
 # Which way is "better than the target": +1 higher is better, -1 lower is better, 0 no better side
-DIRECTION = [1, -1, 0, 0, 0, -1]
-# Sample values the page starts with: schools and safety at Top, commute and home age at Low,
+DIRECTION = [1, -1, 0, 0, 0, -1, -1]
+# Sample values the page starts with: schools and safety at Top, commute, home age and train at Low,
 # the rest Normal, a job in the Loop (60606)
 SAMPLE = {
-    "buy": {"targets": [90, 11, 30, 10, 30, 600000], "weights": [3, 3, 0.5, 1, 0.5, 1], "workplace": "60606"},
-    "rent": {"targets": [90, 11, 30, 10, 30, 1200], "weights": [3, 3, 0.5, 1, 0.5, 1], "workplace": "60606"},
+    "buy": {"targets": [90, 11, 30, 10, 30, 600000, 2], "weights": [3, 3, 0.5, 1, 0.5, 1, 0.5], "workplace": "60606"},
+    "rent": {"targets": [90, 11, 30, 10, 30, 1200, 2], "weights": [3, 3, 0.5, 1, 0.5, 1, 0.5], "workplace": "60606"},
 }
 
 
@@ -65,7 +69,8 @@ def load():
     df = (pd.read_csv(P / "indicators.csv", dtype={"zcta": str})
           .merge(pd.read_csv(P / "prices.csv", dtype={"zcta": str}), on="zcta", how="left")
           .merge(pd.read_csv(P / "extras.csv", dtype={"zcta": str})[["zcta", "home_age"]], on="zcta", how="left")
-          .merge(pd.read_csv(P / "rent.csv", dtype={"zcta": str})[["zcta", "rent_per_person", "renter_units"]], on="zcta", how="left"))
+          .merge(pd.read_csv(P / "rent.csv", dtype={"zcta": str})[["zcta", "rent_per_person", "renter_units"]], on="zcta", how="left")
+          .merge(pd.read_csv(P / "station_distance.csv", dtype={"zcta": str})[["zcta", "station_mi"]], on="zcta", how="left"))
     ok = (df.quality_missing < 2) & df.home_age.notna()
     return {
         "buy": df[ok & (df.sales_12m >= MIN_SALES) & df.median_price.notna()].reset_index(drop=True),
@@ -80,9 +85,12 @@ def pct(values, x):
 
 
 def drive_to(df, workplace):
-    """Whole-minute drive times from each zip to the workplace zip, as the site stores them."""
-    m = pd.read_csv(P / "drive_minutes.csv", dtype={"from": str}).set_index("from")
-    return df.zcta.map(m[workplace]).round().clip(upper=255)
+    """Whole-minute drive times from each zip to the workplace zip, read from the file the site uses
+    (rounding the one-decimal CSV again could differ by a minute)."""
+    t = json.loads((OUT / "site/chicago-home-value-drive.json").read_text())
+    grid = np.frombuffer(base64.b64decode(t["minutes"]), dtype=np.uint8).reshape(len(t["zips"]), -1)
+    col = pd.Series(grid[:, t["zips"].index(workplace)].astype(float), index=t["zips"])
+    return df.zcta.map(col)
 
 
 def score(df, mode, targets, weights, workplace=None):
@@ -105,7 +113,7 @@ def main():
         ex = SAMPLE[mode]
         close, s = score(df, mode, ex["targets"], ex["weights"], ex["workplace"])
         res = df[["zcta", "place_name", "state", "county", *COLUMNS[mode]]].rename(
-            columns={COLUMNS[mode][-1]: "price"})
+            columns={COLUMNS[mode][5]: "price"})
         res = res.join(close.add_prefix("close_").round(2))
         res["score"] = s.round(2)
         res["rank"] = s.rank(ascending=False, method="min").astype(int)
