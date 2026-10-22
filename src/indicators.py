@@ -4,6 +4,11 @@ values, before percentiles), the tax rate and the place name.
 Percentile ranks and the quality score are computed in step 3, after the sales
 filter, because the pre-registration ranks zips within the final sample.
 
+crimes_per_1000 is the pre-registered agency rate (one rate per police agency), which
+src/model.py keeps using. crimes_per_1000_local (added 2026-10-22) is the same except in
+Chicago, where it is the zip's own rate from src/chicago_crime.py; the map's fit score and
+the housing value model (src/value.py, src/value_gap.py) use it.
+
 Output: data/processed/indicators.csv
 """
 import pandas as pd
@@ -22,7 +27,9 @@ def main():
                  on="zcta", how="left")
           .merge(read("acs.csv")[["zcta", "commute_min", "tax_rate", "tax_rate_median", "median_topcoded"]], on="zcta", how="left")
           .merge(read("walkability.csv"), on="zcta", how="left")
-          .merge(read("places.csv")[["zcta", "place_name"]], on="zcta", how="left"))
+          .merge(read("places.csv")[["zcta", "place_name"]], on="zcta", how="left")
+          .merge(read("chicago_crime.csv")[["zcta", "crimes_per_1000_local"]], on="zcta", how="left"))
+    df["crimes_per_1000_local"] = df.crimes_per_1000_local.fillna(df.crimes_per_1000)
     quality = ["school_pct", "crimes_per_1000", "commute_min", "walk_index"]
     df["quality_missing"] = df[quality].isna().sum(axis=1)
     df.to_csv(P / "indicators.csv", index=False, float_format="%.5g")

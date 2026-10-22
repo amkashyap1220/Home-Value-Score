@@ -1015,3 +1015,8 @@ south_shore_gtfs.zip,http://www.mysouthshoreline.com/google/google_transit.zip,2
 cta_l_stops.json,https://data.cityofchicago.org/resource/8pix-ypme.json?$limit=1000,2026-10-22T03:07:09Z
 cenpop2020_bg17.txt,https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/CenPop2020_Mean_BG17.txt,2026-10-22T03:07:19Z
 cenpop2020_bg18.txt,https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/CenPop2020_Mean_BG18.txt,2026-10-22T03:07:19Z
+acsdt5y2024-b25024.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25024.dat,2026-10-22T03:43:26Z
+acsdt5y2024-b25018.dat,https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25018.dat,2026-10-22T03:43:28Z
+zip_code_market_tracker.tsv000.gz,https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/zip_code_market_tracker.tsv000.gz,2026-10-22T03:44:08Z
+cb_2020_us_zcta520_500k.zip,https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip,2026-10-22T03:47:13Z
+chicago_crimes_2025.csv,"https://data.cityofchicago.org/resource/ijzp-q8t2.csv?$select=primary_type,description,latitude,longitude&$where=year=2025 AND primary_type in ('HOMICIDE', 'CRIMINAL SEXUAL ASSAULT', 'ROBBERY', 'BURGLARY', 'THEFT', 'MOTOR VEHICLE THEFT', 'ARSON', 'ASSAULT', 'BATTERY') AND latitude IS NOT NULL&$limit=1000000",2026-10-22T03:47:25Z
