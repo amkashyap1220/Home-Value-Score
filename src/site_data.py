@@ -6,6 +6,8 @@ Reads output/value.csv (made by value.py) and writes:
                                             the page can score them against the reader's
                                             own targets and weights
   output/site/chicago-home-value-zips.json  zip shapes (made by map.py)
+  output/site/chicago-home-value-stations.json  the train stations inside the map (from stations.py),
+                                            as [lon, lat, name, agency]
 
 Copy both to research/ in the site repo (not /data/, which the site's worker handles).
 """
@@ -44,6 +46,25 @@ def main():
     path = OUT / "site/chicago-home-value.json"
     path.write_text(json.dumps(site, separators=(",", ":")))
     print(f"wrote {path} ({path.stat().st_size / 1024:.0f} KB, {len(zips)} zips)")
+
+    # Stations inside the map's bounding box (the shapes' outer coordinates)
+    shapes = json.loads((OUT / "site/chicago-home-value-zips.json").read_text())
+    pts = [c for f in shapes["features"] for c in coords(f["geometry"]["coordinates"])]
+    lons, lats = [c[0] for c in pts], [c[1] for c in pts]
+    st = pd.read_csv(ROOT / "data/processed/stations.csv")
+    st = st[st.lon.between(min(lons), max(lons)) & st.lat.between(min(lats), max(lats))]
+    path = OUT / "site/chicago-home-value-stations.json"
+    path.write_text(json.dumps([[round(r.lon, 4), round(r.lat, 4), r.name, r.agency] for r in st.itertuples()], separators=(",", ":")))
+    print(f"wrote {path} ({path.stat().st_size / 1024:.0f} KB, {len(st)} stations)")
+
+
+def coords(c):
+    """Every [lon, lat] pair in a GeoJSON coordinate array, however deeply nested."""
+    if isinstance(c[0], (int, float)):
+        yield c
+    else:
+        for x in c:
+            yield from coords(x)
 
 
 if __name__ == "__main__":
