@@ -1,0 +1,381 @@
+zcta,station_mi,nearest_station
+46301,1.04,Beverly Shores
+46302,18.11,Miller
+46303,11.12,Munster Dyer Station
+46304,3.13,Dune Park
+46307,11.1,Munster Dyer Station
+46310,28.29,Munster Dyer Station
+46311,2.96,Munster Dyer Station
+46312,1.94,East Chicago
+46319,4.65,Gary/Chicago Airport
+46320,1.24,South Hammond
+46321,1.21,Munster Ridge Station
+46322,3.26,Munster Dyer Station
+46323,2.13,East Chicago
+46324,1.02,South Hammond
+46327,0.65,Hammond Gateway
+46341,18.54,Miller
+46342,4.67,Miller
+46347,22.69,Portage/Ogden Dunes
+46349,27.05,Munster Dyer Station
+46356,16.71,Munster Dyer Station
+46368,3.29,Portage/Ogden Dunes
+46373,6.0,Munster Dyer Station
+46375,4.39,Munster Dyer Station
+46376,22.75,University Park
+46377,24.57,Munster Dyer Station
+46379,25.62,Munster Dyer Station
+46381,25.81,Munster Dyer Station
+46383,11.26,Dune Park
+46385,9.6,Portage/Ogden Dunes
+46392,30.61,Miller
+46393,7.3,Portage/Ogden Dunes
+46394,3.18,Hegewisch
+46402,0.69,Gary Metro Center
+46403,1.25,Miller
+46404,1.61,Gary/Chicago Airport
+46405,2.4,Miller
+46406,1.32,Gary/Chicago Airport
+46407,1.72,Gary Metro Center
+46408,4.48,Gary/Chicago Airport
+46409,4.54,Gary Metro Center
+46410,7.85,Munster Dyer Station
+47922,44.4,University Park
+47943,31.23,Munster Dyer Station
+47948,50.5,University Park
+47951,49.11,University Park
+47963,37.83,University Park
+47964,41.14,Munster Dyer Station
+47977,55.75,Munster Dyer Station
+47978,44.17,Munster Dyer Station
+60002,1.76,Antioch
+60004,1.76,Arlington Heights
+60005,1.36,Arlington Heights
+60007,2.35,Roselle
+60008,1.78,Arlington Park
+60010,2.6,Barrington
+60012,2.27,Crystal Lake
+60013,1.35,Cary
+60014,2.21,Pingree Road
+60015,1.0,Deerfield
+60016,1.08,Des Plaines
+60018,1.49,O'Hare
+60020,1.03,Ingleside
+60021,0.54,Fox River Grove
+60022,0.62,Glencoe
+60025,1.31,Glen/N. Glenview
+60026,1.28,Glen/N. Glenview
+60029,0.56,Golf
+60030,1.75,Round Lake
+60031,4.11,Libertyville
+60033,1.54,Harvard
+60034,9.71,Harvard
+60035,0.82,Lake-Cook
+60040,0.37,Highwood
+60041,1.27,Long Lake
+60042,5.14,McHenry
+60043,0.31,Kenilworth
+60044,1.2,Great Lakes
+60045,1.07,Lake Forest
+60046,2.13,Lake Villa
+60047,3.66,Vernon Hills
+60048,1.4,Libertyville
+60050,1.66,McHenry
+60051,2.65,Ingleside
+60053,0.82,Morton Grove
+60056,1.21,Mt. Prospect
+60060,1.22,Mundelein
+60061,1.44,Mundelein
+60062,1.38,Lake-Cook
+60064,0.9,North Chicago
+60067,1.42,Palatine
+60068,0.64,Park Ridge
+60069,1.47,Prairie View
+60070,1.13,Wheeling
+60071,7.02,Fox Lake
+60072,3.48,McHenry
+60073,1.05,Long Lake
+60074,2.13,Palatine
+60075,4.94,Winthrop Harbor
+60076,1.03,Oakton-Skokie
+60077,0.61,Dempster-Skokie
+60081,4.01,Fox Lake
+60083,4.95,Waukegan
+60084,5.3,Round Lake
+60085,1.7,Waukegan
+60087,2.97,Zion
+60088,0.75,Great Lakes
+60089,1.46,Buffalo Grove
+60090,1.09,Wheeling
+60091,0.93,Kenilworth
+60093,0.91,Winnetka
+60096,0.91,Winthrop Harbor
+60097,4.89,Woodstock
+60098,1.77,Woodstock
+60099,1.73,Zion
+60101,2.05,Itasca
+60102,4.57,Cary
+60103,1.76,National St
+60104,0.73,Bellwood
+60106,0.88,Bensenville
+60107,2.17,Bartlett
+60108,2.5,Schaumburg
+60109,10.23,Elburn
+60110,5.03,Big Timber
+60111,22.62,Elburn
+60112,12.06,Elburn
+60115,15.48,Elburn
+60118,3.36,Big Timber
+60119,1.38,Elburn
+60120,1.47,Elgin
+60123,1.28,Big Timber
+60124,3.63,Big Timber
+60126,1.2,Elmhurst
+60129,25.9,Elburn
+60130,0.43,Forest Park
+60131,0.52,Franklin Pk
+60133,1.32,Schaumburg
+60134,1.55,La Fox
+60135,18.37,Elburn
+60136,2.98,Big Timber
+60137,1.33,Glen Ellyn
+60139,2.99,Roselle
+60140,7.43,Big Timber
+60141,1.42,Forest Park
+60142,7.59,Crystal Lake
+60143,0.71,Itasca
+60144,4.81,Elburn
+60145,21.98,Woodstock
+60146,24.05,Elburn
+60148,1.62,Lombard
+60150,20.72,Elburn
+60151,7.46,Elburn
+60152,9.65,Woodstock
+60153,0.75,Maywood
+60154,2.25,Bellwood
+60155,1.82,Melrose Park
+60156,4.53,Pingree Road
+60157,0.81,Medinah
+60160,0.78,Melrose Park
+60162,1.44,Bellwood
+60163,0.66,Berkeley
+60164,1.36,Mannheim
+60165,0.74,Bellwood
+60169,4.22,Hanover Park
+60171,0.52,River Grove
+60172,0.97,Roselle
+60173,3.29,Roselle
+60174,2.7,Geneva
+60175,4.07,Geneva
+60176,0.54,Schiller Park
+60177,3.23,National St
+60178,13.71,Elburn
+60180,7.67,Woodstock
+60181,1.53,Villa Park
+60183,3.64,La Fox
+60184,4.61,National St
+60185,1.65,West Chicago
+60187,0.76,Wheaton
+60188,3.19,Winfield
+60189,1.71,College Ave
+60190,1.06,Winfield
+60191,0.81,Wood Dale
+60192,3.58,National St
+60193,2.19,Roselle
+60194,3.26,Hanover Park
+60195,4.49,Palatine
+60201,0.47,Foster
+60202,0.52,South Boulevard
+60203,1.46,Evanston (Davis St.)
+60208,0.49,Foster
+60301,0.14,Oak Park
+60302,0.52,Harlem/Lake
+60304,0.33,Harlem
+60305,0.72,River Forest
+60401,8.74,University Park
+60402,0.79,Harlem Ave.
+60403,3.32,Joliet
+60404,7.16,Joliet
+60406,0.49,Blue Island
+60407,17.81,Manhattan
+60408,16.01,Manhattan
+60409,1.72,Hegewisch
+60410,10.07,Joliet
+60411,2.49,Munster Dyer Station
+60415,0.66,Chicago Ridge
+60416,17.58,Manhattan
+60417,5.33,University Park
+60418,2.21,Midlothian
+60419,1.71,Riverdale
+60421,5.45,Manhattan
+60422,0.85,Olympia Fields
+60423,3.2,Laraway Road
+60424,22.72,Manhattan
+60425,3.2,Homewood
+60426,0.89,Harvey
+60428,1.47,Midlothian
+60429,1.31,Homewood
+60430,0.95,Homewood
+60431,6.58,Joliet
+60432,1.76,Joliet
+60433,1.66,Joliet
+60435,2.56,Joliet
+60436,1.52,Joliet
+60437,34.42,Manhattan
+60438,1.46,Munster Ridge Station
+60439,1.69,Lemont
+60440,4.22,Romeoville
+60441,1.97,Lockport
+60442,1.58,Manhattan
+60443,2.55,211th St.
+60444,25.28,Manhattan
+60445,0.91,Midlothian
+60446,3.56,Lockport
+60447,11.64,Joliet
+60448,1.18,Mokena
+60449,3.67,University Park
+60450,20.33,Joliet
+60451,1.48,Laraway Road
+60452,1.31,Oak Forest
+60453,1.11,Chicago Ridge
+60455,2.51,Chicago Ridge
+60456,1.04,Oak Lawn Patriot
+60457,2.2,Worth
+60458,2.55,Willow Springs
+60459,2.1,Ashburn
+60461,0.65,Olympia Fields
+60462,1.5,Orland Park 153rd
+60463,1.61,Palos Park
+60464,1.55,Orland Park 143rd
+60465,1.59,Worth
+60466,1.31,211th St.
+60467,1.53,Orland Park 179th
+60468,9.44,Manhattan
+60469,0.92,Robbins
+60471,0.92,Richton Park
+60472,0.75,Robbins
+60473,2.46,Harvey
+60474,22.6,Manhattan
+60475,4.06,Munster Dyer Station
+60476,2.44,Hazel Crest
+60477,1.14,Tinley-80th
+60478,2.36,Oak Forest
+60479,30.21,Manhattan
+60480,0.9,Willow Springs
+60481,12.0,Manhattan
+60482,0.5,Worth
+60484,2.43,University Park
+60487,1.62,Tinley-80th
+60490,5.57,Naperville
+60491,3.19,Lockport
+60501,0.81,Summit
+60502,2.7,Route 59
+60503,4.21,Aurora
+60504,2.55,Route 59
+60505,1.34,Aurora
+60506,2.19,Aurora
+60510,2.74,Geneva
+60511,9.96,Elburn
+60512,7.18,Aurora
+60513,0.58,Congress Park
+60514,0.55,Clarendon Hills
+60515,0.86,Downers Grove
+60516,2.11,Belmont
+60517,3.02,Belmont
+60519,1.75,Route 59
+60520,12.47,Elburn
+60521,0.63,West Hinsdale
+60523,2.38,Clarendon Hills
+60525,1.41,Stone Ave.
+60526,1.0,Congress Park
+60527,2.48,Willow Springs
+60532,1.46,Lisle
+60534,0.9,Hollywood
+60536,16.82,Aurora
+60538,4.3,Aurora
+60539,3.92,Geneva
+60540,1.59,Route 59
+60541,19.2,Aurora
+60542,4.01,Aurora
+60543,5.4,Aurora
+60544,6.94,Lockport
+60545,13.04,Aurora
+60546,0.93,Riverside
+60548,19.05,Aurora
+60550,22.49,Elburn
+60554,6.39,Aurora
+60555,3.07,Naperville
+60556,19.71,Elburn
+60558,0.75,Highlands
+60559,1.08,Westmont
+60560,10.21,Aurora
+60561,3.2,Westmont
+60563,1.1,Naperville
+60564,5.04,Route 59
+60565,3.62,Naperville
+60585,7.77,Romeoville
+60586,8.08,Joliet
+60601,0.29,Millennium Station
+60602,0.11,Clark/Lake
+60603,0.05,Monroe
+60604,0.09,Jackson
+60605,0.22,Roosevelt
+60606,0.16,Chicago OTC
+60607,0.27,Halsted Street
+60608,0.43,California
+60609,0.74,Western
+60610,0.25,North/Clybourn
+60611,0.39,Grand
+60612,0.33,Ashland
+60613,0.32,Addison
+60614,0.43,Paulina
+60615,0.37,51st/53rd St. (Hyde Park)
+60616,0.41,Cermak-McCormick Place
+60617,1.11,South Chicago (93rd)
+60618,0.53,Belmont
+60619,0.43,75th St. (Grand Crossing)
+60620,0.74,95th/Dan Ryan
+60621,0.59,69th
+60622,0.53,Division
+60623,0.59,Cicero
+60624,0.37,Cicero
+60625,0.46,Rockwell
+60626,0.24,Loyola
+60628,0.56,Stewart Ridge
+60629,1.14,Midway
+60630,0.55,Mayfair
+60631,0.49,Cumberland
+60632,0.65,Kedzie
+60633,0.82,Hegewisch
+60634,1.37,Hanson Park
+60636,0.8,Ashland/63rd
+60637,0.34,Cottage Grove
+60638,1.49,Summit
+60639,0.59,Hanson Park
+60640,0.28,Lawrence
+60641,0.76,Grayland
+60642,0.29,Grand
+60643,0.47,99th St. - Beverly Hills
+60644,0.39,Austin
+60645,1.03,Peterson/Ridge
+60646,0.85,Kimball
+60647,0.46,Western
+60649,0.35,Cheltenham (79th St.)
+60651,0.92,Kedzie
+60652,0.75,Ashburn
+60653,0.48,Indiana
+60654,0.18,Chicago
+60655,1.56,115th St. - Morgan Park
+60656,0.7,Cumberland
+60657,0.4,Paulina
+60659,1.14,Peterson/Ridge
+60660,0.24,Granville
+60661,0.16,Clinton
+60706,1.31,Harlem
+60707,0.47,Mars
+60712,1.47,Rogers Park
+60714,1.44,Dee Road
+60803,2.34,Chicago Ridge
+60804,0.65,Cicero
+60805,1.43,Ashburn
+60827,0.6,Riverdale
