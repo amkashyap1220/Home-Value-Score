@@ -71,3 +71,7 @@ The places marked "no agency found" have no police department in the FBI Crime D
 - **Small agencies are noisy.** A village of 500 people with 0 offenses gets a rate of 0. These are reported as published.
 - **Tax rate.** Uses ACS aggregates, not medians, because the median taxes table is top-coded at $10,000 (see the change log in `docs/decisions.md`). Indiana's median effective rate is about 0.8%, Illinois' about 2.0%.
 - **Walkability** is from EPA's Smart Location Database v3 (2021), built on 2010 block groups and 2019 data. It's the latest national release.
+
+## Chicago crime by zip (added 2026-10-22)
+
+`src/chicago_crime.py`. Of 104,529 City of Chicago portal incidents in 2025 matching the FBI's violent and property offenses (with aggravated assault and battery only), 102,645 fall inside a Chicago zip. The city's FBI total (91,682 offenses, 33.8 per 1,000) is spread across the 56 Chicago zips in proportion, and divided by each zip's population living in the city. The citywide rate comes out at 33.7 per 1,000 (rounding of the city-part populations). The lowest are 60655 (Mount Greenwood, 7.6) and 60646 (8.8); the highest are the downtown zips, where few people live and many visit: 60602 (787), 60603 (288), 60604 (120), 60606 (109).

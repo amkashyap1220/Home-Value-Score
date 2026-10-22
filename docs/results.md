@@ -122,3 +122,61 @@ Full lists: `output/value.json`, per-zip scores: `output/value.csv`.
 ## Target map (2026-10-21)
 
 The weighted value score above was replaced by a target score (change log in [decisions.md](decisions.md)): each reader's ranking depends on their own targets and weights, so there is no single list to report. With the example targets (schools 50th percentile, 11 crimes per 1,000, 30-minute commute, walk index 11, homes 50 years old, $350,000 or $1,400 a month, all weights equal), the top 20 are middle-of-the-road suburbs such as Palos Heights, Hanover Park, Justice and Carpentersville for buyers, and Clarendon Hills, Woodridge and Justice for renters. The page now starts with different sample values (decisions.md). Full lists: `output/value.json`.
+
+## Price vs expected (2026-10-22)
+
+A separate, fixed model of price per square foot (`src/value_gap.py`; method and reasons in the change log of [decisions.md](decisions.md)). It is post-hoc: it was built after every earlier result was seen, so it is an exploratory description, not a test. Full output: `output/value_gap.json`, per zip: `output/value_gap.csv`.
+
+### Model
+
+`log(ppsf) ~ schools + log(1 + crimes per 1,000) + commute + walk index + log(station miles + 0.25) + home age + Indiana + Chicago`, OLS, 338 zips (318 with every indicator; the other 20 are predicted without the missing one). In-sample R² = 0.67. Leave-one-out residual SD = 0.21 in logs (about 23%).
+
+| Term | Effect on price per sq ft | p (robust) | p (clustered by county) |
+|---|---|---|---|
+| Schools, per percentile point | +0.55% | < 0.001 | < 0.001 |
+| log(1 + crimes per 1,000), per unit | −9.5% | < 0.001 | 0.003 |
+| Commute, per minute | −1.5% | < 0.001 | 0.002 |
+| Walk index, per point | +6.3% | < 0.001 | < 0.001 |
+| log(station miles + 0.25), per unit | −0.6% | 0.78 | 0.78 |
+| Home age, per year | −0.37% | < 0.001 | < 0.001 |
+| Indiana | −20% | < 0.001 | < 0.001 |
+| Chicago | +32% | < 0.001 | < 0.001 |
+
+Distance to a station adds nothing once walkability is in (they correlate at −0.82). The residuals are spatially clustered (Moran's I = 0.26 with 8 nearest neighbours, p = 0.001), so these p-values are too small; the county-clustered ones are more cautious but rest on only 13 clusters.
+
+### Validation against baselines
+
+Median absolute error in price per sq ft and R² on log price, for zips each model did not see. Spatial folds are 10 k-means clusters of zip centers, so a zip is never predicted from its neighbours.
+
+| Model | Error, random | R², random | Error, spatial | R², spatial |
+|---|---|---|---|---|
+| Metro average | 19.0% | 0.00 | 21.2% | −0.15 |
+| County average | 14.4% | 0.17 | 20.1% | −0.16 |
+| Pre-registered: $/sq ft ~ quality score + tax rate | 14.7% | 0.27 | 16.8% | 0.09 |
+| Previous main: + home age, energy bills, commuting fuel | 14.6% | 0.32 | 18.7% | 0.08 |
+| **This model** | **11.8%** | **0.64** | **13.8%** | **0.53** |
+| This model + single-family share and rooms | 13.3% | 0.64 | 14.1% | 0.51 |
+
+The earlier models barely beat an average once whole areas are held out, which is why their residuals (the old "value picks") leaned on geography. Their residuals were also more clustered (Moran's I = 0.59).
+
+### Classes and confidence
+
+- 86 zips below expected (≤ −10%), 153 in line, 99 above expected (≥ +10%).
+- Confidence: 159 high, 107 medium, 72 low. Doubts counted: 17 with under 50 sales, 20 missing an indicator, 55 in Chicago, 93 whose class changes in more than 20% of the 12 other specifications, 39 in a different class with 2025 prices, 52 where price noise could erase the gap.
+- Sampling noise: the squared year-to-year change in a zip's log price per sq ft is about 0.18 × (1/n₁ + 1/n₂), so a 12-month median is off by about 6% at 50 sales and 3% at 200.
+- Specifications that change classes most: dropping schools (60% of zips keep their class), dropping walkability (72%) and dropping the Indiana and Chicago terms (77%). Adding the tax rate or using agency crime rates changes almost nothing (96%).
+
+**Below expected, high confidence (35 zips)**, most below first: Gary 46407 and 46402, Harvey, Palos Hills, Grayslake, Woodstock, North Chicago, Blue Island, Hickory Hills, Fox River Grove, Worth, Westmont, Calumet City, Riverdale, Prospect Heights, Hazel Crest, Itasca, Gary 46409, Skokie, Naperville 60563, East Chicago, Dyer, Buffalo Grove, Crest Hill, Des Plaines, Gary 46406, Willow Springs, Lincolnshire, Mokena, Crystal Lake, Park Forest, Munster, West Dundee, Orland Park and Tinley Park.
+
+**Above expected, high confidence**, most above first: Kenilworth (+117%), Glencoe, Lake Forest, Gary 46403, Winnetka, Merrillville, Portage, Hammond, Hinsdale, Western Springs and Lake Bluff.
+
+### How to read it
+
+- **Not "undervalued".** The most-below list starts with Gary, Harvey and Calumet-area suburbs: places with long-running disinvestment, vacancy and fiscal stress that the six indicators don't capture. The top of the above list is the lakefront North Shore. The gap is whatever the model can't see, plus noise.
+- **Persistent, not temporary.** The same model on the 2025, 2024 and 2023 price windows gives gaps that correlate with this year's at 0.97, 0.97 and 0.94. These are lasting differences between places, not mispricing that's about to close.
+- **An exploratory check, not used anywhere:** zips further below expected in 2023 saw faster price growth to 2026 (correlation −0.32 between the 2023 gap and the 2023–26 change in log price). Cheaper zips rose faster across the region over these years, so this can't separate catching up from a general low-end boom, and the page doesn't claim either.
+- **The useful set** is the intersection the page's chart shows: zips that fit a reader's targets, sell below expected, and have high confidence. Of the earlier 16 pre-registered value picks, 12 are still below expected here, 4 with high confidence (Grayslake, Woodstock, North Chicago, Itasca); Valparaiso 46383, Morris, Schiller Park and Highland are now in line.
+
+## Fit score with missing data left out (2026-10-22)
+
+With the sample values (safety at Top), 20 buyer zips and 23 renter zips are no longer ranked, because their missing factors carry more than 20% of the weight. The buyers' sample top 20 is led by Lisle, Naperville and Geneva; the renters' by Hinsdale, Lisle and Naperville. Inside Chicago, the safety factor now varies (7.6 to 787 crimes per 1,000, median 31), so city zips no longer tie. Full lists: `output/value.json`.

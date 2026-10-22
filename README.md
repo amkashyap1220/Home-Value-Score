@@ -6,11 +6,16 @@
 
 ## Method in short
 
-The post on the site is an interactive map that scores each zip against the reader's own targets (since 2026-10-21; see the change log in [docs/decisions.md](docs/decisions.md)):
+The post on the site answers two separate questions (since 2026-10-22; see the change log in [docs/decisions.md](docs/decisions.md)):
+
+- **Fit to you:** how well a zip matches the reader's own targets and weights (below).
+- **Price vs expected:** whether a zip's price per sq ft is below or above what zips with the same measured schools, safety, commute, walkability, train access, home age and state sell for. A fixed log-price regression with leave-one-out predictions, validated against simple baselines with spatial cross-validation, with a confidence rating per zip (`src/value_gap.py`, results in [docs/results.md](docs/results.md#price-vs-expected-2026-10-22)). "Below expected" is not "undervalued": the gap includes everything the model can't see.
+
+The fit score:
 
 1. The reader sets a target and a weight for seven things: schools, safety, commute time, distance to the nearest train station, walkability, home age, and median sale price (buyers) or rent per bedroom (renters: median gross rent divided by the average bedrooms of rented homes, so each roommate's share). If they name the town or zip they work in, commute becomes the drive time from each zip to that workplace (OpenStreetMap roads via OSRM, free-flow, so no traffic and no transit) instead of the Census average. Train station distance is the straight-line miles to the nearest Metra, CTA 'L' or South Shore Line station, averaged over where people in the zip live (Census 2020 block-group population centers). Two people can name different workplaces. The page starts filled in with sample values (`SAMPLE` in `src/value.py`) that the reader changes to their own.
 2. Each value and each target becomes a percentile among the metro's zips. Closeness = 100 − the gap between the zip's percentile and the target's, so it's 100 exactly on target. For schools, safety, price and train station, beating the target also counts as 100.
-3. Score = the weighted average of the seven closeness values. The 20 highest are the reader's top areas, each linked to listings. With two people, "best for both" ranks by the lower of their two scores.
+3. Score = the weighted average of the closeness values of the factors the zip has data for; coverage = the share of the reader's weight those carry. A missing value is left out, not counted as average, and a zip under 80% coverage is shown but not ranked. The 20 highest ranked scores are the reader's top areas, each linked to listings. With two people, "best for both" ranks by the lower of their two scores.
 
 The original pre-registered study (a regression of price per sq ft on quality, taxes and running costs, with value picks more than one standard deviation below the line) is still computed by `src/model.py`; its result is below. Race and ethnicity, and proxies for them, are not used anywhere.
 
@@ -40,6 +45,8 @@ The original pre-registered study (a regression of price per sq ft on quality, t
 | CTA 'L' stations | City of Chicago Data Portal, CTA System Information – List of 'L' Stops | https://data.cityofchicago.org/d/8pix-ypme | 2026-10-22 | City of Chicago Data Portal terms of use |
 | South Shore Line stations | NICTD GTFS feed (stops.txt) | http://www.mysouthshoreline.com/google/google_transit.zip | 2026-10-22 | NICTD GTFS terms of use |
 | Where people live (for station distance) | Census 2020 centers of population by block group (IL, IN) | https://www2.census.gov/geo/docs/reference/cenpop2020/blkgrp/ | 2026-10-22 | Public domain |
+| Chicago crime by location (added 2026-10-22) | City of Chicago Data Portal, Crimes - 2001 to Present, 2025 incidents | https://data.cityofchicago.org/d/ijzp-q8t2 | 2026-10-22 | City of Chicago Data Portal terms of use |
+| Housing stock (sensitivity check, added 2026-10-22) | ACS 5-year 2020–2024, tables B25024 (units in structure) and B25018 (median rooms) | https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/ | 2026-10-22 | Public domain |
 | Drive times between zips (added for the workplace commute) | OSRM table service on OpenStreetMap roads (public demo server), from each zip's representative point to every other | https://router.project-osrm.org/ | 2026-10-21 | Map data © OpenStreetMap contributors, ODbL; OSRM is BSD-2 |
 
 Each file's exact URL and download time is in `data/raw/manifest.csv`. Missing police agencies and other data gaps are listed in [docs/data_notes.md](docs/data_notes.md).
@@ -57,7 +64,9 @@ docs/            pre-registration and notes
 
 ## Result
 
-**Target map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the sample values the page starts with (schools and safety at Top, commute and home age at Low, a job in the Loop, 60606): the buyers' top 20 is led by Lisle, Naperville and Dyer. The same targets without a workplace (the Census average commute) are under `no_workplace`.
+**Price vs expected (2026-10-22).** The log-price model explains about half the variation in price per sq ft for areas it didn't see (spatial cross-validation R² 0.53, against 0.09 for the pre-registered model and −0.15 for the metro average). 86 zips sell at least 10% below expected, 99 at least 10% above; 35 and 42 of them with high confidence. The gaps are stable from year to year (correlation 0.97 with 2025 prices), and the most-below list is led by places with long-running disinvestment (Gary, Harvey), so they describe lasting differences the indicators miss, not bargains.
+
+**Fit map (the post).** There is no single ranking any more: each reader's result depends on their targets. `output/value.json` has the sample values the page starts with (schools and safety at Top, commute and home age at Low, a job in the Loop, 60606): the buyers' top 20 is led by Lisle, Naperville and Dyer. The same targets without a workplace (the Census average commute) are under `no_workplace`.
 
 **Pre-registered test.** H1 is supported: 16 of 338 zips are both above-median quality and more than one standard deviation ($56/sq ft) below the price the model predicts. The model explains 41% of the variation in price. About half the picks depend on which indicators go into the score, and the hand check flags some as measurement artifacts. A first run without the running costs, as pre-registered, also met the rule (16 picks) but leaned heavily on Indiana. Details: [docs/results.md](docs/results.md).
 
@@ -83,8 +92,15 @@ cd src
 ../.venv/bin/python map.py           # simplified zip shapes for the map -> output/site/
 ../.venv/bin/python commute.py       # drive times between all 380 zips (OSRM) -> data/processed/, output/site/
 ../.venv/bin/python stations.py      # miles to the nearest Metra, CTA or South Shore Line station -> data/processed/
-../.venv/bin/python value.py         # target scores for the sample values, buyers and renters -> output/value.*
+../.venv/bin/python chicago_crime.py # crime rates by zip inside Chicago (city incident data) -> data/processed/
+../.venv/bin/python indicators.py    # again, to add the Chicago rates (crimes_per_1000_local)
+../.venv/bin/python structure.py     # housing stock: single-family share, median rooms
+../.venv/bin/python price_history.py # earlier price windows and single-family prices (Redfin)
+../.venv/bin/python value.py         # fit scores for the sample values, buyers and renters -> output/value.*
+../.venv/bin/python value_gap.py     # price vs expected: model, validation, checks -> output/value_gap.*
 ../.venv/bin/python site_data.py     # small JSON for the map on alexanderk.dev -> output/site/
 ```
 
-Each script downloads what it needs into `data/raw/` (about 4.6 GB, not committed) and skips files already there. Copy the three files in `output/site/` to `writing/` in the site repo.
+Each script downloads what it needs into `data/raw/` (about 6 GB, not committed) and skips files already there. Copy the files in `output/site/` to `research/` in the site repo.
+
+Tests (scoring, normalization, missing data, the model's building blocks): `../.venv/bin/python -m pytest tests` from the repo root. The site repo's `node --test` checks that the page ranks the sample values exactly as `src/value.py` does.

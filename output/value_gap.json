@@ -1,0 +1,280 @@
+{
+  "n": 338,
+  "n_complete": 318,
+  "r2_in_sample": 0.6731094688078673,
+  "adj_r2_in_sample": 0.6646462835342846,
+  "loo_residual_sd_log": 0.20894305295571258,
+  "in_line_band": 0.1,
+  "few_sales": 50,
+  "agreement_threshold": 0.8,
+  "sales_noise_b": 0.18140166803949356,
+  "price_window": "2025-06-01 to 2026-05-31",
+  "coefficients": [
+    {
+      "term": "const",
+      "label": "Intercept",
+      "coef": 5.259144330045721,
+      "pct_effect": 19131.68611129836,
+      "se_hc1": 0.15956672536207958,
+      "p_hc1": 3.153822907624367e-238,
+      "se_county": 0.17523046379623924,
+      "p_county": 6.69521569806399e-198
+    },
+    {
+      "term": "school_pct",
+      "label": "Schools (percentile)",
+      "coef": 0.005477284866635099,
+      "pct_effect": 0.549231261595029,
+      "se_hc1": 0.00048506620593858783,
+      "p_hc1": 1.4400764037975302e-29,
+      "se_county": 0.00028406137701690663,
+      "p_county": 7.600802739690715e-83
+    },
+    {
+      "term": "log_crime",
+      "label": "log(1 + crimes per 1,000)",
+      "coef": -0.09941583086966219,
+      "pct_effect": -9.46338494568808,
+      "se_hc1": 0.021753854343301675,
+      "p_hc1": 4.876475666313222e-06,
+      "se_county": 0.03285065437154364,
+      "p_county": 0.0024756914305996084
+    },
+    {
+      "term": "commute_min",
+      "label": "Commute (minutes)",
+      "coef": -0.014737816029705569,
+      "pct_effect": -1.4629745975957231,
+      "se_hc1": 0.0034290162209543243,
+      "p_hc1": 1.723678571400143e-05,
+      "se_county": 0.0046486776873350625,
+      "p_county": 0.0015226886713710331
+    },
+    {
+      "term": "walk_index",
+      "label": "Walk index",
+      "coef": 0.06127683825281019,
+      "pct_effect": 6.31932059992486,
+      "se_hc1": 0.007841607629787034,
+      "p_hc1": 5.526015429565118e-15,
+      "se_county": 0.00971857948074323,
+      "p_county": 2.879652628507814e-10
+    },
+    {
+      "term": "log_station",
+      "label": "log(miles to station + 0.25)",
+      "coef": -0.005845709110992865,
+      "pct_effect": -0.5828656198457294,
+      "se_hc1": 0.021062369563398357,
+      "p_hc1": 0.7813633432254301,
+      "se_county": 0.021127568589495934,
+      "p_county": 0.7820209803690812
+    },
+    {
+      "term": "home_age",
+      "label": "Home age (years)",
+      "coef": -0.0037227981615923756,
+      "pct_effect": -0.37158771397026724,
+      "se_hc1": 0.0009059060365024643,
+      "p_hc1": 3.9655973143948324e-05,
+      "se_county": 0.0004956898489216186,
+      "p_county": 5.897502838947742e-14
+    },
+    {
+      "term": "indiana",
+      "label": "Indiana",
+      "coef": -0.22348385453644232,
+      "pct_effect": -20.027219626052695,
+      "se_hc1": 0.04637807082058443,
+      "p_hc1": 1.4446783356741897e-06,
+      "se_county": 0.047319553070384344,
+      "p_county": 2.325453777759389e-06
+    },
+    {
+      "term": "chicago",
+      "label": "Chicago",
+      "coef": 0.27745103830375367,
+      "pct_effect": 31.976149980016455,
+      "se_hc1": 0.0446986334379961,
+      "p_hc1": 5.395474246772612e-10,
+      "se_county": 0.012151368030254864,
+      "p_county": 2.1610519516397813e-115
+    }
+  ],
+  "validation": {
+    "random_10_fold": {
+      "Metro average": {
+        "rmse_log": 0.3450256925920725,
+        "median_abs_pct_error": 19.025823224659955,
+        "r2_log": -0.0015381500445947882
+      },
+      "County average": {
+        "rmse_log": 0.3132596729026738,
+        "median_abs_pct_error": 14.438134706343163,
+        "r2_log": 0.1743925477420929
+      },
+      "Pre-registered: $/sq ft ~ quality score + tax rate": {
+        "rmse_log": 0.29477086381625556,
+        "median_abs_pct_error": 14.658327724605213,
+        "r2_log": 0.2689724701263605
+      },
+      "Previous main: + home age, energy bills, commuting fuel": {
+        "rmse_log": 0.2845629796728634,
+        "median_abs_pct_error": 14.566667898145337,
+        "r2_log": 0.3187266138419871
+      },
+      "This model: log $/sq ft ~ six indicators + Indiana + Chicago": {
+        "rmse_log": 0.20779529977320343,
+        "median_abs_pct_error": 11.753783128448214,
+        "r2_log": 0.6367245379752245
+      },
+      "This model + single-family share and rooms": {
+        "rmse_log": 0.207278838875735,
+        "median_abs_pct_error": 13.309489540750496,
+        "r2_log": 0.6385280861409275
+      }
+    },
+    "spatial_10_fold": {
+      "Metro average": {
+        "rmse_log": 0.36977425557978044,
+        "median_abs_pct_error": 21.181600460852746,
+        "r2_log": -0.15037111152751237
+      },
+      "County average": {
+        "rmse_log": 0.371561882633527,
+        "median_abs_pct_error": 20.10968573094607,
+        "r2_log": -0.16152064547433476
+      },
+      "Pre-registered: $/sq ft ~ quality score + tax rate": {
+        "rmse_log": 0.32904468692575817,
+        "median_abs_pct_error": 16.784888835432742,
+        "r2_log": 0.08909226589533059
+      },
+      "Previous main: + home age, energy bills, commuting fuel": {
+        "rmse_log": 0.33132202198639077,
+        "median_abs_pct_error": 18.71077219454833,
+        "r2_log": 0.07643975477786435
+      },
+      "This model: log $/sq ft ~ six indicators + Indiana + Chicago": {
+        "rmse_log": 0.2361449532537684,
+        "median_abs_pct_error": 13.76162624913746,
+        "r2_log": 0.530838937393322
+      },
+      "This model + single-family share and rooms": {
+        "rmse_log": 0.24174697080438123,
+        "median_abs_pct_error": 14.119948793308124,
+        "r2_log": 0.5083152868460623
+      }
+    }
+  },
+  "spatial_autocorrelation": {
+    "this_model_loo_residuals": {
+      "moran_i": 0.2578598114813849,
+      "p_value": 0.001,
+      "k": 8
+    },
+    "pre_registered_residuals": {
+      "moran_i": 0.5916388979813721,
+      "p_value": 0.001,
+      "k": 8
+    }
+  },
+  "persistence": {
+    "2025": {
+      "n": 334,
+      "correlation": 0.9725592867005688,
+      "same_sign": 0.9461077844311377
+    },
+    "2024": {
+      "n": 336,
+      "correlation": 0.9670276979893685,
+      "same_sign": 0.9583333333333334
+    },
+    "2023": {
+      "n": 335,
+      "correlation": 0.9399080445834501,
+      "same_sign": 0.9373134328358209
+    }
+  },
+  "catch_up_exploratory": {
+    "n": 335,
+    "correlation_gap2023_vs_growth": -0.31550223367777214
+  },
+  "variants": [
+    "no Indiana or Chicago terms",
+    "adding the tax rate",
+    "adding the housing stock",
+    "agency crime rates (one rate for Chicago)",
+    "single-family homes only",
+    "county fixed effects",
+    "without schools",
+    "without safety",
+    "without commute",
+    "without walkability",
+    "without train station",
+    "without home age"
+  ],
+  "variant_correlation_with_main": {
+    "no Indiana or Chicago terms": 0.9128510901582881,
+    "adding the tax rate": 0.9988899827344648,
+    "adding the housing stock": 0.9849837624133898,
+    "agency crime rates (one rate for Chicago)": 0.9897574203041859,
+    "single-family homes only": 0.9471440156897771,
+    "county fixed effects": 0.9859175276136202,
+    "without schools": 0.8386426299602103,
+    "without safety": 0.961707177892967,
+    "without commute": 0.9724335556011324,
+    "without walkability": 0.9007110479871774,
+    "without train station": 0.999818553305832,
+    "without home age": 0.9700999345088163
+  },
+  "variant_same_class": {
+    "no Indiana or Chicago terms": 0.772189349112426,
+    "adding the tax rate": 0.9615384615384616,
+    "adding the housing stock": 0.9112426035502958,
+    "agency crime rates (one rate for Chicago)": 0.9644970414201184,
+    "single-family homes only": 0.8611111111111112,
+    "county fixed effects": 0.908284023668639,
+    "without schools": 0.5976331360946746,
+    "without safety": 0.834319526627219,
+    "without commute": 0.863905325443787,
+    "without walkability": 0.7189349112426036,
+    "without train station": 0.9970414201183432,
+    "without home age": 0.849112426035503
+  },
+  "classes": {
+    "in_line": 153,
+    "above": 99,
+    "below": 86
+  },
+  "confidence": {
+    "high": 159,
+    "medium": 107,
+    "low": 72
+  },
+  "class_by_confidence": {
+    "high": {
+      "above": 42,
+      "below": 35,
+      "in_line": 82
+    },
+    "low": {
+      "above": 31,
+      "below": 22,
+      "in_line": 19
+    },
+    "medium": {
+      "above": 26,
+      "below": 29,
+      "in_line": 52
+    }
+  },
+  "issue_counts": {
+    "few_sales": 17,
+    "missing_indicator": 20,
+    "chicago_schools": 55,
+    "spec_sensitive": 93,
+    "changed_since_2025": 39,
+    "noisy_price": 52
+  }
+}
